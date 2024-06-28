@@ -15,7 +15,7 @@ def get_label_badge_link(label):
 
 def get_markdown_header():
     return ("# Awesome Neural Physics\n\n"
-    "This repository hosts a curated list of papers that utilize **AI techniques for physics simulation** in the fields of computer graphics and AI.\n\n"
+    "[This repository](https://github.com/awesome-physics/awesome-neural-physics) hosts a curated list of papers that utilize **AI techniques for physics simulation** in the fields of computer graphics and AI.\n\n"
     "If you find this list useful, please consider citing it and giving it a :star:. Feel free to share it with others!\n\n")
 
 jabbr_map={
