@@ -1,15 +1,14 @@
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
-from bibtexparser.customization import homogenize_latex_encoding
 
-import matplotlib.colors as mcolors
+import util
 
-colors=list(mcolors.TABLEAU_COLORS.values())
+
 
 def load_bibtex(file_path):
     with open(file_path, 'r') as bibtex_file:
         parser = BibTexParser()
-        parser.customization = homogenize_latex_encoding
+        # parser.customization = homogenize_latex_encoding
         bib_database = bibtexparser.load(bibtex_file, parser=parser)
     return bib_database.entries
 
@@ -19,6 +18,7 @@ def format_entry(entry):
     dict_entry['author'] = entry.get('author', 'No author')
     dict_entry['year'] = entry.get('year', 'No year')
     dict_entry['link'] = entry.get('url', '')
+    dict_entry['jabbr'] = util.get_jabbr(entry)
     label = entry.get('label', '')
     split_labels = [l.strip() for l in label.split(',')]
     dict_entry['label']=split_labels
@@ -45,7 +45,6 @@ def generate_markdown(bib_entries, output_file):
         # put into bib_entries
         for bib_entry in bib_entries:
             entry=format_entry(bib_entry)
-            # print(entry)
             for label in entry['label']:
                 if label in group_entry_dict.keys():
                     group_entry_dict[label].append(entry)
@@ -57,7 +56,7 @@ def generate_markdown(bib_entries, output_file):
         # write out
         for group_label, group_entries in group_entry_dict.items():
             md_file.write("# "+group_label+"\n\n")
-            md_file.write("|Name|Year|Link|Label|\n")
+            md_file.write("|Name|Info|Link|Label|\n")
             md_file.write("|---|---|---|---|\n")
             for entry in group_entries:
                 labels=entry['label']
@@ -66,10 +65,9 @@ def generate_markdown(bib_entries, output_file):
                     label_str+='![][~'+label+']'
                     # add labels
                     if label not in label_color_dict.keys():
-                        color_code=colors[ord(label[0])%len(colors)][1:]
-                        label_color_dict[label]=f"https://img.shields.io/badge/-{label}-{color_code}.svg"
+                        label_color_dict[label]=util.get_label_badge_link(label)
                 
-                md_file.write(f"|**{entry['title']}**| {entry['year']}| [Link]({entry['link']}) | {label_str}\n")
+                md_file.write(f"|**{entry['title']}**| {entry['jabbr']} {entry['year']}| [Link]({entry['link']}) | {label_str}\n")
             # f"- **{title}** ({year}) by {author}. [Link]({link})" if link else f"- **{title}** ({year}) by {author}."
         md_file.write(f"\n\n")
 
