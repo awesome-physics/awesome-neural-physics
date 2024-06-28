@@ -170,12 +170,13 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 
 If you find this repository helpful, please consider citing it!
 
-```@misc{wang2024awesomelist,
-title = {Awesome Neural Physics - A Curated List of Papers on AI Techniques for Physics Simulation in Computer Graphics},
-author = {Hui Wang},
-journal = {GitHub repository},
-url = {https://github.com/awesome-physics/awesome-neural-physics},
-year = {2023},
+```
+@misc{wang2024awesomelist,
+  title = {Awesome Neural Physics - A Curated List of Papers on AI Techniques for Physics Simulation in Computer Graphics},
+  author = {Hui Wang},
+  journal = {GitHub repository},
+  url = {https://github.com/awesome-physics/awesome-neural-physics},
+  year = {2023},
 }
 ```
 [~fluid]:https://img.shields.io/badge/-fluid-2ca02c.svg

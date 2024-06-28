@@ -21,12 +21,13 @@ def get_markdown_header():
 def get_markdown_footer():
     return ("## Citation\n\n"
     "If you find this repository helpful, please consider citing it!\n\n"
-    "```@misc{wang2024awesomelist,\n"
-    "title = {Awesome Neural Physics - A Curated List of Papers on AI Techniques for Physics Simulation in Computer Graphics},\n"
-    "author = {Hui Wang},\n"
-    "journal = {GitHub repository},\n"
-    "url = {https://github.com/awesome-physics/awesome-neural-physics},\n"
-    "year = {2023},\n"
+    "```\n"
+    "@misc{wang2024awesomelist,\n"
+    "  title = {Awesome Neural Physics - A Curated List of Papers on AI Techniques for Physics Simulation in Computer Graphics},\n"
+    "  author = {Hui Wang},\n"
+    "  journal = {GitHub repository},\n"
+    "  url = {https://github.com/awesome-physics/awesome-neural-physics},\n"
+    "  year = {2023},\n"
     "}\n"
     "```\n")
 
