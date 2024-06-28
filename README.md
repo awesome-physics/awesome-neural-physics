@@ -7,7 +7,7 @@ A curated list of awesome neural physics.
 |Name|Info|Link|Label|
 |---|---|---|---|
 |**Data-driven projection method in fluid simulation**| CAVW 2016| [Link](https://onlinelibrary.wiley.com/doi/abs/10.1002/cav.1695) | ![][~fluid]
-|**tempoGAN: A temporally coherent, volumetric GAN for super-resolution fluid flow**| TOG 2018| [Link]() | ![][~fluid]
+|**tempoGAN: A temporally coherent, volumetric GAN for super-resolution fluid flow**| TOG 2018| [Link]() | ![][~fluid]![][~superresolution]
 |**Fluid directed rigid body control using deep reinforcement learning**| TOG 2018| [Link](https://doi.org/10.1145/3197517.3201334) | ![][~fluid]![][~RL]
 |**Deep dynamical modeling and control of unsteady fluid flows**| NeurIPS 2018| [Link]() | ![][~fluid]
 |**Lagrangian fluid simulation with continuous convolutions**| ICLR 2019| [Link]() | ![][~fluid]
@@ -22,10 +22,10 @@ A curated list of awesome neural physics.
 |**Tomofluid: Reconstructing dynamic fluid from sparse view videos**| CVPR 2020| [Link]() | ![][~fluid]![][~reconstruction]
 |**Interactive liquid splash modeling by user sketches**| TOG 2020| [Link]() | ![][~fluid]![][~interaction]
 |**Lagrangian neural style transfer for fluids**| TOG 2020| [Link](https://doi.org/10.1145/3386569.3392473) | ![][~fluid]![][~style_transfer]
-|**Dynamic Upsampling of Smoke through Dictionary-based Learning**| TOG 2020| [Link](https://doi.org/10.1145/3412360) | ![][~fluid]
+|**Dynamic Upsampling of Smoke through Dictionary-based Learning**| TOG 2020| [Link](https://doi.org/10.1145/3412360) | ![][~fluid]![][~superresolution]
 |**Learning meaningful controls for fluids**| TOG 2021| [Link]() | ![][~fluid]
 |**Differentiable Fluids with Solid Coupling for Learning and Control**| AAAI 2021| [Link](https://ojs.aaai.org/index.php/AAAI/article/view/16764) | ![][~fluid]![][~diffsim]
-|**Predicting high-resolution turbulence details in space and time**| TOG 2021| [Link]() | ![][~fluid]
+|**Predicting high-resolution turbulence details in space and time**| TOG 2021| [Link]() | ![][~fluid]![][~superresolution]
 |**Neural upflow: A scene flow learning approach to increase the apparent resolution of particle-based liquids**|  2021| [Link]() | ![][~fluid]
 |**Data-driven simulation in fluids animation: A survey**|  2021| [Link]() | ![][~fluid]![][~survey]
 |**Global transport for fluid reconstruction with learned self-supervision**| CVPR 2021| [Link]() | ![][~fluid]
@@ -71,7 +71,7 @@ A curated list of awesome neural physics.
 |**Detail-Aware Deep Clothing Animations Infused with Multi-Source Attributes**| CGF 2023| [Link]() | ![][~cloth]
 |**Bayesian Differentiable Physics for Cloth Digitalization**| CVPR 2024| [Link]() | ![][~cloth]
 |**{DiffAvatar}: Simulation-Ready Garment Optimization with Differentiable Simulation**| CVPR 2024| [Link]() | ![][~cloth]
-|**GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details**| Arxiv 2024| [Link]() | ![][~cloth]
+|**GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details**| Arxiv 2024| [Link]() | ![][~cloth]![][~3DGS]
 # softbody
 
 |Name|Info|Link|Label|
@@ -154,6 +154,7 @@ A curated list of awesome neural physics.
 
 
 [~fluid]:https://img.shields.io/badge/-fluid-2ca02c.svg
+[~superresolution]:https://img.shields.io/badge/-superresolution-8c564b.svg
 [~RL]:https://img.shields.io/badge/-RL-2ca02c.svg
 [~style_transfer]:https://img.shields.io/badge/-style_transfer-8c564b.svg
 [~survey]:https://img.shields.io/badge/-survey-8c564b.svg
