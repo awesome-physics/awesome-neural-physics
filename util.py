@@ -15,8 +15,20 @@ def get_label_badge_link(label):
 
 def get_markdown_header():
     return ("# Awesome Neural Physics\n\n"
-    "[This repository](https://github.com/awesome-physics/awesome-neural-physics) hosts a curated list of papers that utilize **AI techniques for physics simulation** in the fields of computer graphics and AI.\n\n"
+    "[This repository](https://github.com/awesome-physics/awesome-neural-physics) hosts a curated list of papers on **AI techniques for physics simulation** in computer graphics.\n\n"
     "If you find this list useful, please consider citing it and giving it a :star:. Feel free to share it with others!\n\n")
+
+def get_markdown_footer():
+    return ("## Citation\n\n"
+    "If you find this repository helpful, please consider citing it!\n\n"
+    "```@misc{wang2024awesomelist,\n"
+    "title = {Awesome Neural Physics - A Curated List of Papers on AI Techniques for Physics Simulation in Computer Graphics},\n"
+    "author = {Hui Wang},\n"
+    "journal = {GitHub repository},\n"
+    "url = {https://github.com/awesome-physics/awesome-neural-physics},\n"
+    "year = {2023},\n"
+    "}\n"
+    "```\n")
 
 jabbr_map={
     'ACM Transactions on Graphics (TOG)'.casefold():'TOG',

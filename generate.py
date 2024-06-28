@@ -70,6 +70,9 @@ def generate_markdown(bib_entries, output_file):
             # f"- **{title}** ({year}) by {author}. [Link]({link})" if link else f"- **{title}** ({year}) by {author}."
         md_file.write(f"\n\n")
 
+        md_file.write(util.get_markdown_footer())
+
+
         for label, color_code in label_color_dict.items():
             md_file.write(f"[~{label}]:{color_code}\n")
 

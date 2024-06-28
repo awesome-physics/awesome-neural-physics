@@ -1,6 +1,6 @@
 # Awesome Neural Physics
 
-[This repository](https://github.com/awesome-physics/awesome-neural-physics) hosts a curated list of papers that utilize **AI techniques for physics simulation** in the fields of computer graphics and AI.
+[This repository](https://github.com/awesome-physics/awesome-neural-physics) hosts a curated list of papers on **AI techniques for physics simulation** in computer graphics.
 
 If you find this list useful, please consider citing it and giving it a :star:. Feel free to share it with others!
 
@@ -166,6 +166,18 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Data-driven simulation in fluids animation: A survey**|  2021| [Link](https://www.sciencedirect.com/science/article/pii/S2096579621000139) | ![][~fluid]![][~survey]
 
 
+## Citation
+
+If you find this repository helpful, please consider citing it!
+
+```@misc{wang2024awesomelist,
+title = {Awesome Neural Physics - A Curated List of Papers on AI Techniques for Physics Simulation in Computer Graphics},
+author = {Hui Wang},
+journal = {GitHub repository},
+url = {https://github.com/awesome-physics/awesome-neural-physics},
+year = {2023},
+}
+```
 [~fluid]:https://img.shields.io/badge/-fluid-2ca02c.svg
 [~superresolution]:https://img.shields.io/badge/-superresolution-8c564b.svg
 [~RL]:https://img.shields.io/badge/-RL-2ca02c.svg
