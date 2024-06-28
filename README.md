@@ -1,6 +1,6 @@
 # Awesome Neural Physics
 
-This repository hosts a curated list of papers that utilize **AI techniques for physics simulation** in the fields of computer graphics and AI.
+[This repository](https://github.com/awesome-physics/awesome-neural-physics) hosts a curated list of papers that utilize **AI techniques for physics simulation** in the fields of computer graphics and AI.
 
 If you find this list useful, please consider citing it and giving it a :star:. Feel free to share it with others!
 
