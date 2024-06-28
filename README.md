@@ -1,8 +1,10 @@
 # Awesome Neural Physics
 
-A curated list of awesome neural physics.
+This repository contains a curated list of physics simulation papers utilizing neural techniques.
 
-# fluid
+If you find this list useful, please consider citing it and giving it a :star:. Feel free to share it with others!
+
+## Fluid
 
 |Name|Info|Link|Label|
 |---|---|---|---|
@@ -47,7 +49,7 @@ A curated list of awesome neural physics.
 |**Gaussian Splashing: Dynamic Fluid Synthesis with Gaussian Splatting**|  2024| [Link]() | ![][~fluid]![][~3DGS]
 |**Differentiable Voronoi Diagrams for Simulation of Cell-Based Mechanical Systems**| TOG 2024| [Link]() | ![][~fluid]
 |**Learning Reduced Fluid Dynamics**| AAAI 2024| [Link]() | ![][~fluid]
-# cloth
+## Cloth
 
 |Name|Info|Link|Label|
 |---|---|---|---|
@@ -72,7 +74,7 @@ A curated list of awesome neural physics.
 |**Bayesian Differentiable Physics for Cloth Digitalization**| CVPR 2024| [Link]() | ![][~cloth]
 |**{DiffAvatar}: Simulation-Ready Garment Optimization with Differentiable Simulation**| CVPR 2024| [Link]() | ![][~cloth]
 |**GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details**| Arxiv 2024| [Link]() | ![][~cloth]![][~3DGS]
-# softbody
+## Softbody
 
 |Name|Info|Link|Label|
 |---|---|---|---|
@@ -106,7 +108,7 @@ A curated list of awesome neural physics.
 |**ElastoGen: 4D Generative Elastodynamics**| Arxiv 2024| [Link]() | ![][~softbody]
 |**VR-GS: A Physical Dynamics-Aware Interactive Gaussian Splatting System in Virtual Reality**|  2024| [Link]() | ![][~softbody]![][~interaction]![][~3DGS]
 |**Feature Splatting: Language-Driven Physics-Based Scene Synthesis and Editing**| Arxiv 2024| [Link]() | ![][~softbody]
-# rigidbody
+## Rigidbody
 
 |Name|Info|Link|Label|
 |---|---|---|---|
@@ -131,7 +133,7 @@ A curated list of awesome neural physics.
 |**Vr-handnet: A visually and physically plausible hand manipulation system in virtual reality**| TVCG 2023| [Link]() | ![][~rigidbody]![][~interaction]
 |**DOC: Differentiable Optimal Control for Retargeting Motions onto Legged Robots**| TOG 2023| [Link](https://doi.org/10.1145/3592454) | ![][~rigidbody]
 |**An Extensible, Data-Oriented Architecture for High-Performance, Many-World Simulation**| TOG 2023| [Link](https://doi.org/10.1145/3592427) | ![][~rigidbody]![][~RL]
-# multiphys
+## Multiphys
 
 |Name|Info|Link|Label|
 |---|---|---|---|
@@ -144,7 +146,7 @@ A curated list of awesome neural physics.
 |**{PAC}-Ne{RF}: Physics Augmented Continuum Neural Radiance Fields for Geometry-Agnostic System Identification**| ICLR 2023| [Link](https://openreview.net/forum?id=tVkrbkz42vc) | ![][~multiphys]![][~NeRF]
 |**Dynamic mesh-aware radiance fields**| ICCV 2023| [Link]() | ![][~multiphys]
 |**Neural Physical Simulation with Multi-Resolution Hash Grid Encoding**| AAAI 2024| [Link]() | ![][~multiphys]
-# survey
+## Survey
 
 |Name|Info|Link|Label|
 |---|---|---|---|

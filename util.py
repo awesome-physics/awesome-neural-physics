@@ -8,24 +8,15 @@ def get_jabbr(entry):
     if entry['ENTRYTYPE'].lower()=='misc':
         return ''
 
-
 colors=list(mcolors.TABLEAU_COLORS.values())
-
 def get_label_badge_link(label):
     color_code=colors[ord(label[0])%len(colors)][1:]
     return f"https://img.shields.io/badge/-{label}-{color_code}.svg"
 
-class CaseInsensitiveDict(dict):
-    """Case-insensitive dictionary implementation."""
-
-    def __getitem__(self, key):
-        return dict.__getitem__(self, key.casefold())
-
-    def __setitem__(self, key, value):
-        return dict.__setitem__(self, key.casefold(), value)
-
-    def __delitem__(self, key):
-        return dict.__delitem__(self, key.casefold())
+def get_markdown_header():
+    return ("# Awesome Neural Physics\n\n"
+    "This repository contains a curated list of physics simulation papers utilizing neural techniques.\n\n"
+    "If you find this list useful, please consider citing it and giving it a :star:. Feel free to share it with others!\n\n")
 
 jabbr_map={
     'ACM Transactions on Graphics (TOG)'.casefold():'TOG',
@@ -48,7 +39,6 @@ jabbr_map={
     'European Conference on Computer Vision'.casefold():'ECCV',
     'Proceedings of the IEEE/CVF International Conference on Computer Vision'.casefold():'ICCV',
     'Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)'.casefold():'ICRA'
-
 }
 def _jabbr_mapping(j):
     if j.casefold() in jabbr_map:

@@ -29,8 +29,7 @@ def format_entry(entry):
 
 def generate_markdown(bib_entries, output_file):
     with open(output_file, 'w') as md_file:
-        md_file.write("# Awesome Neural Physics\n\n")
-        md_file.write("A curated list of awesome neural physics.\n\n")
+        md_file.write(util.get_markdown_header())
 
         group_entry_dict={}
         label_color_dict={}
@@ -55,7 +54,7 @@ def generate_markdown(bib_entries, output_file):
 
         # write out
         for group_label, group_entries in group_entry_dict.items():
-            md_file.write("# "+group_label+"\n\n")
+            md_file.write("## "+group_label.title()+"\n\n")
             md_file.write("|Name|Info|Link|Label|\n")
             md_file.write("|---|---|---|---|\n")
             for entry in group_entries:
