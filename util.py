@@ -43,6 +43,7 @@ jabbr_map={
     'European Conference on Computer Vision'.casefold():'ECCV',
     'Proceedings of the IEEE/CVF International Conference on Computer Vision'.casefold():'ICCV',
     'Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)'.casefold():'ICRA',
+    'IEEE International Conference on Robotics and Automation (ICRA)'.casefold():'ICRA',
     'International Conference on Robotics and Automation (ICRA)'.casefold():'ICRA'
 }
 def _jabbr_mapping(j):

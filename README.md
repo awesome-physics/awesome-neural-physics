@@ -11,6 +11,7 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Data-driven fluid simulations using regression forests**| TOG 2015| [Link](https://dl.acm.org/doi/10.1145/2816795.2818129) | ![][~fluid]
 |**Data-driven projection method in fluid simulation**| CAVW 2016| [Link](http://dalab.se.sjtu.edu.cn/www/home/?page_id=911) | ![][~fluid]
 |**Accelerating eulerian fluid simulation with convolutional networks**| ICML 2017| [Link](https://github.com/google/FluidNet) | ![][~fluid]
+|**Data-driven synthesis of smoke flows with CNN-based feature descriptors**| TOG 2017| [Link](https://ge.in.tum.de/publications/2017-sig-chu/) | ![][~fluid]
 |**tempoGAN: A temporally coherent, volumetric GAN for super-resolution fluid flow**| TOG 2018| [Link](https://ge.in.tum.de/publications/tempogan/) | ![][~fluid]![][~superresolution]
 |**Fluid directed rigid body control using deep reinforcement learning**| TOG 2018| [Link](https://gamma.cs.unc.edu/DRL_FluidRigid/) | ![][~fluid]![][~RL]
 |**Deep dynamical modeling and control of unsteady fluid flows**| NeurIPS 2018| [Link](https://github.com/sisl/deep_flow_control) | ![][~fluid]
@@ -42,6 +43,7 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Efficient Neural Style Transfer for Volumetric Simulations**| TOG 2022| [Link](https://studios.disneyresearch.com/2022/11/30/efficient-neural-style-transfer-for-volumetric-simulations/) | ![][~fluid]![][~style_transfer]
 |**Versatile Control of Fluid-directed Solid Objects Using Multi-task Reinforcement Learning**| TOG 2022| [Link](https://dl.acm.org/doi/10.1145/3554731) | ![][~fluid]![][~RL]
 |**Transformer with implicit edges for particle-based physics simulation**| ECCV 2022| [Link](https://www.mmlab-ntu.com/project/tie/index.html) | ![][~fluid]
+|**Deep Reconstruction of 3D Smoke Densities from Artist Sketches**| CGF 2022| [Link](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14461) | ![][~fluid]
 |**Fluid Simulation on Neural Flow Maps**| TOG 2023| [Link](https://yitongdeng-projects.github.io/neural_flow_maps_webpage/) | ![][~fluid]
 |**DiffFR: Differentiable SPH-Based Fluid-Rigid Coupling for Rigid Body Control**| TOG 2023| [Link](https://zhehaoli1999.github.io/DiffFR/) | ![][~fluid]![][~diffsim]
 |**Fast fluid simulation via dynamic multi-scale gridding**| AAAI 2023| [Link](https://ojs.aaai.org/index.php/AAAI/article/view/25255) | ![][~fluid]
@@ -50,6 +52,7 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Neural vortex method: From finite Lagrangian particles to infinite dimensional Eulerian dynamics**|  2023| [Link](https://arxiv.org/abs/2006.04178) | ![][~fluid]
 |**FluidLab: A Differentiable Environment for Benchmarking Complex Fluid Manipulation**| ICLR 2023| [Link](https://fluidlab2023.github.io/) | ![][~fluid]
 |**Learning to Estimate Single-View Volumetric Flow Motions without 3D Supervision**| ICLR 2023| [Link](https://ge.in.tum.de/publications/2023-franz-neuralglobtrans/) | ![][~fluid]
+|**Physics-Informed Neural Corrector for Deformation-based Fluid Control**| CGF 2023| [Link](https://studios.disneyresearch.com/2023/05/07/physics-informed-neural-corrector-for-deformation-based-fluid-control/) | ![][~fluid]
 |**Fluid Inverse Volumetric Modeling and Applications from Surface Motion**| TVCG 2024| [Link](https://www.computer.org/csdl/journal/tg/5555/01/10452823/1UUuVAIPShy) | ![][~fluid]
 |**Laplacian Projection Based Global Physical Prior Smoke Reconstruction**| TVCG 2024| [Link](https://www.computer.org/csdl/journal/tg/5555/01/10414126/1TZIJbrBNo4) | ![][~fluid]
 |**Inferring Hybrid Neural Fluid Fields from Videos**| NeurIPS 2024| [Link](https://kovenyu.com/hyfluid/) | ![][~fluid]
@@ -139,7 +142,7 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Vr-handnet: A visually and physically plausible hand manipulation system in virtual reality**| TVCG 2023| [Link](https://ieeexplore.ieee.org/abstract/document/10066837) | ![][~rigidbody]![][~interaction]
 |**DOC: Differentiable Optimal Control for Retargeting Motions onto Legged Robots**| TOG 2023| [Link](https://la.disneyresearch.com/publication/doc-differentiable-optimal-control-for-retargeting-motions-onto-legged-robots/) | ![][~rigidbody]
 |**An Extensible, Data-Oriented Architecture for High-Performance, Many-World Simulation**| TOG 2023| [Link](https://madrona-engine.github.io/) | ![][~rigidbody]![][~RL]![][~engine]
-|**Jade: A Differentiable Physics Engine for Articulated Rigid Bodies with Intersection-Free Frictional Contact**|  2024| [Link](https://sites.google.com/view/diffsim/) | ![][~rigidbody]![][~engine]
+|**Jade: A Differentiable Physics Engine for Articulated Rigid Bodies with Intersection-Free Frictional Contact**| ICRA 2024| [Link](https://sites.google.com/view/diffsim/) | ![][~rigidbody]![][~engine]
 ## Multiphys
 
 |Name|Info|Link|Label|
