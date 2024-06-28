@@ -17,7 +17,7 @@ def format_entry(entry):
     dict_entry['title'] = entry.get('title', 'No title')
     dict_entry['author'] = entry.get('author', 'No author')
     dict_entry['year'] = entry.get('year', 'No year')
-    dict_entry['link'] = entry.get('url', '')
+    dict_entry['link'] = entry.get('link', '')
     dict_entry['jabbr'] = util.get_jabbr(entry)
     label = entry.get('label', '')
     split_labels = [l.strip() for l in label.split(',')]
