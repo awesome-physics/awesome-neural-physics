@@ -24,6 +24,9 @@ jabbr_map={
     'ACM Trans. Graph.'.casefold():'TOG',
     'IEEE Transactions on Visualization and Computer Graphics'.casefold():'TVCG',
     'Computer Graphics Forum'.casefold():'CGF',
+    'Proceedings of the ACM on Computer Graphics and Interactive Techniques'.casefold():'PACMCGIT',
+    'Proc. ACM Comput. Graph. Interact. Tech.'.casefold():'PACMCGIT',
+    'Computational Visual Media'.casefold():'CVM',
     'Computer Animation and Virtual Worlds'.casefold():'CAVW',
     'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'.casefold():'CVPR',
     'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition'.casefold():'CVPR',
@@ -31,6 +34,7 @@ jabbr_map={
     'The IEEE/CVF Conference on Computer Vision and Pattern Recognition'.casefold():'CVPR',
     'Advances in Neural Information Processing Systems'.casefold():'NeurIPS',
     'Conference on Neural Information Processing Systems'.casefold():'NeurIPS',
+    'Proceedings of the International Conference on Learning Representations'.casefold():'ICLR',
     'International Conference on Learning Representations'.casefold():'ICLR',
     'ICML'.casefold():'ICML',
     'International Conference on Machine Learning'.casefold():'ICML',
@@ -38,7 +42,8 @@ jabbr_map={
     'Proceedings of the european conference on computer vision (eccv)'.casefold():'ECCV',
     'European Conference on Computer Vision'.casefold():'ECCV',
     'Proceedings of the IEEE/CVF International Conference on Computer Vision'.casefold():'ICCV',
-    'Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)'.casefold():'ICRA'
+    'Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)'.casefold():'ICRA',
+    'International Conference on Robotics and Automation (ICRA)'.casefold():'ICRA'
 }
 def _jabbr_mapping(j):
     if j.casefold() in jabbr_map:

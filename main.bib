@@ -842,14 +842,12 @@
   label={softbody}
 }
 
-@misc{feng2023pienerf,
-  title={PIE-NeRF: Physics-based Interactive Elastodynamics with NeRF}, 
-  author={Yutao Feng and Yintong Shang and Xuan Li and Tianjia Shao and Chenfanfu Jiang and Yin Yang},
-  year={2023},
-  eprint={2311.13099},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  label={softbody,NeRF}
+@inproceedings{feng2024pie,
+  title={Pie-nerf: Physics-based interactive elastodynamics with nerf},
+  author={Feng, Yutao and Shang, Yintong and Li, Xuan and Shao, Tianjia and Jiang, Chenfanfu and Yang, Yin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4450--4461},
+  year={2024}
 }
 
 @article{feng2024elastogen,
@@ -893,14 +891,11 @@ li2023pacnerf,
 }
 
 
-@misc{jiang2024vrgs,
-  title={VR-GS: A Physical Dynamics-Aware Interactive Gaussian Splatting System in Virtual Reality}, 
-  author={Ying Jiang and Chang Yu and Tianyi Xie and Xuan Li and Yutao Feng and Huamin Wang and Minchen Li and Henry Lau and Feng Gao and Yin Yang and Chenfanfu Jiang},
+@article{jiang2024vrgs,
+  title={VR-GS: A Physical Dynamics-Aware Interactive Gaussian Splatting System in Virtual Reality},
+  author={Jiang, Ying and Yu, Chang and Xie, Tianyi and Li, Xuan and Feng, Yutao and Wang, Huamin and Li, Minchen and Lau, Henry and Gao, Feng and Yang, Yin and Jiang, Chenfanfu},
+  journal={arXiv preprint arXiv:2401.16663},
   year={2024},
-  eprint={2401.16663},
-  archivePrefix={arXiv},
-  primaryClass={cs.HC},
-  label={softbody,interaction,3DGS}
 }
 
 @article{qiu2024feature,
@@ -1558,15 +1553,191 @@ li2023pacnerf,
   label = {fluid}
 }
 
-@inproceedings{NEURIPS2023_5f5f7b60,
-  author = {Huang, Zhiao and Chen, Feng and Pu, Yewen and Lin, Chunru and Su, Hao and Gan, Chuang},
-  booktitle = {Advances in Neural Information Processing Systems},
-  editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
-  pages = {29875--29900},
-  publisher = {Curran Associates, Inc.},
-  title = {DiffVL: Scaling Up Soft Body Manipulation using Vision-Language Driven Differentiable Physics},
-  url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/5f5f7b6080dcadced61cf5d96f7c6dde-Paper-Conference.pdf},
-  volume = {36},
+@inproceedings{qiao2020scalable,
+  author  = {Qiao, Yi-Ling and Liang, Junbang and Koltun, Vladlen and Lin, Ming C.},
+  title  = {Scalable Differentiable Physics for Learning and Control},
+  booktitle = {ICML},
+  year  = {2020},
+  link = {https://github.com/YilingQiao/diffsim},
+  label = {rigid, diffsim}
+}
+
+@inproceedings{zesch2023ncf,
+  author = {Zesch, Ryan S. and Modi, Vismay and Sueda, Shinjiro and Levin, David I.W.},
+  title = {Neural Collision Fields for Triangle Primitives},
   year = {2023},
-  label = {softbody}
+  isbn = {9798400703157},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3610548.3618225},
+  doi = {10.1145/3610548.3618225},
+  booktitle = {SIGGRAPH Asia 2023 Conference Papers},
+  articleno = {76},
+  numpages = {10},
+  keywords = {Collision Detection, Collision Resolution, Neural Network},
+  location = {Sydney, NSW, Australia},
+  series = {SA '23},
+  label = {rigid}
+}
+
+
+@inproceedings{
+  winchenbach2024symmetric,
+  title={Symmetric Basis Convolutions for Learning Lagrangian Fluid Mechanics},
+  author={Rene Winchenbach and Nils Thuerey},
+  booktitle={International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=HKgRwNhI9R},
+  label = {fluid}
+}
+
+
+@article{holzschuh2023solving,
+  title={Solving Inverse Physics Problems with Score Matching},
+  author={Holzschuh, Benjamin and Vegetti, Simona and Thuerey, Nils},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2023},
+  label = {fluid}
+}
+
+@inproceedings{oh2021two,
+  title={Two-step Temporal Interpolation Network Using Forward Advection for Efficient Smoke Simulation},
+  author={Oh, Young Jin and Lee, In-Kwon},
+  booktitle={Computer Graphics Forum},
+  volume={40},
+  number={2},
+  pages={355--365},
+  year={2021},
+  organization={Wiley Online Library},
+  label = {fluid}
+}
+
+
+
+@inproceedings{li2023d,
+  title={D-Cloth: Skinning-based Cloth Dynamic Prediction with a Three-stage Network},
+  author={Li, Yu Di and Tang, Min and Chen, Xiao Rui and Yang, Yun and Tong, Ruo Feng and An, Bai Lin and Yang, Shuang Cai and Li, Yao and Kou, Qi Long},
+  booktitle={Computer Graphics Forum},
+  volume={42},
+  number={7},
+  pages={e14937},
+  year={2023},
+  organization={Wiley Online Library},
+  label={cloth}
+}
+
+
+@INPROCEEDINGS{hu2019chain,
+  author={Hu, Yuanming and Liu, Jiancheng and Spielberg, Andrew and Tenenbaum, Joshua B. and Freeman, William T. and Wu, Jiajun and Rus, Daniela and Matusik, Wojciech},
+  booktitle={International Conference on Robotics and Automation (ICRA)}, 
+  title={ChainQueen: A Real-Time Differentiable Physical Simulator for Soft Robotics}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={6265-6271},
+  keywords={Graphics processing units;Computational modeling;Soft robotics;Three-dimensional displays;Planning;Inverse problems},
+  doi={10.1109/ICRA.2019.8794333},
+  label={softbody,diffsim}
+}
+
+@inproceedings{deng2023vortex,
+  title={Learning Vortex Dynamics for Fluid Inference and Prediction},
+  author={Yitong Deng and Hong-Xing Yu and Jiajun Wu and Bo Zhu},
+  booktitle={Proceedings of the International Conference on Learning Representations},
+  year={2023},
+  label={fluid}
+}
+
+@article{xiong2023neural,
+  title = {Neural vortex method: From finite Lagrangian particles to infinite dimensional Eulerian dynamics},
+  journal = {Computers \& Fluids},
+  volume = {258},
+  pages = {105811},
+  year = {2023},
+  issn = {0045-7930},
+  doi = {https://doi.org/10.1016/j.compfluid.2023.105811},
+  url = {https://www.sciencedirect.com/science/article/pii/S0045793023000361},
+  author = {Shiying Xiong and Xingzhe He and Yunjin Tong and Yitong Deng and Bo Zhu},
+  keywords = {Vortex method, Neural network, Lagrangian dynamics, Eulerian dynamics},
+  label = {fluid}
+}
+
+@inproceedings{xian2023fluidlab,
+  title={FluidLab: A Differentiable Environment for Benchmarking Complex Fluid Manipulation},
+  author={Xian, Zhou and Zhu, Bo and Xu, Zhenjia and Tung, Hsiao-Yu and Torralba, Antonio and Fragkiadaki, Katerina and Gan, Chuang},
+  booktitle={International Conference on Learning Representations},
+  year={2023},
+  label={fluid}
+}
+
+
+@article{ladicky2015data,
+  author = {Ladick\'{y}, L'ubor and Jeong, SoHyeon and Solenthaler, Barbara and Pollefeys, Marc and Gross, Markus},
+  title = {Data-driven fluid simulations using regression forests},
+  year = {2015},
+  issue_date = {November 2015},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {34},
+  number = {6},
+  issn = {0730-0301},
+  url = {https://doi.org/10.1145/2816795.2818129},
+  doi = {10.1145/2816795.2818129},
+  journal = {ACM Trans. Graph.},
+  month = {nov},
+  articleno = {199},
+  numpages = {9},
+  keywords = {regression forest, fluid simulation, data-driven},
+  label = {fluid}
+}
+
+@inproceedings{franz2023learning,
+	title={Learning to Estimate Single-View Volumetric Flow Motions without 3D Supervision},
+	author={Erik Franz and Barbara Solenthaler and Nils Thuerey},
+	booktitle={International Conference on Learning Representations},
+	year={2023},
+	url={https://openreview.net/forum?id=2vmGv5wPDBZ},
+  label={fluid}
+}
+
+@article{xie2024dynamic,
+  title={Dynamic ocean inverse modeling based on differentiable rendering},
+  author={Xie, Xueguang and Gao, Yang and Hou, Fei and Hao, Aimin and Qin, Hong},
+  journal={Computational Visual Media},
+  volume={10},
+  number={2},
+  pages={279--294},
+  year={2024},
+  publisher={Springer},
+  label={fluid}
+}
+
+@article{Stuyck2023DiffXPBD,
+  author = {Stuyck, Tuur and Chen, Hsiao-yu},
+  title = {DiffXPBD: Differentiable Position-Based Simulation of Compliant Constraint Dynamics},
+  year = {2023},
+  issue_date = {August 2023},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {6},
+  number = {3},
+  url = {https://doi.org/10.1145/3606923},
+  doi = {10.1145/3606923},
+  journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+  month = {aug},
+  articleno = {51},
+  numpages = {14},
+  keywords = {differentiable simulation, parameter estimation},
+  label = {cloth,diffsim}
+}
+
+@inproceedings{tompson2017accelerating,
+  title={Accelerating eulerian fluid simulation with convolutional networks},
+  author={Tompson, Jonathan and Schlachter, Kristofer and Sprechmann, Pablo and Perlin, Ken},
+  booktitle={International conference on machine learning},
+  pages={3424--3433},
+  year={2017},
+  organization={PMLR},
+  label={fluid}
 }
