@@ -61,6 +61,8 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Learning Reduced Fluid Dynamics**| AAAI 2024| [Link](https://ojs.aaai.org/index.php/AAAI/article/view/29367) | ![][~fluid]
 |**Symmetric Basis Convolutions for Learning Lagrangian Fluid Mechanics**| ICLR 2024| [Link](https://github.com/tum-pbs/SFBC) | ![][~fluid]
 |**Dynamic ocean inverse modeling based on differentiable rendering**| CVM 2024| [Link](https://link.springer.com/article/10.1007/s41095-023-0338-4) | ![][~fluid]
+
+
 ## Cloth
 
 |Name|Info|Link|Label|
@@ -87,6 +89,8 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Bayesian Differentiable Physics for Cloth Digitalization**| CVPR 2024| [Link](https://github.com/realcrane/Bayesian-Differentiable-Physics-for-Cloth-Digitalization) | ![][~cloth]
 |**{DiffAvatar}: Simulation-Ready Garment Optimization with Differentiable Simulation**| CVPR 2024| [Link](https://people.csail.mit.edu/liyifei/publication/diffavatar/) | ![][~cloth]
 |**GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details**| Arxiv 2024| [Link](https://arxiv.org/abs/2405.12420) | ![][~cloth]![][~3DGS]
+
+
 ## Softbody
 
 |Name|Info|Link|Label|
@@ -118,6 +122,8 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**{PhysDreamer}: Physics-Based Interaction with 3D Objects via Video Generation**| Arxiv 2024| [Link](https://physdreamer.github.io/) | ![][~softbody]
 |**ElastoGen: 4D Generative Elastodynamics**| Arxiv 2024| [Link](https://arxiv.org/abs/2405.15056) | ![][~softbody]
 |**Feature Splatting: Language-Driven Physics-Based Scene Synthesis and Editing**| Arxiv 2024| [Link](https://feature-splatting.github.io/) | ![][~softbody]
+
+
 ## Rigidbody
 
 |Name|Info|Link|Label|
@@ -143,6 +149,8 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**DOC: Differentiable Optimal Control for Retargeting Motions onto Legged Robots**| TOG 2023| [Link](https://la.disneyresearch.com/publication/doc-differentiable-optimal-control-for-retargeting-motions-onto-legged-robots/) | ![][~rigidbody]
 |**An Extensible, Data-Oriented Architecture for High-Performance, Many-World Simulation**| TOG 2023| [Link](https://madrona-engine.github.io/) | ![][~rigidbody]![][~RL]![][~engine]
 |**Jade: A Differentiable Physics Engine for Articulated Rigid Bodies with Intersection-Free Frictional Contact**| ICRA 2024| [Link](https://sites.google.com/view/diffsim/) | ![][~rigidbody]![][~engine]
+
+
 ## Multiphys
 
 |Name|Info|Link|Label|
@@ -157,6 +165,8 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**{PAC}-Ne{RF}: Physics Augmented Continuum Neural Radiance Fields for Geometry-Agnostic System Identification**| ICLR 2023| [Link](https://sites.google.com/view/PAC-NeRF) | ![][~multiphys]![][~NeRF]
 |**Dynamic mesh-aware radiance fields**| ICCV 2023| [Link](https://mesh-aware-rf.github.io/) | ![][~multiphys]
 |**Neural Physical Simulation with Multi-Resolution Hash Grid Encoding**| AAAI 2024| [Link](https://ojs.aaai.org/index.php/AAAI/article/view/28349) | ![][~multiphys]
+
+
 ## Survey
 
 |Name|Info|Link|Label|
@@ -164,6 +174,8 @@ If you find this list useful, please consider citing it and giving it a :star:. 
 |**Machine learning for fluid mechanics**|  2020| [Link](https://www.annualreviews.org/content/journals/10.1146/annurev-fluid-010719-060214) | ![][~fluid]![][~survey]
 |**The Role of Physics-Based Simulators in Robotics**|  2021| [Link](https://doi.org/10.1146/annurev-control-072220-093055) | ![][~rigidbody]![][~survey]
 |**Data-driven simulation in fluids animation: A survey**|  2021| [Link](https://www.sciencedirect.com/science/article/pii/S2096579621000139) | ![][~fluid]![][~survey]
+
+
 
 
 ## Citation

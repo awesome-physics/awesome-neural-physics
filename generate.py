@@ -68,6 +68,7 @@ def generate_markdown(bib_entries, output_file):
                 
                 md_file.write(f"|**{entry['title']}**| {entry['jabbr']} {entry['year']}| [Link]({entry['link']}) | {label_str}\n")
             # f"- **{title}** ({year}) by {author}. [Link]({link})" if link else f"- **{title}** ({year}) by {author}."
+            md_file.write(f"\n\n")
         md_file.write(f"\n\n")
 
         md_file.write(util.get_markdown_footer())
