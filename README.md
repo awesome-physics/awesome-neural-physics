@@ -1,4 +1,4 @@
-# Awesome Neural Physics
+# Awesome Neural Physics [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 [This repository](https://github.com/awesome-physics/awesome-neural-physics) hosts a curated list of papers on **AI techniques for physics simulation** in computer graphics.
 
