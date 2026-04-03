@@ -90,7 +90,7 @@ TAG_METADATA = {
         "description": "Human or character-centric avatars, garments, or hair driven by body motion.",
     },
 }
-README_RECENT_LIMIT = 8
+README_RECENT_LIMIT = 5
 PUBLIC_SITE_URL = "https://awesome-physics.github.io/awesome-neural-physics/"
 
 
@@ -283,6 +283,7 @@ def build_catalog(bib_entries):
             "title": title,
             "paper_url": paper_url,
             "project_url": project_url,
+            "doi": clean_bib_text(bib_entry.get("doi", "")),
             "authors": authors,
             "author_text": author_snippet(authors),
             "year_text": clean_bib_text(bib_entry.get("year", "")),
@@ -349,44 +350,31 @@ def format_info_line(entry):
 
 def render_title_link(title, url):
     if not url:
-        return f"**{title}**"
-    return f"**[{title}]({url})**"
+        return title
+    return f"[{title}]({url})"
 
 
 def render_readme_intro(catalog):
-    counts = section_counts(catalog)
-    years = [entry["year_sort"] for entry in catalog if entry["year_sort"]]
-    start_year = min(years) if years else "?"
-    end_year = max(years) if years else "?"
-    stats_line = (
-        f"`{len(catalog)}` papers"
-        f" | `{start_year}-{end_year}`"
-        f" | `Fluid {counts['fluid']}`"
-        f" | `Cloth {counts['cloth']}`"
-        f" | `Softbody {counts['softbody']}`"
-        f" | `Rigidbody {counts['rigidbody']}`"
-        f" | `Multiphys {counts['multiphys']}`"
-    )
     return (
         "# Awesome Neural Physics\n\n"
-        "A curated list of papers on **AI techniques for physics simulation** in computer graphics.\n\n"
-        f"> {stats_line}\n\n"
-        "This README is the compact browsing view. For search, filtering, and tag-based lookup, open "
-        f"[the interactive index]({PUBLIC_SITE_URL}).\n\n"
-        "**Browse:** [Recent Additions](#recent-additions) | [Tag Guide](#tag-guide) | "
-        "[Categories](#categories) | [BibTeX](main.bib) | [Citation](#citation)\n\n"
+        "A curated list of papers on  the seamless fusion of neural models and physics simulation. "
+        "It follows the field from injecting neural capabilities into classical solvers to embedding physical simulators directly within neural architectures.\n\n"
+        f"> **Best browsing experience:** use the [interactive index]({PUBLIC_SITE_URL}) for search, filtering, tag lookup, and faster navigation.\n\n"
     )
 
 
 def render_recent_additions(catalog):
     lines = ["## Recent Additions", ""]
     for entry in get_recent_entries(catalog, README_RECENT_LIMIT):
-        group_title = GROUP_TITLES.get(entry["primary_group"], "Other")
-        info = " / ".join(part for part in (group_title, format_info_line(entry)) if part)
+        info = format_info_line(entry)
         extra_tags = [label for label in entry["labels"] if label not in {entry["primary_group"], "survey"}]
-        tag_text = format_inline_tags(extra_tags[:3])
-        suffix = f" {tag_text}" if tag_text else ""
-        lines.append(f"- {render_title_link(entry['title'], entry['paper_url'])}. `{info}`.{suffix}")
+        tag_text = format_inline_tags(extra_tags[:2])
+        parts = [f"- {render_title_link(entry['title'], entry['paper_url'])}"]
+        if info:
+            parts.append(f"`{info}`")
+        if tag_text:
+            parts.append(tag_text)
+        lines.append(" ".join(parts))
     lines.extend(["", ""])
     return "\n".join(lines)
 
@@ -396,7 +384,9 @@ def render_tag_guide(catalog):
     ordered_tags = [tag for tag in TAG_METADATA if tag in tag_counts]
 
     lines = [
-        "## Tag Guide",
+        '<a id="tag-guide"></a>',
+        "<details>",
+        "<summary><strong>Tag Guide</strong></summary>",
         "",
         "Inline tags only show secondary signals beyond the section label itself.",
         "",
@@ -405,7 +395,7 @@ def render_tag_guide(catalog):
     ]
     for tag in ordered_tags:
         lines.append(f"| `{get_tag_display(tag)}` | {get_tag_description(tag)} |")
-    lines.extend(["", ""])
+    lines.extend(["", "</details>", ""])
     return "\n".join(lines)
 
 
@@ -423,22 +413,44 @@ def render_group_entry(entry, group):
     info = format_info_line(entry)
     extra_tags = [label for label in entry["labels"] if label != group]
     tag_text = format_inline_tags(extra_tags)
-    project_text = f" [project]({entry['project_url']})" if entry["project_url"] else ""
-    parts = [f"- {render_title_link(entry['title'], entry['paper_url'])}."]
+    link_parts = []
+    if entry["project_url"]:
+        link_parts.append(f"[project]({entry['project_url']})")
+    doi = entry.get("doi", "").strip()
+    if doi:
+        doi_url = doi if doi.startswith("http://") or doi.startswith("https://") else f"https://doi.org/{doi}"
+        link_parts.append(f"[doi]({doi_url})")
+    elif entry["paper_url"]:
+        link_parts.append(f"[paper]({entry['paper_url']})")
+
+    parts = [f"- {entry['title']}."]
     if info:
-        parts.append(f"`{info}`.")
-    if project_text:
-        parts.append(project_text.strip())
+        parts.append(f"*{info}*.")
     if tag_text:
         parts.append(tag_text)
+    if link_parts:
+        parts.append(" ".join(link_parts))
     return " ".join(parts)
+
+
+def render_group_section(group, entries):
+    open_attr = " open" if group == "fluid" else ""
+    lines = [
+        f'<a id="{group}"></a>',
+        f"<details{open_attr}>",
+        f"<summary><strong>{GROUP_TITLES[group]} ({len(entries)})</strong></summary>",
+        "",
+    ]
+    for entry in entries:
+        lines.append(render_group_entry(entry, group))
+    lines.extend(["", "</details>", ""])
+    return "\n".join(lines)
 
 
 def generate_markdown(catalog, output_file):
     with open(output_file, "w", encoding="utf-8") as md_file:
         md_file.write(render_readme_intro(catalog))
-        md_file.write(render_recent_additions(catalog))
-        md_file.write(render_tag_guide(catalog))
+        md_file.write('<a id="categories"></a>\n')
         md_file.write("## Categories\n\n")
         md_file.write(render_category_links(catalog))
         md_file.write("\n\n")
@@ -447,12 +459,9 @@ def generate_markdown(catalog, output_file):
             entries = group_entries(catalog, group)
             if not entries:
                 continue
-            md_file.write(f'<a id="{group}"></a>\n')
-            md_file.write(f"## {GROUP_TITLES[group]} ({len(entries)})\n\n")
-            for entry in entries:
-                md_file.write(render_group_entry(entry, group) + "\n")
-            md_file.write("\n")
+            md_file.write(render_group_section(group, entries))
 
+        md_file.write(render_tag_guide(catalog))
         md_file.write(util.get_markdown_footer())
 
 

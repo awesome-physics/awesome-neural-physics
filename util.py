@@ -67,7 +67,7 @@ def get_markdown_footer():
         "  author = {Hui Wang},\n"
         "  journal = {GitHub repository},\n"
         "  url = {https://github.com/awesome-physics/awesome-neural-physics},\n"
-        "  year = {2023},\n"
+        "  year = {2026},\n"
         "}\n"
         "```\n"
     )
@@ -100,6 +100,8 @@ _raw_jabbr_map = {
     "Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)".casefold(): "ICRA",
     "IEEE International Conference on Robotics and Automation (ICRA)".casefold(): "ICRA",
     "International Conference on Robotics and Automation (ICRA)".casefold(): "ICRA",
+    "IEEE Robotics and Automation Letters".casefold(): "RA-L",
+    "IEEE Robot. Autom. Lett.".casefold(): "RA-L",
     "IROS".casefold(): "IROS",
     "ICCV".casefold(): "ICCV",
     "CVPR".casefold(): "CVPR",
