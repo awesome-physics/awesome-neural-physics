@@ -45,6 +45,10 @@ def get_label_badge_link(label):
     return f"https://img.shields.io/badge/-{label}-{color_code}.svg"
 
 
+def get_label_color(label):
+    return colors[ord(label[0]) % len(colors)]
+
+
 def get_markdown_header():
     return (
         "# Awesome Neural Physics\n\n"
@@ -108,7 +112,7 @@ _raw_jabbr_map = {
 def _normalize_venue(journal_or_booktitle):
     lowered = journal_or_booktitle.casefold()
     lowered = lowered.replace("\\&", "&").replace("&amp;", "&")
-    lowered = lowered.replace("–", "-").replace("—", "-")
+    lowered = lowered.replace("\u2013", "-").replace("\u2014", "-")
     lowered = re.sub(r"\s+", " ", lowered).strip()
     return lowered
 
