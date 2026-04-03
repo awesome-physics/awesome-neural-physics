@@ -85,6 +85,7 @@ def parse_entry(entry_text):
         "label": extract_bib_value(entry_text, "label"),
         "journal": extract_bib_value(entry_text, "journal"),
         "booktitle": extract_bib_value(entry_text, "booktitle"),
+        "archiveprefix": extract_bib_value(entry_text, "archivePrefix"),
     }
     return entry
 
@@ -100,7 +101,7 @@ def format_entry(entry):
     dict_entry["author"] = entry.get("author", "No author")
     dict_entry["year"] = entry.get("year", "No year")
     dict_entry["link"] = entry.get("link", "")
-    dict_entry["jabbr"] = util.get_jabbr(entry)
+    dict_entry["venue"] = util.get_venue_display(entry)
     label = entry.get("label", "")
     split_labels = [l.strip() for l in label.split(",") if l.strip()]
     dict_entry["label"] = split_labels
@@ -142,7 +143,9 @@ def generate_markdown(bib_entries, output_file):
                     if label not in label_color_dict.keys():
                         label_color_dict[label] = util.get_label_badge_link(label)
 
-                md_file.write(f"|**{entry['title']}**| {entry['jabbr']} {entry['year']}| [Link]({entry['link']}) | {label_str}\n")
+                info_parts = [part for part in [entry["venue"], entry["year"]] if part]
+                info_text = " ".join(info_parts)
+                md_file.write(f"|**{entry['title']}**| {info_text}| [Link]({entry['link']}) | {label_str}\n")
             md_file.write("\n\n")
         md_file.write("\n\n")
 

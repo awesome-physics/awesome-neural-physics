@@ -202,6 +202,19 @@
   abstract={We propose a hybrid neural network and physics framework for reduced-order modeling of elastoplasticity and fracture. State-of-the-art scientific computing models like the Material Point Method (MPM) faithfully simulate large-deformation elastoplasticity and fracture mechanics. However, their long runtime and large memory consumption render them unsuitable for applications constrained by computation time and memory usage, e.g., virtual reality. To overcome these barriers, we propose a reduced-order framework. Our key innovation is training a low-dimensional manifold for the Kirchhoff stress field via an implicit neural representation. This low-dimensional neural stress field (NSF) enables efficient evaluations of stress values and, correspondingly, internal forces at arbitrary spatial locations. In addition, we also train neural deformation and affine fields to build low-dimensional manifolds for the deformation and affine momentum fields. These neural stress, deformation, and affine fields share the same low-dimensional latent space, which uniquely embeds the high-dimensional simulation state. After training, we run new simulations by evolving in this single latent space, which drastically reduces the computation time and memory consumption. Our general continuum-mechanics-based reduced-order framework is applicable to any phenomena governed by the elastodynamics equation. To showcase the versatility of our framework, we simulate a wide range of material behaviors, including elastica, sand, metal, non-Newtonian fluids, fracture, contact, and collision. We demonstrate dimension reduction by up to 100,000 × and time savings by up to 10 ×.}
 }
 
+@article{huang2025deepfracture,
+  title={DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning},
+  author={Huang, Yuhang and Kanai, Takashi},
+  journal={Computer Graphics Forum},
+  pages={e70002},
+  year={2025},
+  doi={10.1111/cgf.70002},
+  label={softbody,neural_representation},
+  link={https://nikoloside.graphics/deepfracture/},
+  openalex_id={W4407236887},
+  abstract={In the field of brittle fracture animation, generating realistic destruction animations using physics-based simulation methods is computationally expensive. While techniques based on Voronoi diagrams or pre-fractured patterns are effective for real-time applications, they fail to incorporate collision conditions when determining fractured shapes during runtime. This paper introduces a novel learning-based approach for predicting fractured shapes based on collision dynamics at runtime. Our approach seamlessly integrates realistic brittle fracture animations with rigid body simulations, utilising boundary element method (BEM) brittle fracture simulations to generate training data. To integrate collision scenarios and fractured shapes into a deep learning framework, we introduce generative geometric segmentation, distinct from both instance and semantic segmentation, to represent 3D fragment shapes. We propose an eight-dimensional latent code to address the challenge of optimising multiple discrete fracture pattern targets that share similar continuous collision latent codes. This code will follow a discrete normal distribution corresponding to a specific fracture pattern within our latent impulse representation design. This adaptation enables the prediction of fractured shapes using neural discrete representation learning. Our experimental results show that our approach generates considerably more detailed brittle fractures than existing techniques, while the computational time is typically reduced compared to traditional simulation methods at comparable resolutions.}
+}
+
 @article{du2021diffpd,
   title={Diffpd: Differentiable projective dynamics},
   author={Du, Tao and Wu, Kui and Ma, Pingchuan and Wah, Sebastien and Spielberg, Andrew and Rus, Daniela and Matusik, Wojciech},
@@ -216,11 +229,11 @@
   abstract={We present a novel, fast differentiable simulator for soft-body learning and control applications. Existing differentiable soft-body simulators can be classified into two categories based on their time integration methods. Simulators using explicit time-stepping scheme require tiny time steps to avoid numerical instabilities in gradient computation, and simulators using implicit time integration typically compute gradients by employing the adjoint method to solve the expensive linearized dynamics. Inspired by Projective Dynamics (PD), we present DiffPD, an efficient differentiable soft-body simulator with implicit time integration. The key idea in DiffPD is to speed up backpropagation by exploiting the prefactorized Cholesky decomposition in PD to achieve a super-linear convergence rate. To handle contacts, DiffPD solves contact forces by analyzing a linear complementarity problem (LCP) and its gradients. With the assumption that contacts occur on a small number of nodes, we develop an efficient method for gradient computation by exploring the low-rank structure in the linearized dynamics. We evaluate the performance of DiffPD and observe a speedup of 4-19 times compared to the standard Newton's method in various applications including system identification, inverse design problems, trajectory optimization, and closed-loop control.}
 }
 
-@article{huang2022differentiable,
+@article{huang2024differentiable,
   title={Differentiable solver for time-dependent deformation problems with contact},
   author={Huang, Zizhou and Tozoni, Davi Colli and Gjoka, Arvi and Ferguson, Zachary and Schneider, Teseo and Panozzo, Daniele and Zorin, Denis},
   journal={ACM Transactions on Graphics},
-  year={2022},
+  year={2024},
   publisher={ACM New York, NY},
   label={softbody},
   link={https://dl.acm.org/doi/10.1145/3657648},
@@ -957,6 +970,18 @@
   label={softbody},
   link={https://physdreamer.github.io/},
   abstract={Realistic object interactions are crucial for creating immersive virtual experiences, yet synthesizing realistic 3D object dynamics in response to novel interactions remains a significant challenge. Unlike unconditional or text-conditioned dynamics generation, action-conditioned dynamics requires perceiving the physical material properties of objects and grounding the 3D motion prediction on these properties, such as object stiffness. However, estimating physical material properties is an open problem due to the lack of material ground-truth data, as measuring these properties for real objects is highly difficult. We present PhysDreamer, a physics-based approach that endows static 3D objects with interactive dynamics by leveraging the object dynamics priors learned by video generation models. By distilling these priors, PhysDreamer enables the synthesis of realistic object responses to novel interactions, such as external forces or agent manipulations. We demonstrate our approach on diverse examples of elastic objects and evaluate the realism of the synthesized interactions through a user study. PhysDreamer takes a step towards more engaging and realistic virtual experiences by enabling static 3D objects to dynamically respond to interactive stimuli in a physically plausible manner. See our project page at https://physdreamer.github.io/.}
+}
+
+@inproceedings{jiang2025phystwin,
+  title={PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos},
+  author={Jiang, Hanxiao and Hsu, Hao-Yu and Zhang, Kaifeng and Yu, Hsin-Ni and Wang, Shenlong and Li, Yunzhu},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2025},
+  eprint={2503.17973},
+  archivePrefix={arXiv},
+  label={softbody,real2sim,3DGS},
+  link={https://jianghanxiao.github.io/phystwin-web/},
+  abstract={Creating a physical digital twin of a real-world object has immense potential in robotics, content creation, and XR. In this paper, we present PhysTwin, a novel framework that uses sparse videos of dynamic objects under interaction to produce a photo- and physically realistic, realtime interactive virtual replica. Our approach centers on two key components: (1) a physics-informed representation that combines spring-mass models for realistic physical simulation, generative shape models for geometry, and Gaussian splats for rendering; and (2) a novel multi-stage, optimization-based inverse modeling framework that reconstructs complete geometry, infers dense physical properties, and replicates realistic appearance from videos. Our method integrates an inverse physics framework with visual perception cues, enabling high-fidelity reconstruction even from partial, occluded, and limited viewpoints. PhysTwin supports modeling various deformable objects, including ropes, stuffed animals, cloth, and delivery packages. Experiments show that PhysTwin outperforms competing methods in reconstruction, rendering, future prediction, and simulation under novel interactions. We further demonstrate its applications in interactive real-time simulation and model-based robotic motion planning.}
 }
 
 @inproceedings{feng2024pie,
@@ -2268,7 +2293,7 @@ li2023pacnerf,
 @article{arnavaz2022differentiabledepth,
   title={Differentiable Depth for Real2Sim Calibration of Soft Body Simulations},
   author={Kasra Arnavaz and Mads Nielsen and Paul G. Kry and Miles Macklin and Kenny Erleben},
-  journal={Research at the University of Copenhagen (University of Copenhagen)},
+  journal={Computer Graphics Forum},
   year={2022},
   doi={10.1111/cgf.14720},
   label={softbody,diffsim,real2sim},
