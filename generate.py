@@ -16,80 +16,133 @@ GROUP_TITLES = {
     "multiphys": "Multiphys",
     "survey": "Survey",
 }
-TAG_METADATA = {
+
+HIGH_LEVEL_CATEGORY_ORDER = [
+    "differentiable_simulation",
+    "neural_representation",
+    "neural_solver",
+    "reconstruction",
+    "control",
+    "optimization",
+    "embodied_ai",
+    "engine",
+    "fracture",
+    "contact",
+    "sound",
+    "avatar",
+    "survey",
+    "tutorial",
+]
+
+CATEGORY_METADATA = {
     "differentiable_simulation": {
         "display": "Differentiable Simulation",
-        "description": "Pipelines whose forward pass is an explicit physical simulator, with differentiable gradients propagated through that simulator.",
-    },
-    "neural_simulation": {
-        "display": "Neural Simulation",
-        "description": "Learned forward simulators where part or all of the dynamics model is neural.",
+        "description": "Pipelines whose forward pass is an explicit physical simulator, with gradients propagated through that simulator.",
     },
     "neural_representation": {
         "display": "Neural Representation",
-        "description": "Physics-aware neural state, field, or latent representations used to model dynamics.",
+        "description": "Physics-aware neural state, field, or latent representations used to model physical processes.",
     },
-    "neural_material": {
-        "display": "Neural Material",
-        "description": "Neural representations or neural constitutive models that explicitly encode material behavior.",
+    "neural_solver": {
+        "display": "Neural Solver",
+        "description": "Works where the solve, update, or simulation computation is replaced or driven by a learned solver.",
     },
     "reconstruction": {
         "display": "Reconstruction",
-        "description": "Recovering geometry, motion, or physical state from images, videos, or sparse observations.",
-    },
-    "interaction": {
-        "display": "Interaction",
-        "description": "Interactive systems, authoring tools, editing workflows, or user-in-the-loop interfaces.",
+        "description": "Recovering geometry, motion, state, or parameters from observations.",
     },
     "control": {
         "display": "Control",
-        "description": "Control, optimal control, MPC, or policy design for simulated physical systems.",
+        "description": "Control-centered methods such as policy design, MPC, or action optimization for physical systems.",
     },
-    "reinforce_learning": {
-        "display": "Reinforcement Learning",
-        "description": "Works that explicitly use reinforcement learning.",
+    "optimization": {
+        "display": "Optimization",
+        "description": "Target-driven optimization of shape, topology, parameters, trajectories, or initial states.",
     },
     "embodied_ai": {
         "display": "Embodied AI",
-        "description": "Validation on robotic or embodied manipulation settings.",
-    },
-    "real2sim": {
-        "display": "Real2Sim",
-        "description": "Inferring simulation-ready models or parameters from real observations.",
-    },
-    "sim2real": {
-        "display": "Sim2Real",
-        "description": "Transfer from simulation-trained models or policies to the real world.",
-    },
-    "nerf": {
-        "display": "NeRF",
-        "description": "Neural radiance fields or related volumetric neural rendering methods.",
-    },
-    "3dgs": {
-        "display": "3DGS",
-        "description": "3D Gaussian splatting based modeling, rendering, or simulation pipelines.",
+        "description": "Validation in robotic or embodied settings such as manipulation, locomotion, or embodied interaction.",
     },
     "engine": {
         "display": "Engine",
-        "description": "Reusable simulation engines or general-purpose physics frameworks.",
-    },
-    "super_resolution": {
-        "display": "Super-Resolution",
-        "description": "Increasing spatial or temporal detail beyond the native simulation resolution.",
-    },
-    "style_transfer": {
-        "display": "Style Transfer",
-        "description": "Transferring appearance or motion style across simulations.",
+        "description": "Clearly reusable engines, frameworks, or toolkits rather than one-off task-specific methods.",
     },
     "fracture": {
         "display": "Fracture",
-        "description": "Fracture, crack propagation, or failure phenomena in physical systems.",
+        "description": "Fracture, crack propagation, or material failure is a central simulation phenomenon.",
+    },
+    "contact": {
+        "display": "Contact",
+        "description": "Contact interaction is one of the main technical axes of the paper.",
+    },
+    "sound": {
+        "display": "Sound",
+        "description": "Acoustics or sound is a primary simulation phenomenon.",
     },
     "avatar": {
         "display": "Avatar",
-        "description": "Human or character-centric avatars, garments, or hair driven by body motion.",
+        "description": "Human-avatar-centric settings such as clothed humans or body-driven garment dynamics.",
+    },
+    "survey": {
+        "display": "Survey",
+        "description": "Survey or review papers.",
+    },
+    "tutorial": {
+        "display": "Tutorial",
+        "description": "Tutorial, course, or lecture-note style entries.",
     },
 }
+
+TAG_DISPLAY_OVERRIDES = {
+    "3dgs": "3DGS",
+    "cnn": "CNN",
+    "gan": "GAN",
+    "gnn": "GNN",
+    "nerf": "NeRF",
+    "real2sim": "Real2Sim",
+    "reinforce_learning": "Reinforcement Learning",
+}
+
+LEGACY_LABEL_TO_CATEGORY = {
+    "diffsim": "differentiable_simulation",
+    "differentiable_simulation": "differentiable_simulation",
+    "neural_representation": "neural_representation",
+    "neural_simulation": "neural_solver",
+    "reconstruction": "reconstruction",
+    "control": "control",
+    "optimization": "optimization",
+    "embodied_ai": "embodied_ai",
+    "engine": "engine",
+    "fracture": "fracture",
+    "contact": "contact",
+    "sound": "sound",
+    "avatar": "avatar",
+    "survey": "survey",
+    "tutorial": "tutorial",
+}
+
+LEGACY_LABEL_TO_TAG = {
+    "RL": "reinforce_learning",
+    "interaction": "user_interaction",
+    "real2sim": "real2sim",
+    "reinforce_learning": "reinforce_learning",
+    "neural_material": "neural_material",
+    "neural_operator": "neural_operator",
+    "world_models": "world_models",
+    "nerf": "nerf",
+    "NeRF": "nerf",
+    "3dgs": "3dgs",
+    "3DGS": "3dgs",
+    "style_transfer": "style_transfer",
+    "super_resolution": "super_resolution",
+    "superresolution": "super_resolution",
+    "hair": "hair",
+    "mpm": "mpm",
+    "benchmark_dataset": "benchmark_dataset",
+}
+
+LEGACY_LABELS_TO_DROP = {"sim2real"}
+
 README_RECENT_LIMIT = 5
 PUBLIC_SITE_URL = "https://awesome-physics.github.io/awesome-neural-physics/"
 
@@ -173,6 +226,9 @@ def parse_entry(entry_text):
         "year": extract_bib_value(entry_text, "year"),
         "link": extract_bib_value(entry_text, "link"),
         "label": extract_bib_value(entry_text, "label"),
+        "category": extract_bib_value(entry_text, "category"),
+        "tag": extract_bib_value(entry_text, "tag"),
+        "keywords": extract_bib_value(entry_text, "keywords"),
         "journal": extract_bib_value(entry_text, "journal"),
         "booktitle": extract_bib_value(entry_text, "booktitle"),
         "archiveprefix": extract_bib_value(entry_text, "archivePrefix"),
@@ -214,8 +270,23 @@ def clean_abstract_text(value):
     return re.sub(r"^abstract\s+", "", value, flags=re.I).strip()
 
 
+def split_csv_values(value):
+    return [item.strip() for item in value.split(",") if item.strip()]
+
+
 def split_labels(value):
-    return [label.strip() for label in value.split(",") if label.strip()]
+    return split_csv_values(value)
+
+
+def dedupe_preserve(items):
+    seen = set()
+    ordered = []
+    for item in items:
+        if not item or item in seen:
+            continue
+        seen.add(item)
+        ordered.append(item)
+    return ordered
 
 
 def split_authors(value):
@@ -258,23 +329,83 @@ def normalize_project_url(project_url, paper_url):
     return project_url
 
 
-def primary_group(labels):
-    for label in PRIMARY_GROUPS:
-        if label in labels:
-            return label
-    if "survey" in labels:
+def legacy_labels_to_metadata(labels):
+    categories = []
+    tags = []
+    for label in labels:
+        if label in LEGACY_LABELS_TO_DROP:
+            continue
+        if label in PRIMARY_GROUPS:
+            categories.append(label)
+            continue
+        mapped_category = LEGACY_LABEL_TO_CATEGORY.get(label)
+        if mapped_category:
+            categories.append(mapped_category)
+            continue
+        mapped_tag = LEGACY_LABEL_TO_TAG.get(label)
+        if mapped_tag:
+            tags.append(mapped_tag)
+            continue
+        categories.append(label)
+    return dedupe_preserve(categories), dedupe_preserve(tags)
+
+
+def extract_metadata(bib_entry):
+    explicit_categories = dedupe_preserve(split_csv_values(bib_entry.get("category", "")))
+    explicit_tags = dedupe_preserve(split_csv_values(bib_entry.get("tag", "")))
+    if explicit_categories or explicit_tags:
+        return explicit_categories, explicit_tags
+    return legacy_labels_to_metadata(split_labels(bib_entry.get("label", "")))
+
+
+def primary_group(categories):
+    for category in PRIMARY_GROUPS:
+        if category in categories:
+            return category
+    if "survey" in categories:
         return "survey"
     return ""
+
+
+def secondary_categories(categories, group):
+    return [
+        category
+        for category in categories
+        if category != group and category not in PRIMARY_GROUPS
+    ]
 
 
 def sort_key(entry):
     return (-entry["year_sort"], entry["title"].casefold())
 
 
+def humanize_identifier(value):
+    value = value.strip()
+    if not value:
+        return ""
+    override = TAG_DISPLAY_OVERRIDES.get(value)
+    if override:
+        return override
+    return " ".join(word.upper() if len(word) <= 3 else word.capitalize() for word in value.split("_"))
+
+
+def get_category_display(category):
+    return CATEGORY_METADATA.get(category, {}).get("display", humanize_identifier(category))
+
+
+def get_category_description(category):
+    return CATEGORY_METADATA.get(category, {}).get("description", "")
+
+
+def get_tag_display(tag):
+    return humanize_identifier(tag)
+
+
 def build_catalog(bib_entries):
     catalog = []
     for bib_entry in bib_entries:
-        labels = split_labels(bib_entry.get("label", ""))
+        categories, tags = extract_metadata(bib_entry)
+        group = primary_group(categories)
         title = clean_bib_text(bib_entry.get("title", "")) or "Untitled"
         paper_url = default_paper_url(bib_entry)
         project_url = normalize_project_url(bib_entry.get("project", ""), paper_url)
@@ -289,8 +420,10 @@ def build_catalog(bib_entries):
             "year_text": clean_bib_text(bib_entry.get("year", "")),
             "year_sort": parse_year_sort(bib_entry.get("year", "")),
             "venue": clean_bib_text(util.get_venue_display(bib_entry)),
-            "labels": labels,
-            "primary_group": primary_group(labels),
+            "categories": categories,
+            "secondary_categories": secondary_categories(categories, group),
+            "tags": tags,
+            "primary_group": group,
             "abstract": clean_abstract_text(bib_entry.get("abstract", "")),
         }
         catalog.append(entry)
@@ -298,7 +431,7 @@ def build_catalog(bib_entries):
 
 
 def group_entries(catalog, group):
-    entries = [entry for entry in catalog if group in entry["labels"]]
+    entries = [entry for entry in catalog if entry["primary_group"] == group]
     return sorted(entries, key=sort_key)
 
 
@@ -319,22 +452,26 @@ def get_recent_entries(catalog, limit):
     return recent
 
 
-def collect_tag_counts(catalog):
+def collect_secondary_category_counts(catalog):
     counts = {}
     for entry in catalog:
-        for label in entry["labels"]:
-            if label in PRIMARY_GROUPS:
-                continue
-            counts[label] = counts.get(label, 0) + 1
+        for category in entry["secondary_categories"]:
+            counts[category] = counts.get(category, 0) + 1
     return counts
 
 
-def get_tag_display(tag):
-    return TAG_METADATA.get(tag, {}).get("display", tag)
+def collect_tag_counts(catalog):
+    counts = {}
+    for entry in catalog:
+        for tag in entry["tags"]:
+            counts[tag] = counts.get(tag, 0) + 1
+    return counts
 
 
-def get_tag_description(tag):
-    return TAG_METADATA.get(tag, {}).get("description", "")
+def format_inline_categories(categories):
+    if not categories:
+        return ""
+    return " ".join(f"`{get_category_display(category)}`" for category in categories)
 
 
 def format_inline_tags(tags):
@@ -359,7 +496,7 @@ def render_readme_intro(catalog):
         "# Awesome Neural Physics\n\n"
         "A curated list of papers on  the seamless fusion of neural models and physics simulation. "
         "It follows the field from injecting neural capabilities into classical solvers to embedding physical simulators directly within neural architectures.\n\n"
-        f"> **Best browsing experience:** use the [interactive index]({PUBLIC_SITE_URL}) for search, filtering, tag lookup, and faster navigation.\n\n"
+        f"> **Best browsing experience:** use the [interactive index]({PUBLIC_SITE_URL}) for search, filtering, category browsing, and tag lookup.\n\n"
     )
 
 
@@ -367,34 +504,37 @@ def render_recent_additions(catalog):
     lines = ["## Recent Additions", ""]
     for entry in get_recent_entries(catalog, README_RECENT_LIMIT):
         info = format_info_line(entry)
-        extra_tags = [label for label in entry["labels"] if label not in {entry["primary_group"], "survey"}]
-        tag_text = format_inline_tags(extra_tags[:2])
+        category_text = format_inline_categories(entry["secondary_categories"][:1])
+        tag_text = format_inline_tags(entry["tags"][:1])
         parts = [f"- {render_title_link(entry['title'], entry['paper_url'])}"]
         if info:
             parts.append(f"`{info}`")
+        if category_text:
+            parts.append(f"categories: {category_text}")
         if tag_text:
-            parts.append(tag_text)
+            parts.append(f"tags: {tag_text}")
         lines.append(" ".join(parts))
     lines.extend(["", ""])
     return "\n".join(lines)
 
 
-def render_tag_guide(catalog):
-    tag_counts = collect_tag_counts(catalog)
-    ordered_tags = [tag for tag in TAG_METADATA if tag in tag_counts]
+def render_category_guide(catalog):
+    category_counts = collect_secondary_category_counts(catalog)
+    ordered_categories = [category for category in HIGH_LEVEL_CATEGORY_ORDER if category in category_counts]
 
     lines = [
+        '<a id="category-guide"></a>',
         '<a id="tag-guide"></a>',
         "<details>",
-        "<summary><strong>Tag Guide</strong></summary>",
+        "<summary><strong>Category Guide</strong></summary>",
         "",
-        "Inline tags only show secondary signals beyond the section label itself.",
+        "The guide documents the stable categories. Paper-specific tags stay inline and remain open-ended.",
         "",
-        "| Tag | Meaning |",
+        "| Category | Meaning |",
         "| --- | --- |",
     ]
-    for tag in ordered_tags:
-        lines.append(f"| `{get_tag_display(tag)}` | {get_tag_description(tag)} |")
+    for category in ordered_categories:
+        lines.append(f"| `{get_category_display(category)}` | {get_category_description(category)} |")
     lines.extend(["", "</details>", ""])
     return "\n".join(lines)
 
@@ -409,10 +549,48 @@ def render_category_links(catalog):
     return " | ".join(links)
 
 
+def render_keyword_links(catalog):
+    tag_counts = collect_tag_counts(catalog)
+    if not tag_counts:
+        return ""
+    ordered_tags = sorted(
+        tag_counts.items(),
+        key=lambda item: (-item[1], get_tag_display(item[0]).casefold()),
+    )
+    return " | ".join(
+        f"[{get_tag_display(tag)} ({count})](#keyword-guide)"
+        for tag, count in ordered_tags
+    )
+
+
+def render_keyword_guide(catalog):
+    tag_counts = collect_tag_counts(catalog)
+    if not tag_counts:
+        return ""
+    ordered_tags = sorted(
+        tag_counts.items(),
+        key=lambda item: (-item[1], get_tag_display(item[0]).casefold()),
+    )
+    lines = [
+        '<a id="keyword-guide"></a>',
+        "<details>",
+        "<summary><strong>Keyword Guide</strong></summary>",
+        "",
+        "Keywords are the reader-facing, open-ended descriptors used for quick understanding and search.",
+        "",
+        "| Keyword | Count |",
+        "| --- | --- |",
+    ]
+    for tag, count in ordered_tags:
+        lines.append(f"| `{get_tag_display(tag)}` | {count} |")
+    lines.extend(["", "</details>", ""])
+    return "\n".join(lines)
+
+
 def render_group_entry(entry, group):
     info = format_info_line(entry)
-    extra_tags = [label for label in entry["labels"] if label != group]
-    tag_text = format_inline_tags(extra_tags)
+    category_text = format_inline_categories(entry["secondary_categories"])
+    tag_text = format_inline_tags(entry["tags"])
     link_parts = []
     if entry["project_url"]:
         link_parts.append(f"[project]({entry['project_url']})")
@@ -423,11 +601,13 @@ def render_group_entry(entry, group):
     elif entry["paper_url"]:
         link_parts.append(f"[paper]({entry['paper_url']})")
 
-    parts = [f"- {entry['title']}."]
+    parts = [f"- {render_title_link(entry['title'], entry['paper_url'])}"]
     if info:
-        parts.append(f"*{info}*.")
+        parts.append(f"*{info}*")
+    if category_text:
+        parts.append(f"categories: {category_text}")
     if tag_text:
-        parts.append(tag_text)
+        parts.append(f"tags: {tag_text}")
     if link_parts:
         parts.append(" ".join(link_parts))
     return " ".join(parts)
@@ -454,6 +634,12 @@ def generate_markdown(catalog, output_file):
         md_file.write("## Categories\n\n")
         md_file.write(render_category_links(catalog))
         md_file.write("\n\n")
+        keyword_links = render_keyword_links(catalog)
+        if keyword_links:
+            md_file.write('<a id="keywords"></a>\n')
+            md_file.write("## Keywords\n\n")
+            md_file.write(keyword_links)
+            md_file.write("\n\n")
 
         for group in SECTION_ORDER:
             entries = group_entries(catalog, group)
@@ -461,7 +647,10 @@ def generate_markdown(catalog, output_file):
                 continue
             md_file.write(render_group_section(group, entries))
 
-        md_file.write(render_tag_guide(catalog))
+        md_file.write(render_category_guide(catalog))
+        keyword_guide = render_keyword_guide(catalog)
+        if keyword_guide:
+            md_file.write(keyword_guide)
         md_file.write(util.get_markdown_footer())
 
 
