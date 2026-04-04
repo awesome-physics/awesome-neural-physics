@@ -7,11 +7,11 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 <a id="categories"></a>
 ## Categories
 
-[Fluid (75)](#fluid) | [Cloth (45)](#cloth) | [Softbody (58)](#softbody) | [Rigidbody (38)](#rigidbody) | [Multiphys (15)](#multiphys) | [Survey (5)](#survey)
+[Fluid (76)](#fluid) | [Cloth (45)](#cloth) | [Softbody (62)](#softbody) | [Rigidbody (40)](#rigidbody) | [Multiphys (17)](#multiphys) | [Survey (6)](#survey)
 
 <a id="fluid"></a>
 <details open>
-<summary><strong>Fluid (75)</strong></summary>
+<summary><strong>Fluid (76)</strong></summary>
 
 - A Neural Particle Level Set Method for Dynamic Interface Tracking. *TOG 2025*. `Neural Representation` [project](https://cdwj.github.io/projects/neural-pls-project-page/index.html) [doi](https://doi.org/10.1145/3730399)
 - A Pioneering Neural Network Method for Efficient and Robust Fuel Sloshing Simulation in Aircraft. *AAAI 2025*. [project](https://github.com/chenyu-xjtu/A-Pioneering-Neural-Network-Method-for-Efficient-and-Robust-Fuel-Sloshing-Simulation-in-Aircraft) [doi](https://doi.org/10.1609/aaai.v39i15.33752)
@@ -51,6 +51,7 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 - SurfsUp: Learning Fluid Simulation for Novel Surfaces. *ICCV 2023*. `Neural Simulation` [project](https://surfsup.cs.columbia.edu/) [doi](https://doi.org/10.1109/ICCV51070.2023.01308)
 - Deep Reconstruction of 3D Smoke Densities from Artist Sketches. *CGF 2022*. [doi](https://doi.org/10.1111/cgf.14461)
 - Efficient Neural Style Transfer for Volumetric Simulations. *TOG 2022*. `Style Transfer` [doi](https://doi.org/10.1145/3550454.3555517)
+- FishGym: A High-Performance Physics-based Simulation Framework for Underwater Robot Learning. *ICRA 2022*. `Reinforcement Learning` `Engine` [project](https://github.com/fish-gym/gym-fish) [doi](https://doi.org/10.1109/ICRA46639.2022.9812066)
 - Fluidic Topology Optimization with an Anisotropic Mixture Model. *TOG 2022*. `Differentiable Simulation` [project](https://people.csail.mit.edu/liyifei/publication/anisotropicstokes) [doi](https://doi.org/10.1145/3550454.3555429)
 - Guaranteed conservation of momentum for learning particle-based fluid dynamics. *NeurIPS 2022*. [paper](https://github.com/tum-pbs/DMCF)
 - Half-Inverse Gradients for Physical Deep Learning. *ICLR 2022*. [paper](https://arxiv.org/abs/2203.10131)
@@ -143,13 +144,16 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 </details>
 <a id="softbody"></a>
 <details>
-<summary><strong>Softbody (58)</strong></summary>
+<summary><strong>Softbody (62)</strong></summary>
 
 - Neuralocks: Real-Time Dynamic Neural Hair Simulation. *CGF 2026*. `Neural Simulation` `Avatar` [doi](https://doi.org/10.1111/cgf.70407)
 - A Differentiable Material Point Method Framework for Shape Morphing. *TVCG 2025*. `Differentiable Simulation` [project](https://chayo.oopy.io/1e7e3760-68e9-808e-b30a-f89ba08d6193) [doi](https://doi.org/10.1109/tvcg.2025.3591729)
 - DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning. *CGF 2025*. `Neural Representation` `Fracture` [doi](https://doi.org/10.1111/cgf.70002)
+- Differentiable Simulation of Soft Robots with Frictional Contacts. *IEEE 8th International Conference on Soft Robotics (RoboSoft) 2025*. `Differentiable Simulation` `Embodied AI` [project](https://simple-robotics.github.io/publications/differentiable-soft-robotics/) [doi](https://doi.org/10.1109/ROBOSOFT63089.2025.11020844)
 - Elastic Locomotion with Mixed Second-order Differentiation. *Siggraph 2025*. `Differentiable Simulation` [doi](https://doi.org/10.1145/3721238.3730685)
 - Inverse Design of Discrete Interlocking Materials with Desired Mechanical Behavior. *Siggraph 2025*. `Differentiable Simulation` [project](https://tangpengbin.github.io/publications/InverseDIM/index.html) [doi](https://doi.org/10.1145/3721238.3730675)
+- Neural Modular Physics for Elastic Simulation. *Arxiv 2025*. `Neural Simulation` [project](https://people.csail.mit.edu/liyifei/publication/nmp) [paper](https://arxiv.org/abs/2512.15083)
+- Neurally Integrated Finite Elements for Differentiable Elasticity on Evolving Domains. *TOG 2025*. `Differentiable Simulation` `Neural Representation` [project](https://research.nvidia.com/labs/toronto-ai/flexisim/) [doi](https://doi.org/10.1145/3727874)
 - PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos. *ICCV 2025*. `Real2Sim` `3DGS` [paper](https://jianghanxiao.github.io/phystwin-web/)
 - Precise Gradient Discontinuities in Neural Fields for Subspace Physics. *Siggraph Asia 2025*. `Neural Representation` [project](https://www.dgp.toronto.edu/projects/discont_grad) [doi](https://doi.org/10.1145/3757377.3763810)
 - Quaffure: Real-Time Quasi-Static Neural Hair Simulation. *CVPR 2025*. `Neural Simulation` `Avatar` [project](https://tuurstuyck.github.io/quaffure/quaffure.html) [doi](https://doi.org/10.1109/cvpr52734.2025.00031)
@@ -180,6 +184,7 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 - Contact-centric deformation learning. *TOG 2022*. [paper](http://mslab.es/projects/ContactCentricLearning/)
 - Differentiable Depth for Real2Sim Calibration of Soft Body Simulations. *CGF 2022*. `Differentiable Simulation` `Real2Sim` [project](https://researchprofiles.ku.dk/en/publications/differentiable-depth-for-real2sim-calibration-of-soft-body-simula) [doi](https://doi.org/10.1111/cgf.14720)
 - Differentiable simulation of inertial musculotendons. *TOG 2022*. `Differentiable Simulation` [paper](https://dl.acm.org/doi/abs/10.1145/3550454.3555490)
+- DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools. *ICLR 2022*. `Differentiable Simulation` `Embodied AI` [project](https://xingyu-lin.github.io/diffskill/) [doi](https://doi.org/10.48550/arXiv.2203.17275)
 - Implicit neural representation for physics-driven actuated soft bodies. *TOG 2022*. `Differentiable Simulation` [paper](https://people.inf.ethz.ch/zossg/publication/yang-2022/)
 - Learning to Synthesize Volumetric Meshes from Vision-based Tactile Imprints. *ICRA 2022*. `Reconstruction` `Embodied AI` [doi](https://doi.org/10.1109/icra46639.2022.9812092)
 - Neuphysics: Editable neural geometry and physics from monocular videos. *NeurIPS 2022*. `Differentiable Simulation` [paper](https://sites.google.com/view/neuphysics/home)
@@ -207,8 +212,9 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 </details>
 <a id="rigidbody"></a>
 <details>
-<summary><strong>Rigidbody (38)</strong></summary>
+<summary><strong>Rigidbody (40)</strong></summary>
 
+- Efficient Differentiable Contact Model with Long-range Influence. *ICLR 2026*. `Differentiable Simulation` [doi](https://doi.org/10.48550/arXiv.2509.20917)
 - Learning Object Properties Using Robot Proprioception via Differentiable Robot-Object Interaction. *ICRA 2025*. `Differentiable Simulation` `Embodied AI` [project](https://warpdiffrobot.github.io/) [doi](https://doi.org/10.1109/icra55743.2025.11127955)
 - Newton: An Open-Source, GPU-Accelerated Physics Simulation Engine Built upon NVIDIA Warp. *2025*. `Engine` [paper](https://github.com/newton-physics/newton)
 - Painless Differentiable Rotation Dynamics. *TOG 2025*. `Differentiable Simulation` [project](https://mslab.es/projects/Painless/) [doi](https://doi.org/10.1145/3730944)
@@ -225,6 +231,7 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 - Neural Collision Fields for Triangle Primitives. *Siggraph Asia 2023*. `Neural Representation` [doi](https://doi.org/10.1145/3610548.3618225)
 - SAM-RL: Sensing-Aware Model-Based Reinforcement Learning via Differentiable Physics-Based Simulation and Rendering. *RSS 2023*. `Differentiable Simulation` `Reinforcement Learning` [doi](https://doi.org/10.15607/rss.2023.xix.040)
 - Vr-handnet: A visually and physically plausible hand manipulation system in virtual reality. *TVCG 2023*. `Interaction` [paper](https://ieeexplore.ieee.org/abstract/document/10066837)
+- Accelerated Policy Learning with Parallel Differentiable Simulation. *Conference on Robot Learning (CoRL) 2022*. `Differentiable Simulation` `Reinforcement Learning` [project](https://short-horizon-actor-critic.github.io/) [doi](https://doi.org/10.48550/arXiv.2204.07137)
 - Dojo: A Differentiable Physics Engine for Robotics. *Arxiv 2022*. `Differentiable Simulation` `Engine` [paper](https://sites.google.com/view/dojo-sim)
 - Learning Object Relations with Graph Neural Networks for Target-Driven Grasping in Dense Clutter. *ICRA 2022*. `Embodied AI` [doi](https://doi.org/10.1109/icra46639.2022.9811601)
 - Learning physical dynamics with subequivariant graph neural networks. *NeurIPS 2022*. [paper](https://hanjq17.github.io/SGNN/)
@@ -251,11 +258,13 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 </details>
 <a id="multiphys"></a>
 <details>
-<summary><strong>Multiphys (15)</strong></summary>
+<summary><strong>Multiphys (17)</strong></summary>
 
 - Multiphysics Simulation Methods in Computer Graphics. *CGF 2025*. `survey` [project](https://multi.physics-simulation.org/) [doi](https://doi.org/10.1111/cgf.70082)
 - Stabilizing Reinforcement Learning in Differentiable Multiphysics Simulation. *ICLR 2025*. `Differentiable Simulation` `Reinforcement Learning` [project](https://rewarped.github.io/) [paper](https://arxiv.org/abs/2412.12089)
+- A Review of Differentiable Simulators. *IEEE Access 2024*. `Differentiable Simulation` `survey` [project](https://rhys-newbury.github.io/projects/DiffSim) [doi](https://doi.org/10.1109/ACCESS.2024.3425448)
 - Neural Physical Simulation with Multi-Resolution Hash Grid Encoding. *AAAI 2024*. [paper](https://ojs.aaai.org/index.php/AAAI/article/view/28349)
+- SoftMAC: Differentiable Soft Body Simulation with Forecast-based Contact Model and Two-way Coupling with Articulated Rigid Bodies and Clothes. *IROS 2024*. `Differentiable Simulation` `Engine` [project](https://minliu01.github.io/SoftMAC/) [doi](https://doi.org/10.1109/IROS58592.2024.10801308)
 - A generalized constitutive model for versatile mpm simulation and inverse learning with differentiable physics. *PACMCGIT 2023*. `Differentiable Simulation` [paper](https://xuan-li.github.io/publication/su2023generalized/)
 - Dynamic mesh-aware radiance fields. *ICCV 2023*. [paper](https://mesh-aware-rf.github.io/)
 - Learning neural constitutive laws from motion observations for generalizable pde dynamics. *ICML 2023*. `Differentiable Simulation` `Neural Material` [paper](https://sites.google.com/view/nclaw)
@@ -272,9 +281,10 @@ A curated list of papers on  the seamless fusion of neural models and physics si
 </details>
 <a id="survey"></a>
 <details>
-<summary><strong>Survey (5)</strong></summary>
+<summary><strong>Survey (6)</strong></summary>
 
 - Multiphysics Simulation Methods in Computer Graphics. *CGF 2025*. `multiphys` [project](https://multi.physics-simulation.org/) [doi](https://doi.org/10.1111/cgf.70082)
+- A Review of Differentiable Simulators. *IEEE Access 2024*. `multiphys` `Differentiable Simulation` [project](https://rhys-newbury.github.io/projects/DiffSim) [doi](https://doi.org/10.1109/ACCESS.2024.3425448)
 - Data-driven simulation in fluids animation: A survey. *VRIH 2021*. `fluid` [paper](https://www.sciencedirect.com/science/article/pii/S2096579621000139)
 - Differentiable Simulation. *Siggraph Asia 2021*. `multiphys` `Differentiable Simulation` [doi](https://doi.org/10.1145/3476117.3483433)
 - The Role of Physics-Based Simulators in Robotics. *ARCRAS 2021*. `rigidbody` [doi](https://doi.org/10.1146/annurev-control-072220-093055)
