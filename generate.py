@@ -2,6 +2,7 @@ import argparse
 import html
 import re
 from pathlib import Path
+from urllib.parse import quote, urlparse
 
 import util
 
@@ -14,7 +15,16 @@ GROUP_TITLES = {
     "softbody": "Softbody",
     "rigidbody": "Rigidbody",
     "multiphys": "Multiphys",
-    "survey": "Survey",
+    "survey": "Surveys",
+}
+
+SECTION_DESCRIPTIONS = {
+    "fluid": "Neural physics papers on fluid simulation, reconstruction, control, and differentiable methods.",
+    "cloth": "Papers on cloth, garments, and apparel-related dynamics, reconstruction, and avatar-centric modeling.",
+    "softbody": "Work on deformable objects, elasticity, fracture, soft robots, and learned physical models for soft materials.",
+    "rigidbody": "Methods for articulated rigid bodies, robotics, contact-rich motion, and rigid object dynamics.",
+    "multiphys": "Papers that span multiple physical domains or focus on coupled systems and general simulation frameworks.",
+    "survey": "Survey and review papers that help map the broader neural physics landscape.",
 }
 
 HIGH_LEVEL_CATEGORY_ORDER = [
@@ -145,6 +155,29 @@ LEGACY_LABELS_TO_DROP = {"sim2real"}
 
 README_RECENT_LIMIT = 5
 PUBLIC_SITE_URL = "https://awesome-physics.github.io/awesome-neural-physics/"
+PAPER_HOSTS = {
+    "arxiv.org",
+    "computer.org",
+    "dl.acm.org",
+    "doi.org",
+    "dx.doi.org",
+    "ieeexplore.ieee.org",
+    "link.springer.com",
+    "ojs.aaai.org",
+    "openaccess.thecvf.com",
+    "openreview.net",
+    "papers.nips.cc",
+    "proceedings.mlr.press",
+    "pubmed.ncbi.nlm.nih.gov",
+    "sciencedirect.com",
+    "www.computer.org",
+    "www.sciencedirect.com",
+}
+CODE_HOSTS = {
+    "bitbucket.org",
+    "github.com",
+    "gitlab.com",
+}
 
 
 def iter_bib_entries(text):
@@ -329,6 +362,65 @@ def normalize_project_url(project_url, paper_url):
     return project_url
 
 
+def canonicalize_url(url):
+    return (url or "").strip().rstrip("/")
+
+
+def doi_url_from_value(value):
+    value = (value or "").strip()
+    if not value:
+        return ""
+    if value.startswith("http://") or value.startswith("https://"):
+        return value.rstrip("/")
+    return f"https://doi.org/{value}".rstrip("/")
+
+
+def infer_link_label(url):
+    parsed = urlparse((url or "").strip())
+    host = parsed.netloc.lower()
+    path = parsed.path.lower()
+    path_segments = [segment for segment in path.split("/") if segment]
+
+    if host in {"doi.org", "dx.doi.org"}:
+        return "DOI"
+    if host in CODE_HOSTS:
+        return "Code"
+    if host.endswith(".github.io"):
+        return "Project"
+    if host in PAPER_HOSTS:
+        return "Paper"
+    if any(segment in path_segments for segment in {"abs", "pdf", "article", "paper", "publication"}):
+        return "Paper"
+    return "Project"
+
+
+def collect_external_links(entry):
+    links = []
+    seen = set()
+
+    def add_link(label, url):
+        normalized = canonicalize_url(url)
+        if not normalized or normalized in seen:
+            return
+        seen.add(normalized)
+        links.append((label, url))
+
+    paper_url = entry.get("paper_url", "").strip()
+    if paper_url:
+        add_link(infer_link_label(paper_url), paper_url)
+
+    project_url = entry.get("project_url", "").strip()
+    if project_url:
+        project_label = infer_link_label(project_url)
+        add_link("Code" if project_label == "Code" else "Project", project_url)
+
+    doi_url = doi_url_from_value(entry.get("doi", ""))
+    if doi_url:
+        add_link("DOI", doi_url)
+
+    return links
+
+
 def legacy_labels_to_metadata(labels):
     categories = []
     tags = []
@@ -399,6 +491,23 @@ def get_category_description(category):
 
 def get_tag_display(tag):
     return humanize_identifier(tag)
+
+
+def stable_badge_color(value, kind):
+    palettes = {
+        "category": ["1f77b4", "2f6db3", "3a86b8", "4c78a8", "2a9d8f", "457b9d"],
+        "tag": ["ff7f0e", "e76f51", "f4a261", "bc6c25", "8ab17d", "6d597a"],
+    }
+    colors = palettes[kind]
+    checksum = sum(ord(char) for char in value)
+    return colors[checksum % len(colors)]
+
+
+def render_badge(label, value, kind):
+    return (
+        f"![{label}]("
+        f"https://img.shields.io/badge/-{quote(label)}-{stable_badge_color(value, kind)}.svg?style=flat-square)"
+    )
 
 
 def build_catalog(bib_entries):
@@ -494,73 +603,28 @@ def render_title_link(title, url):
 def render_readme_intro(catalog):
     return (
         "# Awesome Neural Physics\n\n"
-        "A curated list of papers on  the seamless fusion of neural models and physics simulation. "
+        "A curated list of papers on the seamless fusion of neural models and physics simulation. "
         "It follows the field from injecting neural capabilities into classical solvers to embedding physical simulators directly within neural architectures.\n\n"
-        f"> **Best browsing experience:** use the [interactive index]({PUBLIC_SITE_URL}) for search, filtering, category browsing, and tag lookup.\n\n"
+        f"> Best browsing experience: use the [interactive index]({PUBLIC_SITE_URL}) for search, filtering, and tag-based lookup.\n\n"
+        f"[Interactive Index]({PUBLIC_SITE_URL}) | [BibTeX](main.bib) | [Tag Guide](#tag-guide) | [Citation](#citation)\n\n"
     )
 
-
-def render_recent_additions(catalog):
-    lines = ["## Recent Additions", ""]
-    for entry in get_recent_entries(catalog, README_RECENT_LIMIT):
-        info = format_info_line(entry)
-        category_text = format_inline_categories(entry["secondary_categories"][:1])
-        tag_text = format_inline_tags(entry["tags"][:1])
-        parts = [f"- {render_title_link(entry['title'], entry['paper_url'])}"]
-        if info:
-            parts.append(f"`{info}`")
-        if category_text:
-            parts.append(f"categories: {category_text}")
-        if tag_text:
-            parts.append(f"tags: {tag_text}")
-        lines.append(" ".join(parts))
-    lines.extend(["", ""])
-    return "\n".join(lines)
-
-
-def render_category_guide(catalog):
-    category_counts = collect_secondary_category_counts(catalog)
-    ordered_categories = [category for category in HIGH_LEVEL_CATEGORY_ORDER if category in category_counts]
-
-    lines = [
-        '<a id="category-guide"></a>',
-        '<a id="tag-guide"></a>',
-        "<details>",
-        "<summary><strong>Category Guide</strong></summary>",
-        "",
-        "The guide documents the stable categories. Paper-specific tags stay inline and remain open-ended.",
-        "",
-        "| Category | Meaning |",
-        "| --- | --- |",
-    ]
-    for category in ordered_categories:
-        lines.append(f"| `{get_category_display(category)}` | {get_category_description(category)} |")
-    lines.extend(["", "</details>", ""])
-    return "\n".join(lines)
-
-
-def render_category_links(catalog):
+def render_contents(catalog):
     counts = section_counts(catalog)
-    links = [
-        f"[{GROUP_TITLES[group]} ({counts[group]})](#{group})"
+    lines = ["## Contents", ""]
+    lines.extend(
+        f"- [{GROUP_TITLES[group]} ({counts[group]})](#{group})"
         for group in SECTION_ORDER
         if counts[group]
-    ]
-    return " | ".join(links)
-
-
-def render_keyword_links(catalog):
-    tag_counts = collect_tag_counts(catalog)
-    if not tag_counts:
-        return ""
-    ordered_tags = sorted(
-        tag_counts.items(),
-        key=lambda item: (-item[1], get_tag_display(item[0]).casefold()),
     )
-    return " | ".join(
-        f"[{get_tag_display(tag)} ({count})](#keyword-guide)"
-        for tag, count in ordered_tags
+    lines.extend(
+        [
+            "- [Tag Guide](#tag-guide)",
+            "- [Citation](#citation)",
+            "",
+        ]
     )
+    return "\n".join(lines)
 
 
 def render_keyword_guide(catalog):
@@ -571,75 +635,55 @@ def render_keyword_guide(catalog):
         tag_counts.items(),
         key=lambda item: (-item[1], get_tag_display(item[0]).casefold()),
     )
-    lines = [
-        '<a id="keyword-guide"></a>',
-        "<details>",
-        "<summary><strong>Keyword Guide</strong></summary>",
-        "",
-        "Keywords are the reader-facing, open-ended descriptors used for quick understanding and search.",
-        "",
-        "| Keyword | Count |",
-        "| --- | --- |",
-    ]
+    lines = ["<a id=\"tag-guide\"></a>", "## Tag Guide", ""]
+    lines.append("Reader-facing tags used in the list for quick scanning and search.")
+    lines.extend(["", "| Tag | Count |", "| --- | --- |"])
     for tag, count in ordered_tags:
-        lines.append(f"| `{get_tag_display(tag)}` | {count} |")
-    lines.extend(["", "</details>", ""])
+        lines.append(f"| {get_tag_display(tag)} | {count} |")
+    lines.append("")
     return "\n".join(lines)
 
 
-def render_group_entry(entry, group):
+def render_group_entry(entry):
     info = format_info_line(entry)
-    category_text = format_inline_categories(entry["secondary_categories"])
-    tag_text = format_inline_tags(entry["tags"])
-    link_parts = []
-    if entry["project_url"]:
-        link_parts.append(f"[project]({entry['project_url']})")
-    doi = entry.get("doi", "").strip()
-    if doi:
-        doi_url = doi if doi.startswith("http://") or doi.startswith("https://") else f"https://doi.org/{doi}"
-        link_parts.append(f"[doi]({doi_url})")
-    elif entry["paper_url"]:
-        link_parts.append(f"[paper]({entry['paper_url']})")
+    link_parts = [f"[{label}]({url})" for label, url in collect_external_links(entry)]
 
-    parts = [f"- {render_title_link(entry['title'], entry['paper_url'])}"]
+    first_line_parts = [entry["title"]]
     if info:
-        parts.append(f"*{info}*")
-    if category_text:
-        parts.append(f"categories: {category_text}")
-    if tag_text:
-        parts.append(f"tags: {tag_text}")
+        first_line_parts.append(info)
     if link_parts:
-        parts.append(" ".join(link_parts))
-    return " ".join(parts)
+        first_line_parts.append(" ".join(link_parts))
+    first_line = "- " + " | ".join(first_line_parts)
+
+    meta_parts = [
+        render_badge(get_category_display(category), category, "category")
+        for category in entry["secondary_categories"]
+    ]
+    meta_parts.extend(
+        render_badge(get_tag_display(tag), tag, "tag")
+        for tag in entry["tags"]
+    )
+    if not meta_parts:
+        return first_line
+    return first_line + "\n  - " + " ".join(meta_parts)
 
 
 def render_group_section(group, entries):
-    open_attr = " open" if group == "fluid" else ""
-    lines = [
-        f'<a id="{group}"></a>',
-        f"<details{open_attr}>",
-        f"<summary><strong>{GROUP_TITLES[group]} ({len(entries)})</strong></summary>",
-        "",
-    ]
+    lines = [f'<a id="{group}"></a>', f"## {GROUP_TITLES[group]} ({len(entries)})", ""]
+    description = SECTION_DESCRIPTIONS.get(group, "")
+    if description:
+        lines.extend([description, ""])
     for entry in entries:
-        lines.append(render_group_entry(entry, group))
-    lines.extend(["", "</details>", ""])
+        lines.append(render_group_entry(entry))
+        lines.append("")
     return "\n".join(lines)
 
 
 def generate_markdown(catalog, output_file):
     with open(output_file, "w", encoding="utf-8") as md_file:
         md_file.write(render_readme_intro(catalog))
-        md_file.write('<a id="categories"></a>\n')
-        md_file.write("## Categories\n\n")
-        md_file.write(render_category_links(catalog))
-        md_file.write("\n\n")
-        keyword_links = render_keyword_links(catalog)
-        if keyword_links:
-            md_file.write('<a id="keywords"></a>\n')
-            md_file.write("## Keywords\n\n")
-            md_file.write(keyword_links)
-            md_file.write("\n\n")
+        md_file.write(render_contents(catalog))
+        md_file.write("\n")
 
         for group in SECTION_ORDER:
             entries = group_entries(catalog, group)
@@ -647,7 +691,6 @@ def generate_markdown(catalog, output_file):
                 continue
             md_file.write(render_group_section(group, entries))
 
-        md_file.write(render_category_guide(catalog))
         keyword_guide = render_keyword_guide(catalog)
         if keyword_guide:
             md_file.write(keyword_guide)
