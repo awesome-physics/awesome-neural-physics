@@ -646,14 +646,19 @@ def render_keyword_guide(catalog):
 
 def render_group_entry(entry):
     info = format_info_line(entry)
-    link_parts = [f"[{label}]({url})" for label, url in collect_external_links(entry)]
+    link_parts = [f"[[{label}]]({url})" for label, url in collect_external_links(entry)]
 
-    first_line_parts = [entry["title"]]
+    first_line_parts = [f"**{entry['title']}**"]
     if info:
         first_line_parts.append(info)
+    lines = ["* " + " | ".join(first_line_parts) + "  "]
+
+    author_text = entry.get("author_text", "").strip()
+    if author_text:
+        lines.append(f"  *{author_text}*  ")
+
     if link_parts:
-        first_line_parts.append(" ".join(link_parts))
-    first_line = "- " + " | ".join(first_line_parts)
+        lines.append("  " + " ".join(link_parts) + "  ")
 
     meta_parts = [
         render_badge(get_category_display(category), category, "category")
@@ -663,9 +668,9 @@ def render_group_entry(entry):
         render_badge(get_tag_display(tag), tag, "tag")
         for tag in entry["tags"]
     )
-    if not meta_parts:
-        return first_line
-    return first_line + "\n  - " + " ".join(meta_parts)
+    if meta_parts:
+        lines.append("  " + " ".join(meta_parts))
+    return "\n".join(lines)
 
 
 def render_group_section(group, entries):
@@ -673,7 +678,9 @@ def render_group_section(group, entries):
     description = SECTION_DESCRIPTIONS.get(group, "")
     if description:
         lines.extend([description, ""])
-    for entry in entries:
+    for index, entry in enumerate(entries):
+        if index:
+            lines.extend(["<br>", ""])
         lines.append(render_group_entry(entry))
         lines.append("")
     return "\n".join(lines)
