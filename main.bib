@@ -7,18 +7,11 @@
   volume={52},
   pages={477--508},
   year={2020},
-  category={fluid},
+  category={fluid, survey},
   publisher={Annual Reviews},
   link={https://www.annualreviews.org/content/journals/10.1146/annurev-fluid-010719-060214},
   abstract={This video gives an overview of how Machine Learning is being used in Fluid Mechanics. In fact, fluid mechanics is one of the original 'big data' sciences, and many advances in ML came out of fluids.}
 }
-
-
-
-
-
-
-
 
 
 @article{xie2018tempogan,
@@ -37,27 +30,15 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{ummenhofer2019lagrangian,
   title={Lagrangian fluid simulation with continuous convolutions},
   author={Ummenhofer, Benjamin and Prantl, Lukas and Thuerey, Nils and Koltun, Vladlen},
   booktitle={International Conference on Learning Representations},
   year={2019},
-  category={fluid,differentiable_simulation},
+  category={fluid, neural_solver},
   link={https://ge.in.tum.de/publications/2020-ummenhofer-iclr/},
   abstract={We present an approach to Lagrangian fluid simulation with a new type of convolutional network. Our networks process sets of moving particles, which describe fluids in space and time. Unlike previous approaches, we do not build an explicit graph structure to connect the particles but use spatial convolutions as the main differentiable operation that relates particles to their neighbors. To this end we present a simple, novel, and effective extension of N-D convolutions to the continuous domain. We show that our network architecture can simulate different materials, generalizes to arbitrary collision geometries, and can be used for inverse problems. In addition, we demonstrate that our continuous convolutions outperform prior formulations in terms of accuracy and speed.}
 }
-
-
-
-
-
-
 
 
 @article{chu2021learning,
@@ -76,12 +57,6 @@
 }
 
 
-
-
-
-
-
-
 @article{li2023mpmnet,
   title={MPMNet: A data-driven MPM framework for dynamic fluid-solid interaction},
   author={Li, Jin and Gao, Yang and Dai, Ju and Li, Shuai and Hao, Aimin and Qin, Hong},
@@ -92,12 +67,6 @@
   link={https://ieeexplore.ieee.org/document/10113697},
   abstract={High-accuracy, high-efficiency physics-based fluid-solid interaction is essential for reality modeling and computer animation in online games or real-time Virtual Reality (VR) systems. However, the large-scale simulation of incompressible fluid and its interaction with the surrounding solid environment is either time-consuming or suffering from the reduced time/space resolution due to the complicated iterative nature pertinent to numerical computations of involved Partial Differential Equations (PDEs). In recent years, we have witnessed significant growth in exploring a different, alternative data-driven approach to addressing some of the existing technical challenges in conventional model-centric graphics and animation methods. This article showcases some of our exploratory efforts in this direction. One technical concern of our research is to address the central key challenge of how to best construct the numerical solver effectively and how to best integrate spatiotemporal/dimensional neural networks with the available MPM's pressure solvers. In particular, we devise the MPMNet, a hybrid data-driven framework supporting the popular and powerful MPM, to combine the comprehensive properties of MPM in numerically handling physical behaviors ranging from fluid to deformable solids and the high efficiency of data-driven models. At the architectural level, our MPMNet comprises three primary components: A data processing module to describe the physical properties by way of the input fields; A deep neural network group to learn the spatiotemporal features; And an iterative refinement process to continue to reduce possible numerical errors. The goal of these special technical developments is to aim at involved numerical acceleration while preserving physical accuracy, realizing efficient and accurate fluid-solid interactions in a data-driven fashion. The extensive experimental results verify that our MPMNet can tremendously speed up the computation compared with the popular numerical methods as the complexity of interaction scenes increases while better retaining the numerical accuracy.}
 }
-
-
-
-
-
-
 
 
 @article{deng2023fluid,
@@ -116,13 +85,6 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{fulton2019latent,
   title={Latent-space dynamics for reduced deformable simulation},
   author={Fulton, Lawson and Modi, Vismay and Duvenaud, David and Levin, David IW and Jacobson, Alec},
@@ -138,12 +100,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{sanchez2020learning,
   title={Learning to simulate complex physics with graph networks},
   author={Sanchez-Gonzalez, Alvaro and Godwin, Jonathan and Pfaff, Tobias and Ying, Rex and Leskovec, Jure and Battaglia, Peter},
@@ -156,12 +112,6 @@
   link={https://sites.google.com/view/learning-to-simulate},
   abstract={Here we present a machine learning framework and model implementation that can learn to simulate a wide variety of challenging physical domains, involving fluids, rigid solids, and deformable materials interacting with one another. Our framework---which we term "Graph Network-based Simulators" (GNS)---represents the state of a physical system with particles, expressed as nodes in a graph, and computes dynamics via learned message-passing. Our results show that our model can generalize from single-timestep predictions with thousands of particles during training, to different initial conditions, thousands of timesteps, and at least an order of magnitude more particles at test time. Our model was robust to hyperparameter choices across various evaluation metrics: the main determinants of long-term performance were the number of message-passing steps, and mitigating the accumulation of error by corrupting the training data with noise. Our GNS framework advances the state-of-the-art in learned physical simulation, and holds promise for solving a wide range of complex forward and inverse problems.}
 }
-
-
-
-
-
-
 
 
 @article{srinivasan2021learning,
@@ -180,12 +130,6 @@
 }
 
 
-
-
-
-
-
-
 @article{yang2022implicit,
   title={Implicit neural representation for physics-driven actuated soft bodies},
   author={Yang, Lingchen and Kim, Byungsoo and Zoss, Gaspard and G{\"o}zc{\"u}, Baran and Gross, Markus and Solenthaler, Barbara},
@@ -200,13 +144,6 @@
   link={https://people.inf.ethz.ch/zossg/publication/yang-2022/},
   abstract={Active soft bodies can affect their shape through an internal actuation mechanism that induces a deformation. Similar to recent work, this paper utilizes a differentiable, quasi-static, and physics-based simulation layer to optimize for actuation signals parameterized by neural networks. Our key contribution is a general and implicit formulation to control active soft bodies by defining a function that enables a continuous mapping from a spatial point in the material space to the actuation value. This property allows us to capture the signal's dominant frequencies, making the method discretization agnostic and widely applicable. We extend our implicit model to mandible kinematics for the particular case of facial animation and show that we can reliably reproduce facial expressions captured with high-quality capture systems. We apply the method to volumetric soft bodies, human poses, and facial expressions, demonstrating artist-friendly properties, such as simple control over the latent space and resolution invariance at test time.}
 }
-
-
-
-
-
-
-
 
 
 @article{bertiche2022neural,
@@ -224,12 +161,6 @@
 }
 
 
-
-
-
-
-
-
 @article{xiang2022dressing,
   title={Dressing avatars: Deep photorealistic appearance for physically simulated clothing},
   author={Xiang, Donglai and Bagautdinov, Timur and Stuyck, Tuur and Prada, Fabian and Romero, Javier and Xu, Weipeng and Saito, Shunsuke and Guo, Jingfan and Smith, Breannan and Shiratori, Takaaki and others},
@@ -245,12 +176,6 @@
 }
 
 
-
-
-
-
-
-
 @article{lee2023clothcombo,
   title={ClothCombo: Modeling Inter-Cloth Interaction for Draping Multi-Layered Clothes},
   author={Lee, Dohae and Kang, Hyun and Lee, In-Kwon},
@@ -259,18 +184,12 @@
   number={6},
   pages={1--13},
   year={2023},
-  category={cloth},
+  category={cloth, neural_solver, contact, avatar},
   tag={gnn},
   publisher={ACM New York, NY, USA},
   link={https://dl.acm.org/doi/10.1145/3618376},
   abstract={We present ClothCombo, a pipeline to drape arbitrary combinations of clothes on 3D human models with varying body shapes and poses. While existing learning-based approaches for draping clothes have shown promising results, multi-layered clothing remains challenging as it is non-trivial to model inter-cloth interaction. To this end, our method utilizes a GNN-based network to efficiently model the interaction between clothes in different layers, thus enabling multi-layered clothing. Specifically, we first create feature embedding for each cloth using a topology-agnostic network. Then, the draping network deforms all clothes to fit the target body shape and pose without considering inter-cloth interaction. Lastly, the untangling network predicts the per-vertex displacements in a way that resolves interpenetration between clothes. In experiments, the proposed model demonstrates strong performance in complex multi-layered scenarios. Being agnostic to cloth topology, our method can be readily used for layered virtual try-on of real clothes in diverse poses and combinations of clothes.}
 }
-
-
-
-
-
-
 
 
 @article{takahashi2021differentiable, 
@@ -291,12 +210,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{zong2023neural,
   title={Neural Stress Fields for Reduced-order Elastoplasticity and Fracture},
   author={Zong, Zeshun and Li, Xuan and Li, Minchen and Chiaramonte, Maurizio M and Matusik, Wojciech and Grinspun, Eitan and Carlberg, Kevin and Jiang, Chenfanfu and Chen, Peter Yichen},
@@ -310,30 +223,18 @@
 }
 
 
-
-
-
-
-
-
 @article{huang2025deepfracture,
   title={DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning},
   author={Huang, Yuhang and Kanai, Takashi},
   journal={Computer Graphics Forum},
   pages={e70002},
   year={2025},
-  category={softbody,fracture},
+  category={softbody, neural_representation, fracture},
   doi={10.1111/cgf.70002},
   link={https://nikoloside.graphics/deepfracture/},
   openalex_id={W4407236887},
   abstract={In the field of brittle fracture animation, generating realistic destruction animations using physics-based simulation methods is computationally expensive. While techniques based on Voronoi diagrams or pre-fractured patterns are effective for real-time applications, they fail to incorporate collision conditions when determining fractured shapes during runtime. This paper introduces a novel learning-based approach for predicting fractured shapes based on collision dynamics at runtime. Our approach seamlessly integrates realistic brittle fracture animations with rigid body simulations, utilising boundary element method (BEM) brittle fracture simulations to generate training data. To integrate collision scenarios and fractured shapes into a deep learning framework, we introduce generative geometric segmentation, distinct from both instance and semantic segmentation, to represent 3D fragment shapes. We propose an eight-dimensional latent code to address the challenge of optimising multiple discrete fracture pattern targets that share similar continuous collision latent codes. This code will follow a discrete normal distribution corresponding to a specific fracture pattern within our latent impulse representation design. This adaptation enables the prediction of fractured shapes using neural discrete representation learning. Our experimental results show that our approach generates considerably more detailed brittle fractures than existing techniques, while the computational time is typically reduced compared to traditional simulation methods at comparable resolutions.}
 }
-
-
-
-
-
-
 
 
 @article{du2021diffpd,
@@ -351,12 +252,6 @@
 }
 
 
-
-
-
-
-
-
 @article{huang2024differentiable,
   title={Differentiable solver for time-dependent deformation problems with contact},
   author={Huang, Zizhou and Tozoni, Davi Colli and Gjoka, Arvi and Ferguson, Zachary and Schneider, Teseo and Panozzo, Daniele and Zorin, Denis},
@@ -368,12 +263,6 @@
   link={https://dl.acm.org/doi/10.1145/3657648},
   abstract={We introduce a general differentiable solver for time-dependent deformation problems with contact and friction. Our approach uses a finite element discretization with a high-order time integrator coupled with the recently proposed incremental potential contact method for handling contact and friction forces to solve ODE- and PDE-constrained optimization problems on scenes with complex geometry. It supports static and dynamic problems and differentiation with respect to all physical parameters involved in the physical problem description, which include shape, material parameters, friction parameters, and initial conditions. Our analytically derived adjoint formulation is efficient, with a small overhead (typically less than 10% for nonlinear problems) over the forward simulation, and shares many similarities with the forward problem, allowing the reuse of large parts of existing forward simulator code. We implement our approach on top of the open-source PolyFEM library and demonstrate the applicability of our solver to shape design, initial condition optimization, and material estimation on both simulated results and physical validations.}
 }
-
-
-
-
-
-
 
 
 @article{wang2022differentiable,
@@ -391,12 +280,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{qiao2021efficient,
   author  = {Qiao, Yi-Ling and Liang, Junbang and Koltun, Vladlen and Lin, Ming C.},
   title  = {Efficient Differentiable Simulation of Articulated Bodies},
@@ -409,13 +292,6 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{schnell2022halfinverse,
   title={Half-Inverse Gradients for Physical Deep Learning},
   author={Patrick Schnell and Philipp Holl and Nils Thuerey},
@@ -426,12 +302,6 @@
   link={https://arxiv.org/abs/2203.10131},
   abstract={Recent works in deep learning have shown that integrating differentiable physics simulators into the training process can greatly improve the quality of results. Although this combination represents a more complex optimization task than supervised neural network training, the same gradient-based optimizers are typically employed to minimize the loss function. However, the integrated physics solvers have a profound effect on the gradient flow as manipulating scales in magnitude and direction is an inherent property of many physical processes. Consequently, the gradient flow is often highly unbalanced and creates an environment in which existing gradient-based optimizers perform poorly. In this work, we analyze the characteristics of both physical and neural network optimizations to derive a new method that does not suffer from this phenomenon. Our method is based on a half-inversion of the Jacobian and combines principles of both classical network and physics optimizers to solve the combined optimization task. Compared to state-of-the-art neural network optimizers, our method converges more quickly and yields better solutions, which we demonstrate on three complex learning problems involving nonlinear oscillators, the Schroedinger equation and the Poisson problem.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{zesch2023neural,
@@ -456,13 +326,6 @@
 }
 
 
-
-
-
-
-
-
-
 @MISC{coumans2021pybullet,
   author =   {Erwin Coumans and Yunfei Bai},
   title =    {PyBullet, a Python module for physics simulation for games, robotics and machine learning},
@@ -471,12 +334,6 @@
   category={rigidbody,engine},
   link={http://pybullet.org}
 }
-
-
-
-
-
-
 
 
 @article{howell2022dojo,
@@ -491,14 +348,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 @inproceedings{freeman2021brax,
   title={Brax - A Differentiable Physics Engine for Large Scale Rigid Body Simulation},
   author={C. Daniel Freeman and Erik Frey and Anton Raichuk and Sertan Girgin and Igor Mordatch and Olivier Bachem},
@@ -510,13 +359,6 @@
   link={https://github.com/google/brax},
   abstract={We present Brax, an open source library for rigid body simulation with a focus on performance and parallelism on accelerators, written in JAX. We present results on a suite of tasks inspired by the existing reinforcement learning literature, but remade in our engine. Additionally, we provide reimplementations of PPO, SAC, ES, and direct policy optimization in JAX that compile alongside our environments, allowing the learning algorithm and the environment processing to occur on the same device, and to scale seamlessly on accelerators. Finally, we include notebooks that facilitate training of performant policies on common OpenAI Gym MuJoCo-like tasks in minutes.}
 }
-
-
-
-
-
-
-
 
 
 @inproceedings{todorov2012mujoco,
@@ -533,12 +375,6 @@
 }
 
 
-
-
-
-
-
-
 @INPROCEEDINGS{werling2021fast, 
   AUTHOR    = {Keenon Werling AND Dalton Omens AND Jeongseok Lee AND Ioannis Exarchos AND C. Karen Liu}, 
   TITLE     = {Fast and Feature-Complete Differentiable Physics Engine for Articulated Rigid Bodies with Contact Constraints}, 
@@ -551,10 +387,6 @@
   link={https://arxiv.org/abs/2103.16021},
   abstract={We present a fast and feature-complete differentiable physics engine, Nimble (nimblephysics.org), that supports Lagrangian dynamics and hard contact constraints for articulated rigid body simulation. Our differentiable physics engine offers a complete set of features that are typically only available in non-differentiable physics simulators commonly used by robotics applications. We solve contact constraints precisely using linear complementarity problems (LCPs). We present efficient and novel analytical gradients through the LCP formulation of inelastic contact that exploit the sparsity of the LCP solution. We support complex contact geometry, and gradients approximating continuous-time elastic collision. We also introduce a novel method to compute complementarity-aware gradients that help downstream optimization tasks avoid stalling in saddle points. We show that an implementation of this combination in a fork of an existing physics engine (DART) is capable of a 87x single-core speedup over finite-differencing in computing analytical Jacobians for a single timestep, while preserving all the expressiveness of original DART.}
 }
-
-
-
-
 
 
  
@@ -571,28 +403,14 @@
 }
 
 
-
-
-
-
-
-
-
 @misc{russ2019drake,
   author = "Russ Tedrake and the Drake Development Team",
   title = "Drake: Model-based design and verification for robotics",
   year = 2019,
-  category={rigidbody},
+  category={rigidbody, engine, embodied_ai},
   url = "https://drake.mit.edu",
   link= "https://drake.mit.edu",
 }
-
-
-
-
-
-
-
 
 
 @inproceedings{heiden2021neuralsim,
@@ -605,12 +423,6 @@
   link={https://github.com/erwincoumans/tiny-differentiable-simulator},
   abstract={Differentiable simulators provide an avenue for closing the sim-to-real gap by enabling the use of efficient, gradient-based optimization algorithms to find the simulation parameters that best fit the observed sensor readings. Nonetheless, these analytical models can only predict the dynamical behavior of systems for which they have been designed. In this work, we study the augmentation of a novel differentiable rigid-body physics engine via neural networks that is able to learn nonlinear relationships between dynamic quantities and can thus model effects not accounted for in traditional simulators. Such augmentations require less data to train and generalize better compared to entirely data-driven models. Through extensive experiments, we demonstrate the ability of our hybrid simulator to learn complex dynamics involving frictional contacts from real data, as well as match known models of viscous friction, and present an approach for automatically discovering useful augmentations. We show that, besides benefiting dynamics modeling, inserting neural networks can accelerate model-based control architectures. We observe a ten-fold speedup when replacing the QP solver inside a model-predictive gait controller for quadruped robots with a neural network, allowing us to significantly improve control delays as we demonstrate in real-hardware experiments. We publish code, additional results and videos from our experiments on our project webpage at https://sites.google.com/usc.edu/neuralsim.}
 }
-
-
-
-
-
-
 
 
 @article{liu2021role,
@@ -630,13 +442,6 @@
   link="https://doi.org/10.1146/annurev-control-072220-093055",
   abstract={Physics-based simulation provides an accelerated and safe avenue for developing, verifying, and testing robotic control algorithms and prototype designs. In the quest to leverage machine learning for developing AI-enabled robots, physics-based simulation can generate a wealth of labeled training data in a short amount of time. Physics-based simulation also creates an ideal proving ground for developing intelligent robots that can both learn from their mistakes and be verifiable. This article provides an overview of the use of simulation in robotics, emphasizing how robots (with sensing and actuation components), the environment they operate in, and the humans they interact with are simulated in practice. It concludes with an overview of existing tools for simulation in robotics and a short discussion of aspects that limit the role that simulation plays today in intelligent robot design.}
 }
-
-
-
-
-
-
-
 
 
 @article{li2022diffcloth,
@@ -663,13 +468,6 @@
 }
 
 
-
-
-
-
-
-
-
 @article{ly2020projective,
   author = {Ly, Micka\"{e}l and Jouve, Jean and Boissieux, Laurence and Bertails-Descoubes, Florence},
   title = {Projective dynamics with dry frictional contact},
@@ -693,12 +491,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{liang2019differentiable,
   author = {Liang, Junbang and Lin, Ming and Koltun, Vladlen},
   booktitle = {Advances in Neural Information Processing Systems},
@@ -709,17 +501,10 @@
   url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/28f0b864598a1291557bed248a998d4e-Paper.pdf},
   volume = {32},
   year = {2019},
-  category={cloth,differentiable_simulation},
+  category={cloth, differentiable_simulation, control},
   link={https://gamma.umd.edu/researchdirections/virtualtryon/differentiablecloth},
   abstract={We propose a differentiable cloth simulator that can be embedded as a layer in deep neural networks. This approach provides an effective, robust framework for modeling cloth dynamics, self-collisions, and contacts. Due to the high dimensionality of the dynamical system in modeling cloth, traditional gradient computation for collision response can become impractical. To address this problem, we propose to compute the gradient directly using QR decomposition of a much smaller matrix. Experimental results indicate that our method can speed up backpropagation by two orders of magnitude. We demonstrate the presented approach on a number of inverse problems, including parameter estimation and motion control for cloth.}
 }
-
-
-
-
-
-
-
 
 
 @inproceedings{gong2024bayesian,
@@ -734,13 +519,6 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{li2023diffavatar,
   title={{DiffAvatar}: Simulation-Ready Garment Optimization with Differentiable Simulation}, 
   author={Li, Yifei  and Chen, Hsiao-yu and Larionov, Egor and Sarafianos, Nikolaos and Matusik, Wojciech and Stuyck, Tuur},
@@ -752,13 +530,6 @@
   link={https://people.csail.mit.edu/liyifei/publication/diffavatar/},
   abstract={The realism of digital avatars is crucial in enabling telepresence applications with self-expression and customization. While physical simulations can produce realistic motions for clothed humans, they require high-quality garment assets with associated physical parameters for cloth simulations. However, manually creating these assets and calibrating their parameters is labor-intensive and requires specialized expertise. Current methods focus on reconstructing geometry, but don't generate complete assets for physics-based applications. To address this gap, we propose DiffAvatar, a novel approach that performs body and garment co-optimization using differentiable simulation. By integrating physical simulation into the optimization loop and accounting for the complex nonlinear behavior of cloth and its intricate interaction with the body, our framework recovers body and garment geometry and extracts important material parameters in a physically plausible way. Our experiments demonstrate that our approach generates realistic clothing and body shape suitable for downstream applications. We provide additional insights and results on our webpage: people. csail. mit. edu/liyifei/publication/diffavatar.}
 }
-
-
-
-
-
-
-
 
 
 @article{bai2021predicting,
@@ -777,12 +548,6 @@
 }
 
 
-
-
-
-
-
-
 @article{roy2021neural,
   title={Neural upflow: A scene flow learning approach to increase the apparent resolution of particle-based liquids},
   author={Roy, Bruno and Poulin, Pierre and Paquette, Eric},
@@ -792,17 +557,11 @@
   pages={1--26},
   year={2021},
   category={fluid},
+  tag={super_resolution},
   publisher={ACM New York, NY, USA},
   link={https://dl.acm.org/doi/abs/10.1145/3480147},
   abstract={We present a novel up-resing technique for generating high-resolution liquids based on scene flow estimation using deep neural networks. Our approach infers and synthesizes small- and large-scale details solely from a low-resolution particle-based liquid simulation. The proposed network leverages neighborhood contributions to encode inherent liquid properties throughout convolutions. We also propose a particle-based approach to interpolate between liquids generated from varying simulation discretizations using a state-of-the-art bidirectional optical flow solver method for fluids in addition to a novel key-event topological alignment constraint. In conjunction with the neighborhood contributions, our loss formulation allows the inference model throughout epochs to reward important differences in regard to significant gaps in simulation discretizations. Even when applied in an untested simulation setup, our approach is able to generate plausible high-resolution details. Using this interpolation approach and the predicted displacements, our approach combines the input liquid properties with the predicted motion to infer semi-Lagrangian advection. We furthermore showcase how the proposed interpolation approach can facilitate generating large simulation datasets with a subset of initial condition parameters.}
 }
-
-
-
-
-
-
-
 
 
 @article{bertiche2021pbns,
@@ -828,18 +587,12 @@
 }
 
 
-
-
-
-
-
-
 @ARTICLE{xiao2020novel,
   author={Xiao, Xiangyun and Zhou, Yanqing and Wang, Hui and Yang, Xubo},
   journal={IEEE Transactions on Visualization and Computer Graphics}, 
   title={A Novel CNN-Based Poisson Solver for Fluid Simulation}, 
   year={2020},
-  category={fluid},
+  category={fluid, neural_solver},
   tag={cnn},
   volume={26},
   number={3},
@@ -851,12 +604,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{li2023detail,
   title={Detail-Aware Deep Clothing Animations Infused with Multi-Source Attributes},
   author={Li, Tianxing and Shi, Rui and Kanai, Takashi},
@@ -865,18 +612,12 @@
   number={1},
   pages={231--244},
   year={2023},
-  category={cloth},
+  category={cloth, neural_solver, avatar},
   tag={gnn},
   organization={Wiley Online Library},
   link={https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14651},
   abstract={Abstract This paper presents a novel learning‐based clothing deformation method to generate rich and reasonable detailed deformations for garments worn by bodies of various shapes in various animations. In contrast to existing learning‐based methods, which require numerous trained models for different garment topologies or poses and are unable to easily realize rich details, we use a unified framework to produce high fidelity deformations efficiently and easily. Specifically, we first found that the fit between the garment and the body has an important impact on the degree of folds. We then designed an attribute parser to generate detail‐aware encodings and infused them into the graph neural network, therefore enhancing the discrimination of details under diverse attributes. Furthermore, to achieve better convergence and avoid overly smooth deformations, we proposed to reconstruct output to mitigate the complexity of the learning task. Experimental results show that our proposed deformation method achieves better performance over existing methods in terms of generalization ability and quality of details.}
 }
-
-
-
-
-
-
 
 
 @article{yang2016data,
@@ -891,16 +632,10 @@
   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cav.1695},
   eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cav.1695},
   year = {2016},
-  category={fluid},
+  category={fluid, neural_solver},
   link={http://dalab.se.sjtu.edu.cn/www/home/?page_id=911},
   abstract={Abstract Physically based fluid simulation requires much time in numerical calculation to solve Navier–Stokes equations. Especially in grid‐based fluid simulation, because of iterative computation, the projection step is much more time‐consuming than other steps. In this paper, we propose a novel data‐driven projection method using an artificial neural network to avoid iterative computation. Once the grid resolution is decided, our data‐driven method could obtain projection results in relatively constant time per grid cell, which is independent of scene complexity. Experimental results demonstrated that our data‐driven method drastically speeded up the computation in the projection step. With the growth of grid resolution, the speed‐up would increase strikingly. In addition, our method is still applicable in different fluid scenes with some alterations, when computational cost is more important than physical accuracy. Copyright © 2016 John Wiley &amp; Sons, Ltd.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{xiao2019cnn,
@@ -911,18 +646,12 @@
   number={2},
   pages={431--440},
   year={2019},
-  category={fluid},
+  category={fluid, neural_solver},
   tag={cnn},
   organization={Wiley Online Library},
   link={http://dalab.se.sjtu.edu.cn/www/home/?page_id=763},
   abstract={Abstract Eulerian‐based smoke simulations are sensitive to the initial parameters and grid resolutions. Due to the numerical dissipation on different levels of the grid and the nonlinearity of the governing equations, the differences in simulation resolutions will result in different results. This makes it challenging for artists to preview the animation results based on low‐resolution simulations. In this paper, we propose a learning‐based flow correction method for fast previewing based on low‐resolution smoke simulations. The main components of our approach lie in a deep convolutional neural network, a grid‐layer feature vector and a special loss function. We provide a novel matching model to represent the relationship between low‐resolution and high‐resolution smoke simulations and correct the overall shape of a low‐resolution simulation to closely follow the shape of a high‐resolution down‐sampled version. We introduce the grid‐layer concept to effectively represent the 3D fluid shape, which can also reduce the input and output dimensions. We design a special loss function for the fluid divergence‐free constraint in the neural network training process. We have demonstrated the efficacy and the generality of our approach by simulating a diversity of animations deviating from the original training set. In addition, we have integrated our approach into an existing fluid simulation framework to showcase its wide applications.}
 }
-
-
-
-
-
-
 
 
 @article{chen2021data,
@@ -938,12 +667,6 @@
   link={https://www.sciencedirect.com/science/article/pii/S2096579621000139},
   abstract={The field of fluid simulation is developing rapidly, and data-driven methods provide many frameworks and techniques for fluid simulation. This paper presents a survey of data-driven methods used in fluid simulation in computer graphics in recent years. First, we provide a brief introduction of physicalbased fluid simulation methods based on their spatial discretization, including Lagrangian, Eulerian, and hybrid methods. The characteristics of these underlying structures and their inherent connection with datadriven methodologies are then analyzed. Subsequently, we review studies pertaining to a wide range of applications, including data-driven solvers, detail enhancement, animation synthesis, fluid control, and differentiable simulation. Finally, we discuss some related issues and potential directions in data-driven fluid simulation. We conclude that the fluid simulation combined with data-driven methods has some advantages, such as higher simulation efficiency, rich details and different pattern styles, compared with traditional methods under the same parameters. It can be seen that the data-driven fluid simulation is feasible and has broad prospects.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{wiewel2020latent,
@@ -962,13 +685,6 @@
 }
 
 
-
-
-
-
-
-
-
 @article{prantl2022guaranteed,
   title={Guaranteed conservation of momentum for learning particle-based fluid dynamics},
   author={Prantl, Lukas and Ummenhofer, Benjamin and Koltun, Vladlen and Thuerey, Nils},
@@ -980,12 +696,6 @@
   link={https://github.com/tum-pbs/DMCF},
   abstract={We present a novel method for guaranteeing linear momentum in learned physics simulations. Unlike existing methods, we enforce conservation of momentum with a hard constraint, which we realize via antisymmetrical continuous convolutional layers. We combine these strict constraints with a hierarchical network architecture, a carefully constructed resampling scheme, and a training approach for temporal coherence. In combination, the proposed method allows us to increase the physical accuracy of the learned simulator substantially. In addition, the induced physical bias leads to significantly better generalization performance and makes our method more reliable in unseen test cases. We evaluate our method on a range of different, challenging fluid scenarios. Among others, we demonstrate that our approach generalizes to new scenarios with up to one million particles. Our results show that the proposed algorithm can learn complex dynamics while outperforming existing approaches in generalization and training performance. An implementation of our approach is available at https://github.com/tum-pbs/DMCF.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{wang2023neuwigs,
@@ -1001,30 +711,16 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{santesteban2022snug,
   title={Snug: Self-supervised neural dynamic garments},
   author={Santesteban, Igor and Otaduy, Miguel A and Casas, Dan},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={8140--8150},
   year={2022},
-  category={cloth},
+  category={cloth, neural_solver, avatar},
   link={http://mslab.es/projects/SNUG/},
   abstract={We present a self-supervised method to learn dynamic 3D deformations of garments worn by parametric human bodies. State-of-the-art data-driven approaches to model 3D garment deformations are trained using supervised strategies that require large datasets, usually obtained by expensive physics-based simulation methods or professional multi-camera capture setups. In contrast, we propose a new training scheme that removes the need for ground-truth samples, enabling self-supervised training of dynamic 3D garment deformations. Our key contribution is to realize that physics-based deformation models, traditionally solved in a frame-by-frame basis by implicit integrators, can be recasted as an optimization problem. We leverage such optimization-based scheme to formulate a set of physics-based loss terms that can be used to train neural networks without precomputing ground-truth data. This allows us to learn models for interactive garments, including dynamic deformations and fine wrinkles, with a two orders of magnitude speed up in training time compared to state-of-the-art supervised methods.}
 }
-
-
-
-
-
-
-
 
 
 @inproceedings{santesteban2021self,
@@ -1039,29 +735,16 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{pan2022predicting,
   title={Predicting loose-fitting garment deformations using bone-driven motion networks},
   author={Pan, Xiaoyu and Mai, Jiaming and Jiang, Xinwei and Tang, Dongxue and Li, Jingxiang and Shao, Tianjia and Zhou, Kun and Jin, Xiaogang and Manocha, Dinesh},
   booktitle={ACM SIGGRAPH 2022 Conference Proceedings},
   pages={1--10},
   year={2022},
-  category={cloth},
+  category={cloth, neural_solver, avatar},
   link={http://www.cad.zju.edu.cn/home/jin/SigCloth2022/SigCloth2022.htm},
   abstract={We present a learning algorithm that uses bone-driven motion networks to predict the deformation of loose-fitting garment meshes at interactive rates. Given a garment, we generate a simulation database and extract virtual bones from simulated mesh sequences using skin decomposition. At runtime, we separately compute low- and high-frequency deformations in a sequential manner. The low-frequency deformations are predicted by transferring body motions to virtual bones' motions, and the high-frequency deformations are estimated leveraging the global information of virtual bones' motions and local information extracted from low-frequency meshes. In addition, our method can estimate garment deformations caused by variations of the simulation parameters (e.g., fabric's bending stiffness) using an RBF kernel ensembling trained networks for different sets of simulation parameters. Through extensive comparisons, we show that our method outperforms state-of-the-art methods in terms of prediction accuracy of mesh deformations by about 20% in RMSE and 10% in Hausdorff distance and STED. The code and data are available at https://github.com/non-void/VirtualBones.}
 }
-
-
-
-
-
-
 
 
 @article{romero2021learning,
@@ -1077,12 +760,6 @@
   link={http://mslab.es/projects/LearningContactCorrections/},
   abstract={This paper introduces a novel subspace method for the simulation of dynamic deformations. The method augments existing linear handle-based subspace formulations with nonlinear learning-based corrections parameterized by the same subspace. Together, they produce a compact nonlinear model that combines the fast dynamics and overall contact-based interaction of subspace methods, with the highly detailed deformations of learning-based methods. We propose a formulation of the model with nonlinear corrections applied on the local undeformed setting, and decoupling internal and external contact-driven corrections. We define a simple mapping of these corrections to the global setting, an efficient implementation for dynamic simulation, and a training pipeline to generate examples that efficiently cover the interaction space. Altogether, the method achieves unprecedented combination of speed and contact-driven deformation detail.}
 }
-
-
-
-
-
-
 
 
 @article{shen2021high,
@@ -1108,15 +785,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 @article{romero2022contact,
   title={Contact-centric deformation learning},
   author={Romero, Cristian and Casas, Dan and Chiaramonte, Maurizio M and Otaduy, Miguel A},
@@ -1132,13 +800,6 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{romero2023learning,
   title={Learning Contact Deformations with General Collider Descriptors},
   author={Romero, Cristian and Casas, Dan and Chiaramonte, Maurizio and Otaduy, Miguel A},
@@ -1151,29 +812,16 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{sharp2023data,
   title={Data-Free Learning of Reduced-Order Kinematics},
   author={Sharp, Nicholas and Romero, Cristian and Jacobson, Alec and Vouga, Etienne and Kry, Paul and Levin, David IW and Solomon, Justin},
   booktitle={ACM SIGGRAPH 2023 Conference Proceedings},
   pages={1--9},
   year={2023},
-  category={cloth,embodied_ai},
+  category={cloth, neural_representation, embodied_ai},
   link={https://nmwsharp.com/research/neural-physics-subspaces/},
   abstract={Physical systems ranging from elastic bodies to kinematic linkages are defined on high-dimensional configuration spaces, yet their typical low-energy configurations are concentrated on much lower-dimensional subspaces. This work addresses the challenge of identifying such subspaces automatically: given as input an energy function for a high-dimensional system, we produce a low-dimensional map whose image parameterizes a diverse yet low-energy submanifold of configurations. The only additional input needed is a single seed configuration for the system to initialize our procedure; no dataset of trajectories is required. We represent subspaces as neural networks that map a low-dimensional latent vector to the full configuration space, and propose a training scheme to fit network parameters to any system of interest. This formulation is effective across a very general range of physical systems; our experiments demonstrate not only nonlinear and very low-dimensional elastic body and cloth subspaces, but also more general systems like colliding rigid bodies and linkages. We briefly explore applications built on this formulation, including manipulation, latent interpolation, and sampling.}
 }
-
-
-
-
-
-
 
 
 @article{yang2022learning,
@@ -1186,12 +834,6 @@
   category={rigidbody,neural_solver},
   link={https://proceedings.neurips.cc/paper_files/paper/2022/hash/6d5e035724687454549b97d6c805dc84-Abstract-Conference.html}
 }
-
-
-
-
-
-
 
 
 @article{han2022learning,
@@ -1208,13 +850,6 @@
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{ma2023learning,
   title={Learning neural constitutive laws from motion observations for generalizable pde dynamics},
   author={Ma, Pingchuan and Chen, Peter Yichen and Deng, Bolei and Tenenbaum, Joshua B and Du, Tao and Gan, Chuang and Matusik, Wojciech},
@@ -1227,12 +862,6 @@
   link={https://sites.google.com/view/nclaw},
   abstract={We propose a hybrid neural network (NN) and PDE approach for learning generalizable PDE dynamics from motion observations. Many NN approaches learn an end-to-end model that implicitly models both the governing PDE and constitutive models (or material models). Without explicit PDE knowledge, these approaches cannot guarantee physical correctness and have limited generalizability. We argue that the governing PDEs are often well-known and should be explicitly enforced rather than learned. Instead, constitutive models are particularly suitable for learning due to their data-fitting nature. To this end, we introduce a new framework termed "Neural Constitutive Laws" (NCLaw), which utilizes a network architecture that strictly guarantees standard constitutive priors, including rotation equivariance and undeformed state equilibrium. We embed this network inside a differentiable simulation and train the model by minimizing a loss function based on the difference between the simulation and the motion observation. We validate NCLaw on various large-deformation dynamical systems, ranging from solids to fluids. After training on a single motion trajectory, our method generalizes to new geometries, initial/boundary conditions, temporal ranges, and even multi-physics systems. On these extremely out-of-distribution generalization tasks, NCLaw is orders-of-magnitude more accurate than previous NN approaches. Real-world experiments demonstrate our method's ability to learn constitutive laws from videos.}
 }
-
-
-
-
-
-
 
 
 @InProceedings{hennigh2021nvidia,
@@ -1262,12 +891,6 @@
 }
 
 
-
-
-
-
-
-
 @article{xie2024fluid,
   title={Fluid Inverse Volumetric Modeling and Applications from Surface Motion},
   author={Xie, Xueguang and Gao, Yang and Hou, Fei and Cheng, Tianwei and Hao, Aimin and Qin, Hong},
@@ -1279,12 +902,6 @@
   link={https://www.computer.org/csdl/journal/tg/5555/01/10452823/1UUuVAIPShy},
   abstract={In this study, we devise a framework for volumetrically reconstructing fluid from observable, measurable free surface motion. Our innovative method amalgamates the benefits of deep learning and conventional simulation to preserve the guiding motion and temporal coherence of the reproduced fluid. We infer surface velocities by encoding and decoding spatiotemporal features of surface sequences, and a 3D CNN is used to generate the volumetric velocity field, which is then combined with 3D labels of obstacles and boundaries. Concurrently, we employ a network to estimate the fluid's physical properties. To progressively evolve the flow field over time, we input the reconstructed velocity field and estimated parameters into the physical simulator as the initial state. Our approach yields promising results for both synthetic fluid generated by different fluid solvers and captured real fluid. The developed framework naturally lends itself to a variety of graphics applications, such as 1) effective reproductions of fluid behaviors visually congruent with the observed surface motion, and 2) physics-guided re-editing of fluid scenes. Extensive experiments affirm that our novel method surpasses state-of-the-art approaches for 3D fluid inverse modeling and animation in graphics.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{franz2021global,
@@ -1300,12 +917,6 @@
 }
 
 
-
-
-
-
-
-
 @article{xiao2024laplacian,
   title={Laplacian Projection Based Global Physical Prior Smoke Reconstruction},
   author={Xiao, Shibang and Tong, Chao and Zhang, Qifan and Cen, Yunchi and Li, Frederick WB and Liang, Xiaohui},
@@ -1317,12 +928,6 @@
   link={https://www.computer.org/csdl/journal/tg/5555/01/10414126/1TZIJbrBNo4},
   abstract={We present a novel framework for reconstructing fluid dynamics in real-life scenarios. Our approach leverages sparse view images and incorporates physical priors across long series of frames, resulting in reconstructed fluids with enhanced physical consistency. Unlike previous methods, we utilize a differentiable fluid simulator (DFS) and a differentiable renderer (DR) to exploit global physical priors, reducing reconstruction errors without the need for manual regularization coefficients. We introduce divergence-free Laplacian eigenfunctions (div-free LE) as velocity bases, improving computational efficiency and memory usage. By employing gradient-related strategies, we achieve better convergence and superior results. Extensive experiments demonstrate the effectiveness of our method, showcasing improved reconstruction quality and computational efficiency compared to existing approaches. We validate our approach using both synthetic and real data, highlighting its practical potential.}
 }
-
-
-
-
-
-
 
 
 @article{yu2024inferring,
@@ -1339,28 +944,16 @@
 }
 
 
-
-
-
-
-
-
 @article{xie2023physgaussian,
   title={PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics}, 
   author={Xie, Tianyi and Zong, Zeshun and Qiu, Yuxing and Li, Xuan and Feng, Yutao and Yang, Yin and Jiang, Chenfanfu},
   journal={arXiv preprint arXiv:2311.12198},
   year={2023},
-  category={fluid},
+  category={fluid, neural_representation},
   tag={3dgs},
   link={https://xpandora.github.io/PhysGaussian/},
   abstract={We introduce PhysGaussian, a new method that seamlessly integrates physically grounded Newtonian dynamics within 3D Gaussians to achieve high-quality novel motion synthesis. Employing a custom Material Point Method (MPM), our approach enriches 3D Gaussian kernels with physically meaningful kinematic deformation and mechanical stress attributes, all evolved in line with continuum mechanics principles. A defining characteristic of our method is the seamless integration between physical simulation and visual rendering: both components utilize the same 3D Gaussian kernels as their discrete representations. This negates the necessity for triangle/tetrahedron meshing, marching cubes, "cage meshes," or any other geometry embedding, highlighting the principle of "what you see is what you simulate (WS$^2$)." Our method demonstrates exceptional versatility across a wide variety of materials--including elastic entities, metals, non-Newtonian fluids, and granular materials--showcasing its strong capabilities in creating diverse visual content with novel viewpoints and movements. Our project page is at: https://xpandora.github.io/PhysGaussian/}
 }
-
-
-
-
-
-
 
 
 @misc{feng2024gaussian,
@@ -1377,12 +970,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{guan2022neurofluid,
   title={Neurofluid: Fluid dynamics grounding with particle-driven neural radiance fields},
   author={Guan, Shanyan and Deng, Huayu and Wang, Yunbo and Yang, Xiaokang},
@@ -1395,12 +982,6 @@
   link={https://syguan96.github.io/NeuroFluid/},
   abstract={Deep learning has shown great potential for modeling the physical dynamics of complex particle systems such as fluids. Existing approaches, however, require the supervision of consecutive particle properties, including positions and velocities. In this paper, we consider a partially observable scenario known as fluid dynamics grounding, that is, inferring the state transitions and interactions within the fluid particle systems from sequential visual observations of the fluid surface. We propose a differentiable two-stage network named NeuroFluid. Our approach consists of (i) a particle-driven neural renderer, which involves fluid physical properties into the volume rendering function, and (ii) a particle transition model optimized to reduce the differences between the rendered and the observed images. NeuroFluid provides the first solution to unsupervised learning of particle-based fluid dynamics by training these two models jointly. It is shown to reasonably estimate the underlying physics of fluids with different initial shapes, viscosity, and densities.}
 }
-
-
-
-
-
-
 
 
 @article{halimi2022pattern,
@@ -1419,12 +1000,6 @@
 }
 
 
-
-
-
-
-
-
 @article{feng2022learning,
   title={Learning-based bending stiffness parameter estimation by a drape tester},
   author={Feng, Xudong and Huang, Wenchao and Xu, Weiwei and Wang, Huamin},
@@ -1441,13 +1016,6 @@
 }
 
 
-
-
-
-
-
-
-
 @article{qiao2022neuphysics,
   title={Neuphysics: Editable neural geometry and physics from monocular videos},
   author={Qiao, Yi-Ling and Gao, Alexander and Lin, Ming},
@@ -1462,12 +1030,6 @@
 }
 
 
-
-
-
-
-
-
 @article{li2024garmentdreamer,
   title={GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details},
   author={Li, Boqian and Li, Xuan and Jiang, Ying and Xie, Tianyi and Gao, Feng and Wang, Huamin and Yang, Yin and Jiang, Chenfanfu},
@@ -1478,12 +1040,6 @@
   link={https://arxiv.org/abs/2405.12420},
   abstract={Traditional 3D garment creation is labor-intensive, involving sketching, modeling, UV mapping, and texturing, which are time-consuming and costly. Recent advances in diffusion-based generative models have enabled new possibilities for 3D garment generation from text prompts, images, and videos. However, existing methods either suffer from inconsistencies among multi-view images or require additional processes to separate cloth from the underlying human model. In this paper, we propose GarmentDreamer, a novel method that leverages 3D Gaussian Splatting (GS) as guidance to generate wearable, simulation-ready 3D garment meshes from text prompts. In contrast to using multi-view images directly predicted by generative models as guidance, our 3DGS guidance ensures consistent optimization in both garment deformation and texture synthesis. Our method introduces a novel garment augmentation module, guided by normal and RGBA information, and employs implicit Neural Texture Fields (NeTF) combined with Score Distillation Sampling (SDS) to generate diverse geometric and texture details. We validate the effectiveness of our approach through comprehensive qualitative and quantitative experiments, showcasing the superior performance of GarmentDreamer over state-of-the-art alternatives. Our project page is available at: https://xuan-li.github.io/GarmentDreamerDemo/.}
 }
-
-
-
-
-
-
 
 
 @article{zhang2024physdreamer,
@@ -1497,12 +1053,6 @@
   link={https://physdreamer.github.io/},
   abstract={Realistic object interactions are crucial for creating immersive virtual experiences, yet synthesizing realistic 3D object dynamics in response to novel interactions remains a significant challenge. Unlike unconditional or text-conditioned dynamics generation, action-conditioned dynamics requires perceiving the physical material properties of objects and grounding the 3D motion prediction on these properties, such as object stiffness. However, estimating physical material properties is an open problem due to the lack of material ground-truth data, as measuring these properties for real objects is highly difficult. We present PhysDreamer, a physics-based approach that endows static 3D objects with interactive dynamics by leveraging the object dynamics priors learned by video generation models. By distilling these priors, PhysDreamer enables the synthesis of realistic object responses to novel interactions, such as external forces or agent manipulations. We demonstrate our approach on diverse examples of elastic objects and evaluate the realism of the synthesized interactions through a user study. PhysDreamer takes a step towards more engaging and realistic virtual experiences by enabling static 3D objects to dynamically respond to interactive stimuli in a physically plausible manner. See our project page at https://physdreamer.github.io/.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{jiang2025phystwin,
@@ -1519,12 +1069,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{feng2024pie,
   title={Pie-nerf: Physics-based interactive elastodynamics with nerf},
   author={Feng, Yutao and Shang, Yintong and Li, Xuan and Shao, Tianjia and Jiang, Chenfanfu and Yang, Yin},
@@ -1539,27 +1083,15 @@
 }
 
 
-
-
-
-
-
-
 @article{feng2024elastogen,
   title={ElastoGen: 4D Generative Elastodynamics},
   author={Feng, Yutao and Shang, Yintong and Feng, Xiang and Lan, Lei and Zhe, Shandian and Shao, Tianjia and Wu, Hongzhi and Zhou, Kun and Su, Hao and Jiang, Chenfanfu and others},
   journal={arXiv preprint arXiv:2405.15056},
   year={2024},
-  category={softbody},
+  category={softbody, neural_solver},
   link={https://arxiv.org/abs/2405.15056},
   abstract={We present ElastoGen, a knowledge-driven AI model that generates physically accurate 4D elastodynamics. Unlike deep models that learn from video- or image-based observations, ElastoGen leverages the principles of physics and learns from established mathematical and optimization procedures. The core idea of ElastoGen is converting the differential equation, corresponding to the nonlinear force equilibrium, into a series of iterative local convolution-like operations, which naturally fit deep architectures. We carefully build our network module following this overarching design philosophy. ElastoGen is much more lightweight in terms of both training requirements and network scale than deep generative models. Because of its alignment with actual physical procedures, ElastoGen efficiently generates accurate dynamics for a wide range of hyperelastic materials and can be easily integrated with upstream and downstream deep modules to enable end-to-end 4D generation.}
 }
-
-
-
-
-
-
 
 
 @article{huang2023diffvl,
@@ -1573,12 +1105,6 @@
   link={https://arxiv.org/abs/2312.06408},
   abstract={Combining gradient-based trajectory optimization with differentiable physics simulation is an efficient technique for solving soft-body manipulation problems. Using a well-crafted optimization objective, the solver can quickly converge onto a valid trajectory. However, writing the appropriate objective functions requires expert knowledge, making it difficult to collect a large set of naturalistic problems from non-expert users. We introduce DiffVL, a method that enables non-expert users to communicate soft-body manipulation tasks -- a combination of vision and natural language, given in multiple stages -- that can be readily leveraged by a differential physics solver. We have developed GUI tools that enable non-expert users to specify 100 tasks inspired by real-life soft-body manipulations from online videos, which we'll make public. We leverage large language models to translate task descriptions into machine-interpretable optimization objectives. The optimization objectives can help differentiable physics solvers to solve these long-horizon multistage tasks that are challenging for previous baselines.}
 }
-
-
-
-
-
-
 
 
 @article{su2023generalized,
@@ -1596,12 +1122,6 @@
 }
 
 
-
-
-
-
-
-
 @inproceedings{
 li2023pacnerf,
   title={{PAC}-Ne{RF}: Physics Augmented Continuum Neural Radiance Fields for Geometry-Agnostic System Identification},
@@ -1614,13 +1134,6 @@ li2023pacnerf,
   link={https://sites.google.com/view/PAC-NeRF},
   abstract={Existing approaches to system identification (estimating the physical parameters of an object) from videos assume known object geometries. This precludes their applicability in a vast majority of scenes where object geometries are complex or unknown. In this work, we aim to identify parameters characterizing a physical system from a set of multi-view videos without any assumption on object geometry or topology. To this end, we propose "Physics Augmented Continuum Neural Radiance Fields" (PAC-NeRF), to estimate both the unknown geometry and physical parameters of highly dynamic objects from multi-view videos. We design PAC-NeRF to only ever produce physically plausible states by enforcing the neural radiance field to follow the conservation laws of continuum mechanics. For this, we design a hybrid Eulerian-Lagrangian representation of the neural radiance field, i.e., we use the Eulerian grid representation for NeRF density and color fields, while advecting the neural radiance fields via Lagrangian particles. This hybrid Eulerian-Lagrangian representation seamlessly blends efficient neural rendering with the material point method (MPM) for robust differentiable physics simulation. We validate the effectiveness of our proposed framework on geometry and physical parameter estimation over a vast range of materials, including elastic bodies, plasticine, sand, Newtonian and non-Newtonian fluids, and demonstrate significant performance gain on most tasks.}
 }
-
-
-
-
-
-
-
 
 
 @article{jiang2024vrgs,
@@ -1636,12 +1149,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{qiu2024feature,
   title={Feature Splatting: Language-Driven Physics-Based Scene Synthesis and Editing},
   author={Qiu, Ri-Zhao and Yang, Ge and Zeng, Weijia and Wang, Xiaolong},
@@ -1652,13 +1159,6 @@ li2023pacnerf,
   link={https://feature-splatting.github.io/},
   abstract={Scene representations using 3D Gaussian primitives have produced excellent results in modeling the appearance of static and dynamic 3D scenes. Many graphics applications, however, demand the ability to manipulate both the appearance and the physical properties of objects. We introduce Feature Splatting, an approach that unifies physics-based dynamic scene synthesis with rich semantics from vision language foundation models that are grounded by natural language. Our first contribution is a way to distill high-quality, object-centric vision-language features into 3D Gaussians, that enables semi-automatic scene decomposition using text queries. Our second contribution is a way to synthesize physics-based dynamics from an otherwise static scene using a particle-based simulator, in which material properties are assigned automatically via text queries. We ablate key techniques used in this pipeline, to illustrate the challenge and opportunities in using feature-carrying 3D Gaussians as a unified format for appearance, geometry, material properties and semantics grounded on natural language. Project website: https://feature-splatting.github.io/}
 }
-
-
-
-
-
-
-
 
 
 @article{chu2022physics,
@@ -1685,12 +1185,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{qiao2023dynamic,
   title={Dynamic mesh-aware radiance fields},
   author={Qiao, Yi-Ling and Gao, Alexander and Xu, Yiran and Feng, Yue and Huang, Jia-Bin and Lin, Ming C},
@@ -1702,12 +1196,6 @@ li2023pacnerf,
   link={https://mesh-aware-rf.github.io/},
   abstract={Embedding polygonal mesh assets within photorealistic Neural Radience Fields (NeRF) volumes, such that they can be rendered and their dynamics simulated in a physically consistent manner with the NeRF, is under-explored from the system perspective of integrating NeRF into the traditional graphics pipeline. This paper designs a two-way coupling between mesh and NeRF during rendering and simulation. We first review the light transport equations for both mesh and NeRF, then distill them into an efficient algorithm for updating radiance and throughput along a cast ray with an arbitrary number of bounces. To resolve the discrepancy between the linear color space that the path tracer assumes and the sRGB color space that standard NeRF uses, we train NeRF with High Dynamic Range (HDR) images. We also present a strategy to estimate light sources and cast shadows on the NeRF. Finally, we consider how the hybrid surface-volumetric formulation can be efficiently integrated with a high-performance physics simulator that supports cloth, rigid and soft bodies. The full rendering and simulation system can be run on a GPU at interactive rates. We show that a hybrid system approach outperforms alternatives in visual realism for mesh insertion, because it allows realistic light transport from volumetric NeRF media onto surfaces, which affects the appearance of reflective/refractive surfaces and illumination of diffuse surfaces informed by the dynamic scene.}
 }
-
-
-
-
-
-
 
 
 @article{li2023difffr,
@@ -1734,12 +1222,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{rao2020rl,
   title={Rl-cyclegan: Reinforcement learning aware simulation-to-real},
   author={Rao, Kanishka and Harris, Chris and Irpan, Alex and Levine, Sergey and Ibarz, Julian and Khansari, Mohi},
@@ -1753,28 +1235,17 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{runia2020cloth,
   title={Cloth in the wind: A case study of physical measurement through simulation},
   author={Runia, Tom FH and Gavrilyuk, Kirill and Snoek, Cees GM and Smeulders, Arnold WM},
   booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
   pages={10498--10507},
   year={2020},
-  category={cloth},
+  category={cloth, reconstruction},
+  tag={real2sim, parameter_estimation},
   link={https://arxiv.org/abs/2003.05065},
   abstract={For many of the physical phenomena around us, we have developed sophisticated models explaining their behavior. Nevertheless, measuring physical properties from visual observations is challenging due to the high number of causally underlying physical parameters -- including material properties and external forces. In this paper, we propose to measure latent physical properties for cloth in the wind without ever having seen a real example before. Our solution is an iterative refinement procedure with simulation at its core. The algorithm gradually updates the physical model parameters by running a simulation of the observed phenomenon and comparing the current simulation to a real-world observation. The correspondence is measured using an embedding function that maps physically similar examples to nearby points. We consider a case study of cloth in the wind, with curling flags as our leading example - a seemingly simple phenomena but physically highly involved. Based on the physics of cloth and its visual manifestation, we propose an instantiation of the embedding function. For this mapping, modeled as a deep network, we introduce a spectral layer that decomposes a video volume into its temporal spectral power and corresponding frequencies. Our experiments demonstrate that the proposed method compares favorably to prior work on the task of measuring cloth material properties and external wind force from a real-world video.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{ehsani2020use,
@@ -1783,16 +1254,10 @@ li2023pacnerf,
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={224--233},
   year={2020},
-  category={rigidbody},
+  category={rigidbody, reconstruction},
   link={https://ehsanik.github.io/forcecvpr2020/},
   abstract={When we humans look at a video of human-object interaction, we can not only infer what is happening but we can even extract actionable information and imitate those interactions. On the other hand, current recognition or geometric approaches lack the physicality of action representation. In this paper, we take a step towards more physical understanding of actions. We address the problem of inferring contact points and the physical forces from videos of humans interacting with objects. One of the main challenges in tackling this problem is obtaining ground-truth labels for forces. We sidestep this problem by instead using a physics simulator for supervision. Specifically, we use a simulator to predict effects, and enforce that estimated forces must lead to same effect as depicted in the video. Our quantitative and qualitative results show that (a) we can predict meaningful forces from videos whose effects lead to accurate imitation of the motions observed, (b) by jointly optimizing for contact point and force prediction, we can improve the performance on both tasks in comparison to independent training, and (c) we can learn a representation from this model that generalizes to novel objects using few shot examples.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{thapa2020dynamic,
@@ -1808,12 +1273,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{zang2020tomofluid,
   title={Tomofluid: Reconstructing dynamic fluid from sparse view videos},
   author={Zang, Guangming and Idoughi, Ramzi and Wang, Congli and Bennett, Anthony and Du, Jianguo and Skeen, Scott and Roberts, William L and Wonka, Peter and Heidrich, Wolfgang},
@@ -1825,12 +1284,6 @@ li2023pacnerf,
   link={https://openaccess.thecvf.com/content_CVPR_2020/html/Zang_TomoFluid_Reconstructing_Dynamic_Fluid_From_Sparse_View_Videos_CVPR_2020_paper.html},
   abstract={Visible light tomography is a promising and increasingly popular technique for fluid imaging. However, the use of a sparse number of viewpoints in the capturing setups makes the reconstruction of fluid flows very challenging. In this paper, we present a state-of-the-art 4D tomographic reconstruction framework that integrates several regularizers into a multi-scale matrix free optimization algorithm. In addition to existing regularizers, we propose two new regularizers for improved results: a regularizer based on view interpolation of projected images and a regularizer to encourage reprojection consistency. We demonstrate our method with extensive experiments on both simulated and real data.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{rasheed2020learning,
@@ -1845,12 +1298,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{labbe2021single,
   title={Single-view robot pose and joint angle estimation via render \& compare},
   author={Labb{\'e}, Yann and Carpentier, Justin and Aubry, Mathieu and Sivic, Josef},
@@ -1862,29 +1309,6 @@ li2023pacnerf,
   link={https://www.di.ens.fr/willow/research/robopose/},
   abstract={We introduce RoboPose, a method to estimate the joint angles and the 6D camera-to-robot pose of a known articulated robot from a single RGB image. This is an important problem to grant mobile and itinerant autonomous systems the ability to interact with other robots using only visual information in non-instrumented environments, especially in the context of collaborative robotics. It is also challenging because robots have many degrees of freedom and an infinite space of possible configurations that often result in self-occlusions and depth ambiguities when imaged by a single camera. The contributions of this work are three-fold. First, we introduce a new render & compare approach for estimating the 6D pose and joint angles of an articulated robot that can be trained from synthetic data, generalizes to new unseen robot configurations at test time, and can be applied to a variety of robots. Second, we experimentally demonstrate the importance of the robot parametrization for the iterative pose updates and design a parametrization strategy that is independent of the robot structure. Finally, we show experimental results on existing benchmark datasets for four different robots and demonstrate that our method significantly outperforms the state of the art. Code and pre-trained models are available on the project webpage [1].}
 }
-
-
-
-
-
-
-
-
-@inproceedings{hu2021efficient,
-  title={Efficient deformable shape correspondence via multiscale spectral manifold wavelets preservation},
-  author={Hu, Ling and Li, Qinsong and Liu, Shengjun and Liu, Xinru},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={14536--14545},
-  year={2021},
-  category={softbody},
-  link={https://ieeexplore.ieee.org/document/9578652},
-  abstract={The functional map framework has proven to be extremely effective for representing dense correspondences between deformable shapes. A key step in this framework is to formulate suitable preservation constraints to encode the geometric information that must be preserved by the unknown map. For this issue, we construct novel and powerful constraints to determine the functional map, where multiscale spectral manifold wavelets are required to be preserved at each scale correspondingly. Such constraints allow us to extract significantly more information than previous methods, especially those based on descriptor preservation constraints, and strongly ensure the isometric property of the map. In addition, we also propose a remarkable efficient iterative method to alternatively update the functional maps and pointwise maps. Moreover, when we use the tight wavelet frames in iterations, the computation of the functional maps boils down to a simple filtering procedure with low-pass and various band-pass filters, which avoids time-consuming solving large systems of linear equations commonly presented in functional maps. We demonstrate on a wide variety of experiments with different datasets that our approach achieves significant improvements both in the shape correspondence quality and the computing efficiency.}
-}
-
-
-
-
-
 
 
 @article{yan2020interactive,
@@ -1903,11 +1327,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
 @article{vrhandnet,
   title={Vr-handnet: A visually and physically plausible hand manipulation system in virtual reality},
   author={Han, DongHeun and Lee, RoUn and Kim, KyeongMin and Kang, HyeongYeop},
@@ -1919,11 +1338,6 @@ li2023pacnerf,
   link={https://ieeexplore.ieee.org/abstract/document/10066837},
   abstract={This study aims to allow users to perform dexterous hand manipulation of objects in virtual environments with hand-held VR controllers. To this end, the VR controller is mapped to the virtual hand and the hand motions are dynamically synthesized when the virtual hand approaches an object. At each frame, given the information about the virtual hand, VR controller input, and hand-object spatial relations, the deep neural network determines the desired joint orientations of the virtual hand model in the next frame. The desired orientations are then converted into a set of torques acting on hand joints and applied to a physics simulation to determine the hand pose at the next frame. The deep neural network, named VR-HandNet, is trained with a reinforcement learning-based approach. Therefore, it can produce physically plausible hand motion since the trial-and-error training process can learn how the interaction between hand and object is performed under the environment that is simulated by a physics engine. Furthermore, we adopted an imitation learning paradigm to increase visual plausibility by mimicking the reference motion datasets. Through the ablation studies, we validated the proposed method is effectively constructed and successfully serves our design goal. A live demo is demonstrated in the supplementary video.}
 }
-
-
-
-
-
 
 
 @article{lyu2020real,
@@ -1940,12 +1354,6 @@ li2023pacnerf,
   link={https://www.mlchai.com/publication/lyu2020real/},
   abstract={Traditionally, reduced hair simulation methods are either restricted to heuristic approximations or bound to specific hairstyles. We introduce the first CNN-integrated framework for simulating various hairstyles. The approach produces visually realistic hairs with an interactive speed. To address the technical challenges, our hair simulation pipeline is designed as a two-stage process. First, we present a fully-convolutional neural interpolator as the backbone generator to compute dynamic weights for guide hair interpolation. Then, we adopt a second generator to produce fine-scale displacements to enhance the hair details. We train the neural interpolator with a dedicated loss function and the displacement generator with an adversarial discriminator. Experimental results demonstrate that our method is effective, efficient, and superior to the state-of-the-art on a wide variety of hairstyles. We further propose a performance-driven digital avatar system and an interactive hairstyle editing tool to illustrate the practical applications.}
 }
-
-
-
-
-
-
 
 
 @article{ma2018fluid,
@@ -1972,12 +1380,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{aurand2022efficient,
   author = {Aurand, Joshua and Ortiz, Raphael and Nauer, Silvia and Azevedo, Vinicius C.},
   title = {Efficient Neural Style Transfer for Volumetric Simulations},
@@ -2000,12 +1402,6 @@ li2023pacnerf,
   link={https://studios.disneyresearch.com/2022/11/30/efficient-neural-style-transfer-for-volumetric-simulations/},
   abstract={Artistically controlling fluids has always been a challenging task. Recently, volumetric Neural Style Transfer (NST) techniques have been used to artistically manipulate smoke simulation data with 2D images. In this work, we revisit previous volumetric NST techniques for smoke, proposing a suite of upgrades that enable stylizations that are significantly faster, simpler, more controllable and less prone to artifacts. Moreover, the energy minimization solved by previous methods is camera dependent. To avoid that, a computationally expensive iterative optimization performed for multiple views sampled around the original simulation is needed, which can take up to several minutes per frame. We propose a simple feed-forward neural network architecture that is able to infer view-independent stylizations that are three orders of the magnitude faster than its optimization-based counterpart.}
 }
-
-
-
-
-
-
 
 
 @article{kim2020lagrangian,
@@ -2032,12 +1428,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{kim2019transport,
   author = {Kim, Byungsoo and Azevedo, Vinicius C. and Gross, Markus and Solenthaler, Barbara},
   title = {Transport-based neural style transfer for smoke simulations},
@@ -2060,13 +1450,6 @@ li2023pacnerf,
   link={https://dl.acm.org/doi/10.1145/3355089.3356560},
   abstract={Artistically controlling fluids has always been a challenging task. Optimization techniques rely on approximating simulation states towards target velocity or density field configurations, which are often handcrafted by artists to indirectly control smoke dynamics. Patch synthesis techniques transfer image textures or simulation features to a target flow field. However, these are either limited to adding structural patterns or augmenting coarse flows with turbulent structures, and hence cannot capture the full spectrum of different styles and semantically complex structures. In this paper, we propose the first Transport-based Neural Style Transfer (TNST) algorithm for volumetric smoke data. Our method is able to transfer features from natural images to smoke simulations, enabling general content-aware manipulations ranging from simple patterns to intricate motifs. The proposed algorithm is physically inspired, since it computes the density transport from a source input smoke to a desired target configuration. Our transport-based approach allows direct control over the divergence of the stylization velocity field by optimizing incompressible and irrotational potentials that transport smoke towards stylization. Temporal consistency is ensured by transporting and aligning subsequent stylized velocities, and 3D reconstructions are computed by seamlessly merging stylizations from different camera viewpoints.}
 }
-
-
-
-
-
-
-
 
 
 @article{eckert2019scalar,
@@ -2093,13 +1476,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
-
 @article{guo2021volumetric,
   author = {Guo, Jie and Li, Mengtian and Zong, Zijing and Liu, Yuntao and He, Jingwu and Guo, Yanwen and Yan, Ling-Qi},
   title = {Volumetric appearance stylization with stylizing kernel prediction network},
@@ -2122,12 +1498,6 @@ li2023pacnerf,
   link={https://dl.acm.org/doi/abs/10.1145/3450626.3459799},
   abstract={This paper aims to efficiently construct the volume of heterogeneous single-scattering albedo for a given medium that would lead to desired color appearance. We achieve this goal by formulating it as a volumetric style transfer problem in which an input 3D density volume is stylized using color features extracted from a reference 2D image. Unlike existing algorithms that require cumbersome iterative optimizations, our method leverages a feed-forward deep neural network with multiple well-designed modules. At the core of our network is a stylizing kernel predictor (SKP) that extracts multi-scale feature maps from a 2D style image and predicts a handful of stylizing kernels as a highly non-linear combination of the feature maps. Each group of stylizing kernels represents a specific style. A volume autoencoder (VolAE) is designed and jointly learned with the SKP to transform a density volume to an albedo volume based on these stylizing kernels. Since the autoencoder does not encode any style information, it can generate different albedo volumes with a wide range of appearance once training is completed. Additionally, a hybrid multi-scale loss function is used to learn plausible color features and guarantee temporal coherence for time-evolving volumes. Through comprehensive experiments, we validate the effectiveness of our method and show its superiority by comparing against state-of-the-arts. We show that with our method a novice user can easily create a diverse set of realistic translucent effects for 3D models (either static or dynamic), neglecting any cumbersome process of parameter tuning.}
 }
-
-
-
-
-
-
 
 
 @article{bai2020dynamic,
@@ -2154,12 +1524,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{takahashi2019video,
   author = {Takahashi, Tetsuya and Lin, Ming C.},
   title = {Video-guided real-to-virtual parameter transfer for viscous fluids},
@@ -2182,12 +1546,6 @@ li2023pacnerf,
   link={https://gamma.cs.unc.edu/ParameterTransfer/},
   abstract={In physically-based simulation, it is essential to choose appropriate material parameters to generate desirable simulation results. In many cases, however, choosing appropriate material parameters is very challenging, and often tedious trial-and-error parameter tuning steps are inevitable. In this paper, we propose a real-to-virtual parameter transfer framework that identifies material parameters of viscous fluids with example video data captured from real-world phenomena. Our method first extracts positional data of fluids and then uses the extracted data as a reference to identify the viscosity parameters, combining forward viscous fluid simulations and parameter optimization in an iterative process. We evaluate our method with a range of synthetic and real-world example data, and demonstrate that our method can identify the hidden physical variables and viscosity parameters. This set of recovered physical variables and parameters can then be effectively used in novel scenarios to generate viscous fluid behaviors visually consistent with the example videos.}
 }
-
-
-
-
-
-
 
 
 @article{hahn2019real,
@@ -2214,12 +1572,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{wang2019learning,
   author = {Wang, Tuanfeng Y. and Shao, Tianjia and Fu, Kai and Mitra, Niloy J.},
   title = {Learning an intrinsic garment space for interactive authoring of garment animation},
@@ -2242,12 +1594,6 @@ li2023pacnerf,
   link={https://geometry.cs.ucl.ac.uk/projects/2019/garment_authoring/},
   abstract={Authoring dynamic garment shapes for character animation on body motion is one of the fundamental steps in the CG industry. Established workflows are either time and labor consuming (i.e., manual editing on dense frames with controllers), or lack keyframe-level control (i.e., physically-based simulation). Not surprisingly, garment authoring remains a bottleneck in many production pipelines. Instead, we present a deep-learning-based approach for semi-automatic authoring of garment animation, wherein the user provides the desired garment shape in a selection of keyframes, while our system infers a latent representation for its motion-independent intrinsic parameters (e.g., gravity, cloth materials, etc.). Given new character motions, the latent representation allows to automatically generate a plausible garment animation at interactive rates. Having factored out character motion, the learned intrinsic garment space enables smooth transition between keyframes on a new motion sequence. Technically, we learn an intrinsic garment space with an motion-driven autoencoder network, where the encoder maps the garment shapes to the intrinsic space under the condition of body motions, while the decoder acts as a differentiable simulator to generate garment shapes according to changes in character body motion and intrinsic parameters. We evaluate our approach qualitatively and quantitatively on common garment types. Experiments demonstrate our system can significantly improve current garment authoring workflows via an interactive user interface. Compared with the standard CG pipeline, our system significantly reduces the ratio of required keyframes from 20% to 1 -- 2%.}
 }
-
-
-
-
-
-
 
 
 @article{min2019softcon,
@@ -2274,13 +1620,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
-
 @article{geilinger2020add,
   author = {Geilinger, Moritz and Hahn, David and Zehnder, Jonas and B\"{a}cher, Moritz and Thomaszewski, Bernhard and Coros, Stelian},
   title = {ADD: analytically differentiable dynamics for multi-body systems with frictional contact},
@@ -2302,13 +1641,6 @@ li2023pacnerf,
   link={https://arxiv.org/abs/2007.00987},
   abstract={We present a differentiable dynamics solver that is able to handle frictional contact for rigid and deformable objects within a unified framework. Through a principled mollification of normal and tangential contact forces, our method circumvents the main difficulties inherent to the non-smooth nature of frictional contact. We combine this new contact model with fully-implicit time integration to obtain a robust and efficient dynamics solver that is analytically differentiable. In conjunction with adjoint sensitivity analysis, our formulation enables gradient-based optimization with adaptive trade-offs between simulation accuracy and smoothness of objective function landscapes. We thoroughly analyse our approach on a set of simulation examples involving rigid bodies, visco-elastic materials, and coupled multi-body systems. We furthermore showcase applications of our differentiable simulator to parameter estimation for deformable objects, motion planning for robotic manipulation, trajectory optimization for compliant walking robots, as well as efficient self-supervised learning of control policies.}
 }
-
-
-
-
-
-
-
 
 
 @article{zhang2020learning,
@@ -2335,12 +1667,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{ren2022versatile,
   author = {Ren, Bo and Ye, Xiaohan and Pan, Zherong and Zhang, Taiyuan},
   title = {Versatile Control of Fluid-directed Solid Objects Using Multi-task Reinforcement Learning},
@@ -2365,12 +1691,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{numerow2024voronoi,
   title={Differentiable Voronoi Diagrams for Simulation of Cell-Based Mechanical Systems},
   author={Numerow, Logan and Li, Yue and Coros, Stelian and Thomaszewski, Bernhard},
@@ -2383,12 +1703,6 @@ li2023pacnerf,
   link={https://github.com/lnumerow-ethz/VoronoiCellSim},
   abstract={Navigating topological transitions in cellular mechanical systems is a significant challenge for existing simulation methods. While abstract models lack predictive capabilities at the cellular level, explicit network representations struggle with topology changes, and per-cell representations are computationally too demanding for large-scale simulations. To address these challenges, we propose a novel cell-centered approach based on differentiable Voronoi diagrams. Representing each cell with a Voronoi site, our method defines shape and topology of the interface network implicitly. In this way, we substantially reduce the number of problem variables, eliminate the need for explicit contact handling, and ensure continuous geometry changes during topological transitions. Closed-form derivatives of network positions facilitate simulation with Newton-type methods for a wide range of per-cell energies. Finally, we extend our differentiable Voronoi diagrams to enable coupling with arbitrary rigid and deformable boundaries. We apply our approach to a diverse set of examples, highlighting splitting and merging of cells as well as neighborhood changes. We illustrate applications to inverse problems by matching soap foam simulations to real-world images. Comparative analysis with explicit cell models reveals that our method achieves qualitatively comparable results at significantly faster computation times.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{chang2023licrom,
@@ -2413,12 +1727,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{li2023neural,
   author = {Li, Yue and Coros, Stelian and Thomaszewski, Bernhard},
   title = {Neural Metamaterial Networks for Nonlinear Material Design},
@@ -2440,12 +1748,6 @@ li2023pacnerf,
   link={https://github.com/liyuesolo/NeuralMetamaterialNetwork},
   abstract={Nonlinear metamaterials with tailored mechanical properties have applications in engineering, medicine, robotics, and beyond. While modeling their macromechanical behavior is challenging in itself, finding structure parameters that lead to ideal approximation of high-level performance goals is a challenging task. In this work, we propose Neural Metamaterial Networks (NMN)---smooth neural representations that encode the nonlinear mechanics of entire metamaterial families. Given structure parameters as input, NMN return continuously differentiable strain energy density functions, thus guaranteeing conservative forces by construction. Though trained on simulation data, NMN do not inherit the discontinuities resulting from topo-logical changes in finite element meshes. They instead provide a smooth map from parameter to performance space that is fully differentiable and thus well-suited for gradient-based optimization. On this basis, we formulate inverse material design as a nonlinear programming problem that leverages neural networks for both objective functions and constraints. We use this approach to automatically design materials with desired strain-stress curves, prescribed directional stiffness and Poisson ratio profiles. We furthermore conduct ablation studies on network nonlinearities and show the advantages of our approach compared to native-scale optimization.}
 }
-
-
-
-
-
-
 
 
 @article{grandia2023doc,
@@ -2472,17 +1774,11 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{zhang2021dynamic,
   author = {Zhang, Meng and Wang, Tuanfeng Y. and Ceylan, Duygu and Mitra, Niloy J.},
   title = {Dynamic neural garments},
   year = {2021},
-  category={cloth,avatar},
+  category={cloth, neural_solver, avatar},
   issue_date = {December 2021},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
@@ -2499,13 +1795,6 @@ li2023pacnerf,
   link={https://geometry.cs.ucl.ac.uk/projects/2021/DynamicNeuralGarments/},
   abstract={A vital task of the wider digital human effort is the creation of realistic garments on digital avatars, both in the form of characteristic fold patterns and wrinkles in static frames as well as richness of garment dynamics under avatars' motion. Existing workflow of modeling, simulation, and rendering closely replicates the physics behind real garments, but is tedious and requires repeating most of the workflow under changes to characters' motion, camera angle, or garment resizing. Although data-driven solutions exist, they either focus on static scenarios or only handle dynamics of tight garments. We present a solution that, at test time, takes in body joint motion to directly produce realistic dynamic garment image sequences. Specifically, given the target joint motion sequence of an avatar, we propose dynamic neural garments to synthesize plausible dynamic garment appearance from a desired viewpoint. Technically, our solution generates a coarse garment proxy sequence, learns deep dynamic features attached to this template, and neurally renders the features to produce appearance changes such as folds, wrinkles, and silhouettes. We demonstrate generalization behavior to both unseen motion and unseen camera views. Further, our network can be fine-tuned to adopt to new body shape and/or background images. We demonstrate our method on a wide range of real and synthetic garments. We also provide comparisons against existing neural rendering and image sequence translation approaches, and report clear quantitative and qualitative improvements. Project page: http://geometry.cs.ucl.ac.uk/projects/2021/DynamicNeuralGarments/}
 }
-
-
-
-
-
-
-
 
 
 @article{shacklett2023extensible,
@@ -2529,12 +1818,6 @@ li2023pacnerf,
   link={https://madrona-engine.github.io/},
   abstract={Training AI agents to perform complex tasks in simulated worlds requires millions to billions of steps of experience. To achieve high performance, today's fastest simulators for training AI agents adopt the idea of batch simulation: using a single simulation engine to simultaneously step many environments in parallel. We introduce a framework for productively authoring novel training environments (including custom logic for environment generation, environment time stepping, and generating agent observations and rewards) that execute as high-performance, GPU-accelerated batched simulators. Our key observation is that the entity-component-system (ECS) design pattern, popular for expressing CPU-side game logic today, is also well-suited for providing the structure needed for high-performance batched simulators. We contribute the first fully-GPU accelerated ECS implementation that natively supports batch environment simulation. We demonstrate how ECS abstractions impose structure on a training environment's logic and state that allows the system to efficiently manage state, amortize work, and identify GPU-friendly coherent parallel computations within and across different environments. We implement several learning environments in this framework, and demonstrate GPU speedups of two to three orders of magnitude over open source CPU baselines and 5-33× over strong baselines running on a 32-thread CPU. An implementation of the OpenAI hide and seek 3D environment written in our framework, which performs rigid body physics and ray tracing in each simulator step, achieves over 1.9 million environment steps per second on a single GPU.}
 }
-
-
-
-
-
-
 
 
 @article{xu2019learning,
@@ -2561,30 +1844,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
-@inproceedings{groth2018shapestacks,
-  title={Shapestacks: Learning vision-based physical intuition for generalised object stacking},
-  author={Groth, Oliver and Fuchs, Fabian B and Posner, Ingmar and Vedaldi, Andrea},
-  booktitle={Proceedings of the european conference on computer vision (eccv)},
-  pages={702--717},
-  year={2018},
-  category={rigidbody},
-  link={https://arxiv.org/abs/1804.08018},
-  abstract={Physical intuition is pivotal for intelligent agents to perform complex tasks. In this paper we investigate the passive acquisition of an intuitive understanding of physical principles as well as the active utilisation of this intuition in the context of generalised object stacking. To this end, we provide: a simulation-based dataset featuring 20,000 stack configurations composed of a variety of elementary geometric primitives richly annotated regarding semantics and structural stability. We train visual classifiers for binary stability prediction on the ShapeStacks data and scrutinise their learned physical intuition. Due to the richness of the training data our approach also generalises favourably to real-world scenarios achieving state-of-the-art stability prediction on a publicly available benchmark of block towers. We then leverage the physical intuition learned by our model to actively construct stable stacks and observe the emergence of an intuitive notion of stackability - an inherent object affordance - induced by the active stacking task. Our approach performs well even in challenging conditions where it considerably exceeds the stack height observed during training or in cases where initially unstable structures must be stabilised via counterbalancing.}
-}
-
-
-
-
-
-
-
-
 @inproceedings{shao2022transformer,
   title={Transformer with implicit edges for particle-based physics simulation},
   author={Shao, Yidi and Loy, Chen Change and Dai, Bo},
@@ -2599,13 +1858,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{wang2024neural,
   title={Neural Physical Simulation with Multi-Resolution Hash Grid Encoding},
   author={Wang, Haoxiang and Yu, Tao and Yang, Tianwei and Qiao, Hui and Dai, Qionghai},
@@ -2614,16 +1866,10 @@ li2023pacnerf,
   number={6},
   pages={5410--5418},
   year={2024},
-  category={fluid,neural_solver},
+  category={fluid, neural_representation, neural_solver},
   link={https://ojs.aaai.org/index.php/AAAI/article/view/28349},
   abstract={We explore the generalization of the implicit representation in the physical simulation task. Traditional time-dependent partial differential equations (PDEs) solvers for physical simulation often adopt the grid or mesh for spatial discretization, which is memory-consuming for high resolution and lack of adaptivity. Many implicit representations like local extreme machine or Siren are proposed but they are still too compact to suffer from limited accuracy in handling local details and a long time of convergence. We contribute a neural simulation framework based on multi-resolution hash grid representation to introduce hierarchical consideration of global and local information, simultaneously. Furthermore, we propose two key strategies: 1) a numerical gradient method for computing high-order derivatives with boundary conditions; 2) a range analysis sample method for fast neural geometry boundary sampling with dynamic topologies. Our method shows much higher accuracy and strong flexibility for various simulation problems: e.g., large elastic deformations, complex fluid dynamics, and multi-scale phenomena which remain challenging for existing neural physical solvers.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{liu2023fast,
@@ -2634,16 +1880,10 @@ li2023pacnerf,
   number={2},
   pages={1675--1682},
   year={2023},
-  category={fluid},
+  category={fluid, neural_solver},
   link={https://ojs.aaai.org/index.php/AAAI/article/view/25255},
   abstract={Recent works on learning-based frameworks for Lagrangian (i.e., particle-based) fluid simulation, though bypassing iterative pressure projection via efficient convolution operators, are still time-consuming due to excessive amount of particles. To address this challenge, we propose a dynamic multi-scale gridding method to reduce the magnitude of elements that have to be processed, by observing repeated particle motion patterns within certain consistent regions. Specifically, we hierarchically generate multi-scale micelles in Euclidean space by grouping particles that share similar motion patterns/characteristics based on super-light motion and scale estimation modules. With little internal motion variation, each micelle is modeled as a single rigid body with convolution only applied to a single representative particle. In addition, a distance-based interpolation is conducted to propagate relative motion message among micelles. With our efficient design, the network produces high visual fidelity fluid simulations with the inference time to be only 4.24 ms/frame (with 6K fluid particles), hence enables real-time human-computer interaction and animation. Experimental results on multiple datasets show that our work achieves great simulation acceleration with negligible prediction error increase.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{pan2024learning,
@@ -2660,12 +1900,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{qiao2021differentiable,
   title={Differentiable simulation of soft multi-body systems},
   author={Qiao, Yiling and Liang, Junbang and Koltun, Vladlen and Lin, Ming},
@@ -2677,12 +1911,6 @@ li2023pacnerf,
   link={https://github.com/YilingQiao/diff_fem},
   abstract={We present a method for differentiable simulation of soft articulated bodies. Our work enables the integration of differentiable physical dynamics into gradient-based pipelines. We develop a top-down matrix assembly algorithm within Projective Dynamics and derive a generalized dry friction model for soft continuum using a new matrix splitting strategy. We derive a differentiable control framework for soft articulated bodies driven by muscles, joint torques, or pneumatic tubes. The experiments demonstrate that our designs make soft body simulation more stable and realistic compared to other frameworks. Our method accelerates the solution of system identification problems by more than an order of magnitude, and enables efficient gradient-based learning of motion control with soft robots.}
 }
-
-
-
-
-
-
 
 
 @article{morton2018deep,
@@ -2698,12 +1926,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{qiao2020scalable,
   author  = {Qiao, Yi-Ling and Liang, Junbang and Koltun, Vladlen and Lin, Ming C.},
   title  = {Scalable Differentiable Physics for Learning and Control},
@@ -2716,31 +1938,17 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
-
 @inproceedings{
   winchenbach2024symmetric,
   title={Symmetric Basis Convolutions for Learning Lagrangian Fluid Mechanics},
   author={Rene Winchenbach and Nils Thuerey},
   booktitle={International Conference on Learning Representations},
   year={2024},
-  category={fluid},
+  category={fluid, neural_solver},
   url={https://openreview.net/forum?id=HKgRwNhI9R},
   link={https://github.com/tum-pbs/SFBC},
   abstract={Learning physical simulations has been an essential and central aspect of many recent research efforts in machine learning, particularly for Navier-Stokes-based fluid mechanics. Classic numerical solvers have traditionally been computationally expensive and challenging to use in inverse problems, whereas Neural solvers aim to address both concerns through machine learning. We propose a general formulation for continuous convolutions using separable basis functions as a superset of existing methods and evaluate a large set of basis functions in the context of (a) a compressible 1D SPH simulation, (b) a weakly compressible 2D SPH simulation, and (c) an incompressible 2D SPH Simulation. We demonstrate that even and odd symmetries included in the basis functions are key aspects of stability and accuracy. Our broad evaluation shows that Fourier-based continuous convolutions outperform all other architectures regarding accuracy and generalization. Finally, using these Fourier-based networks, we show that prior inductive biases, such as window functions, are no longer necessary. An implementation of our approach, as well as complete datasets and solver implementations, is available at https://github.com/tum-pbs/SFBC.}
 }
-
-
-
-
-
-
-
 
 
 @article{holzschuh2023solving,
@@ -2749,16 +1957,10 @@ li2023pacnerf,
   journal={Advances in Neural Information Processing Systems},
   volume={36},
   year={2023},
-  category={fluid,neural_solver},
+  category={fluid, neural_solver, optimization},
   link={https://github.com/tum-pbs/SMDP},
   abstract={We propose to solve inverse problems involving the temporal evolution of physics systems by leveraging recent advances from diffusion models. Our method moves the system's current state backward in time step by step by combining an approximate inverse physics simulator and a learned correction function. A central insight of our work is that training the learned correction with a single-step loss is equivalent to a score matching objective, while recursively predicting longer parts of the trajectory during training relates to maximum likelihood training of a corresponding probability flow. We highlight the advantages of our algorithm compared to standard denoising score matching and implicit score matching, as well as fully learned baselines for a wide range of inverse physics problems. The resulting inverse solver has excellent accuracy and temporal stability and, in contrast to other learned inverse solvers, allows for sampling the posterior of the solutions.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{oh2021two,
@@ -2770,18 +1972,11 @@ li2023pacnerf,
   pages={355--365},
   year={2021},
   category={fluid},
+  tag={temporal_interpolation},
   organization={Wiley Online Library},
   link={https://onlinelibrary.wiley.com/doi/10.1111/cgf.142638},
   abstract={Abstract In this paper, we propose a two‐step temporal interpolation network using forward advection to generate smoke simulation efficiently. By converting a low frame rate smoke simulation computed with a large time step into a high frame rate smoke simulation through inference of temporal interpolation networks, the proposed method can efficiently generate smoke simulation with a high frame rate and low computational costs. The first step of the proposed method is optical flow‐based temporal interpolation using deep neural networks (DNNs) for two given smoke animation frames. In the next step, we compute temporary smoke frames with forward advection, a physical computation with a low computational cost. We then interpolate between the results of the forward advection and those of the first step to generate more accurate and enhanced interpolated results. We performed quantitative analyses of the results generated by the proposed method and previous temporal interpolation methods. Furthermore, we experimentally compared the performance of the proposed method with previous methods using DNNs for smoke simulation. We found that the results generated by the proposed method are more accurate and closer to the ground truth smoke simulation than those generated by the previous temporal interpolation methods. We also confirmed that the proposed method generates smoke simulation results more efficiently with lower computational costs than previous smoke simulation methods using DNNs.}
 }
-
-
-
-
-
-
-
-
 
 
 @inproceedings{li2023d,
@@ -2792,18 +1987,11 @@ li2023pacnerf,
   number={7},
   pages={e14937},
   year={2023},
-  category={cloth},
+  category={cloth, neural_solver, avatar},
   organization={Wiley Online Library},
   link={https://min-tang.github.io/home/DCloth/},
   abstract={Abstract We propose a three‐stage network that utilizes a skinning‐based model to accurately predict dynamic cloth deformation. Our approach decomposes cloth deformation into three distinct components: static, coarse dynamic, and wrinkle dynamic components. To capture these components, we train our three‐stage network accordingly. In the first stage, the static component is predicted by constructing a static skinning model that incorporates learned joint increments and skinning weight increments. Then, in the second stage, the coarse dynamic component is added to the static skinning model by incorporating serialized skeleton information. Finally, in the third stage, the mesh sequence stage refines the prediction by incorporating the wrinkle dynamic component using serialized mesh information. We have implemented our network and used it in a Unity game scene, enabling real‐time prediction of cloth dynamics. Our implementation achieves impressive prediction speeds of approximately 3.65ms using an NVIDIA GeForce RTX 3090 GPU and 9.66ms on an Intel i7‐7700 CPU. Compared to SOTA methods, our network excels in accurately capturing fine dynamic cloth deformations.}
 }
-
-
-
-
-
-
-
 
 
 @INPROCEEDINGS{hu2019chain,
@@ -2822,12 +2010,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{deng2023vortex,
   title={Learning Vortex Dynamics for Fluid Inference and Prediction},
   author={Yitong Deng and Hong-Xing Yu and Jiajun Wu and Bo Zhu},
@@ -2840,19 +2022,13 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{xiong2023neural,
   title = {Neural vortex method: From finite Lagrangian particles to infinite dimensional Eulerian dynamics},
   journal = {Computers \& Fluids},
   volume = {258},
   pages = {105811},
   year = {2023},
-  category={fluid},
+  category={fluid, neural_solver},
   issn = {0045-7930},
   doi = {https://doi.org/10.1016/j.compfluid.2023.105811},
   url = {https://www.sciencedirect.com/science/article/pii/S0045793023000361},
@@ -2860,12 +2036,6 @@ li2023pacnerf,
   keywords = {Vortex method, Neural network, Lagrangian dynamics, Eulerian dynamics},
   link={https://arxiv.org/abs/2006.04178}
 }
-
-
-
-
-
-
 
 
 @inproceedings{xian2023fluidlab,
@@ -2878,13 +2048,6 @@ li2023pacnerf,
   link={https://fluidlab2023.github.io/},
   abstract={Humans manipulate various kinds of fluids in their everyday life: creating latte art, scooping floating objects from water, rolling an ice cream cone, etc. Using robots to augment or replace human labors in these daily settings remain as a challenging task due to the multifaceted complexities of fluids. Previous research in robotic fluid manipulation mostly consider fluids governed by an ideal, Newtonian model in simple task settings (e.g., pouring). However, the vast majority of real-world fluid systems manifest their complexities in terms of the fluid's complex material behaviors and multi-component interactions, both of which were well beyond the scope of the current literature. To evaluate robot learning algorithms on understanding and interacting with such complex fluid systems, a comprehensive virtual platform with versatile simulation capabilities and well-established tasks is needed. In this work, we introduce FluidLab, a simulation environment with a diverse set of manipulation tasks involving complex fluid dynamics. These tasks address interactions between solid and fluid as well as among multiple fluids. At the heart of our platform is a fully differentiable physics simulator, FluidEngine, providing GPU-accelerated simulations and gradient calculations for various material types and their couplings. We identify several challenges for fluid manipulation learning by evaluating a set of reinforcement learning and trajectory optimization methods on our platform. To address these challenges, we propose several domain-specific optimization schemes coupled with differentiable physics, which are empirically shown to be effective in tackling optimization problems featured by fluid system's non-convex and non-smooth properties. Furthermore, we demonstrate reasonable sim-to-real transfer by deploying optimized trajectories in real-world settings.}
 }
-
-
-
-
-
-
-
 
 
 @article{ladicky2015data,
@@ -2911,12 +2074,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{franz2023learning,
 	title={Learning to Estimate Single-View Volumetric Flow Motions without 3D Supervision},
 	author={Erik Franz and Barbara Solenthaler and Nils Thuerey},
@@ -2928,12 +2085,6 @@ li2023pacnerf,
   link={https://ge.in.tum.de/publications/2023-franz-neuralglobtrans/},
   abstract={We address the challenging problem of jointly inferring the 3D flow and volumetric densities moving in a fluid from a monocular input video with a deep neural network. Despite the complexity of this task, we show that it is possible to train the corresponding networks without requiring any 3D ground truth for training. In the absence of ground truth data we can train our model with observations from real-world capture setups instead of relying on synthetic reconstructions. We make this unsupervised training approach possible by first generating an initial prototype volume which is then moved and transported over time without the need for volumetric supervision. Our approach relies purely on image-based losses, an adversarial discriminator network, and regularization. Our method can estimate long-term sequences in a stable manner, while achieving closely matching targets for inputs such as rising smoke plumes.}
 }
-
-
-
-
-
-
 
 
 @article{xie2024dynamic,
@@ -2950,12 +2101,6 @@ li2023pacnerf,
   link={https://link.springer.com/article/10.1007/s41095-023-0338-4},
   abstract={Learning and inferring underlying motion patterns of captured 2D scenes and then re-creating dynamic evolution consistent with the real-world natural phenomena have high appeal for graphics and animation. To bridge the technical gap between virtual and real environments, we focus on the inverse modeling and reconstruction of visually consistent and property-verifiable oceans, taking advantage of deep learning and differentiable physics to learn geometry and constitute waves in a self-supervised manner. First, we infer hierarchical geometry using two networks, which are optimized via the differentiable renderer. We extract wave components from the sequence of inferred geometry through a network equipped with a differentiable ocean model. Then, ocean dynamics can be evolved using the reconstructed wave components. Through extensive experiments, we verify that our new method yields satisfactory results for both geometry reconstruction and wave estimation. Moreover, the new framework has the inverse modeling potential to facilitate a host of graphics applications, such as the rapid production of physically accurate scene animation and editing guided by real ocean scenes.}
 }
-
-
-
-
-
-
 
 
 @article{Stuyck2023DiffXPBD,
@@ -2981,12 +2126,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{tompson2017accelerating,
   title={Accelerating eulerian fluid simulation with convolutional networks},
   author={Tompson, Jonathan and Schlachter, Kristofer and Sprechmann, Pablo and Perlin, Ken},
@@ -3000,18 +2139,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{chu2017data,
   author = {Chu, Mengyu and Thuerey, Nils},
   title = {Data-driven synthesis of smoke flows with CNN-based feature descriptors},
   year = {2017},
   category={fluid},
-  tag={cnn},
+  tag={cnn, super_resolution},
   issue_date = {August 2017},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
@@ -3028,13 +2161,6 @@ li2023pacnerf,
   link={https://ge.in.tum.de/publications/2017-sig-chu/},
   abstract={We present a novel data-driven algorithm to synthesize high resolution flow simulations with reusable repositories of space-time flow data. In our work, we employ a descriptor learning approach to encode the similarity between fluid regions with differences in resolution and numerical viscosity. We use convolutional neural networks to generate the descriptors from fluid data such as smoke density and flow velocity. At the same time, we present a deformation limiting patch advection method which allows us to robustly track deformable fluid regions. With the help of this patch advection, we generate stable space-time data sets from detailed fluids for our repositories. We can then use our learned descriptors to quickly localize a suitable data set when running a new simulation. This makes our approach very efficient, and resolution independent. We will demonstrate with several examples that our method yields volumes with very high effective resolutions, and non-dissipative small scale details that naturally integrate into the motions of the underlying flow.}
 }
-
-
-
-
-
-
-
 
 
 @article{tang2023physics,
@@ -3056,12 +2182,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{kim2022deep,
   author = {Kim, Byungsoo and Huang, Xingchang and Wuelfroth, Laura and Tang, Jingwei and Cordonnier, Guillaume and Gross, Markus and Solenthaler, Barbara},
   title = {Deep Reconstruction of 3D Smoke Densities from Artist Sketches},
@@ -3081,12 +2201,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{holl2020learningto,
   title={Learning to Control PDEs with Differentiable Physics},
   author={Philipp Holl and Vladlen Koltun and Nils Thuerey},
@@ -3101,12 +2215,6 @@ li2023pacnerf,
   abstract={Predicting outcomes and planning interactions with the physical world are long-standing goals for machine learning. A variety of such tasks involves continuous physical systems, which can be described by partial differential equations (PDEs) with many degrees of freedom. Existing methods that aim to control the dynamics of such systems are typically limited to relatively short time frames or a small number of interaction parameters. We present a novel hierarchical predictor-corrector scheme which enables neural networks to learn to understand and control complex nonlinear physical systems over long time frames. We propose to split the problem into two distinct tasks: planning and control. To this end, we introduce a predictor network that plans optimal trajectories and a control network that infers the corresponding control parameters. Both stages are trained end-to-end using a differentiable PDE solver. We demonstrate that our method successfully develops an understanding of complex physical systems and learns to control them for tasks involving PDEs such as the incompressible Navier-Stokes equations.},
   project_kind={code_repo}
 }
-
-
-
-
-
-
 
 
 @inproceedings{pfaff2020learningmesh,
@@ -3125,12 +2233,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{huang2021modelpredictive,
   title={Model-Predictive Control of Blood Suction for Surgical Hemostasis using Differentiable Fluid Simulations},
   author={Jing-bin Huang and Fei Liu and Florian Richter and Michael C. Yip},
@@ -3145,12 +2247,6 @@ li2023pacnerf,
   abstract={Recent developments in surgical robotics have led to new advancements in the automation of surgical sub-tasks such as suturing, soft tissue manipulation, tissue tensioning and cutting. However, integration of dynamics to optimize these control policies for the variety of scenes encountered in surgery remains unsolved. Towards this effort, we investigate the integration of differentiable fluid dynamics to optimizing a suction tool’s trajectory to clear the surgical field from blood as fast as possible. The fully differentiable fluid dynamics is integrated with a novel suction model for effective model predictive control of the tool. The differentiability of the fluid model is crucial because we utilize the gradients of the fluid states with respect to the suction tool position to optimize the trajectory. Through a series of experiments, we demonstrate how, by incorporating fluid models, the trajectories generated by our method can perform as good as or better than handcrafted human-intuitive suction policies. We also show that our method is adaptable and can work in different cavity conditions while using a single handcrafted strategy fails.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{heiden2021disectdifferentiable,
@@ -3168,12 +2264,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{yang2021learningto,
   title={Learning to Propagate Interaction Effects for Modeling Deformable Linear Objects Dynamics},
   author={Yuxuan Yang and Johannes A. Stork and Todor Stoyanov},
@@ -3187,12 +2277,6 @@ li2023pacnerf,
   abstract={Modeling dynamics of deformable linear objects (DLOs), such as cables, hoses, sutures, and catheters, is an important and challenging problem for many robotic manipulation applications. In this paper, we propose the first method to model and learn full 3D dynamics of DLOs from data. Our approach is capable of capturing the complex twisting and bending dynamics of DLOs and allows local effects to propagate globally. To this end, we adapt the interaction network (IN) dynamics learning method for capturing the interaction between neighboring segments in a DLO and augment it with a recurrent model for propagating interaction effects along the length of a DLO. For learning twisting and bending dynamics in 3D, we also introduce a new suitable representation of DLO segments and their relationships. Unlike the original IN method, our model learns to propagate the effects of local interaction between neighboring segments to each segment in the chain within a single time step, without the need for iterated propagation steps. Evaluation of our model with synthetic and newly collected real-world data shows better accuracy and generalization in short-term and long- term predictions than the current state of the art. We further integrate our learned model in a model predictive control scheme and use it to successfully control the shape of a DLO. Our implementation is available at https://gitsvn-nt.oru.se/ammlab&#x2013;public/in&#x2013;bilstm.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{heiden2021neuralsimaugmenting,
@@ -3210,18 +2294,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{zheng2021deepemulator,
   title={A Deep Emulator for Secondary Motion of 3D Characters},
   author={Mianlun Zheng and Yi Zhou and Duygu Ceylan and Jernej Barbič},
   booktitle={2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2021},
-  category={softbody},
+  category={softbody, neural_solver, avatar},
   doi={10.1109/cvpr46437.2021.00587},
   link={https://doi.org/10.1109/cvpr46437.2021.00587},
   project={https://github.com/ZhengMianlun/deep_emulator},
@@ -3229,12 +2307,6 @@ li2023pacnerf,
   abstract={Fast and light-weight methods for animating 3D characters are desirable in various applications such as computer games. We present a learning-based approach to enhance skinning-based animations of 3D characters with vivid secondary motion effects. We design a neural network that encodes each local patch of a character simulation mesh where the edges implicitly encode the internal forces between the neighboring vertices. The network emulates the ordinary differential equations of the character dynamics, predicting new vertex positions from the current accelerations, velocities and positions. Being a local method, our network is independent of the mesh topology and generalizes to arbitrarily shaped 3D character meshes at test time. We further represent per-vertex constraints and material properties such as stiffness, enabling us to easily adjust the dynamics in different parts of the mesh. We evaluate our method on various character meshes and complex motion sequences. Our method can be over 30 times more efficient than ground-truth physically based simulation, and outperforms alternative solutions that provide fast approximations.},
   project_kind={code_repo}
 }
-
-
-
-
-
-
 
 
 @article{shao2021accuratelysolving,
@@ -3252,18 +2324,13 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{ma2021diffaqua,
   title={DiffAqua},
   author={Pingchuan Ma and Tao Du and John Z. Zhang and Kui Wu and Andrew Spielberg and Robert K. Katzschmann and Wojciech Matusik},
   journal={ACM Transactions on Graphics},
   year={2021},
-  category={softbody,differentiable_simulation},
+  category={softbody, differentiable_simulation, optimization, embodied_ai},
+  tag={soft_robot, underwater_robot, robot_control},
   doi={10.1145/3450626.3459832},
   link={https://doi.org/10.1145/3450626.3459832},
   project={https://diffaqua.csail.mit.edu/},
@@ -3271,12 +2338,6 @@ li2023pacnerf,
   abstract={The computational design of soft underwater swimmers is challenging because of the high degrees of freedom in soft-body modeling. In this paper, we present a differentiable pipeline for co-designing a soft swimmer's geometry and controller. Our pipeline unlocks gradient-based algorithms for discovering novel swimmer designs more efficiently than traditional gradient-free solutions. We propose Wasserstein barycenters as a basis for the geometric design of soft underwater swimmers since it is differentiable and can naturally interpolate between bio-inspired base shapes via optimal transport. By combining this design space with differentiable simulation and control, we can efficiently optimize a soft underwater swimmer's performance with fewer simulations than baseline methods. We demonstrate the efficacy of our method on various design problems such as fast, stable, and energy-efficient swimming and demonstrate applicability to multi-objective design.},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @inproceedings{ma2022learninglatent,
@@ -3291,12 +2352,6 @@ li2023pacnerf,
   openalex_id={W4285102216},
   abstract={Manipulating deformable objects, such as ropes and clothing, is a long-standing challenge in robotics, because of their large degrees of freedom, complex non-linear dynamics, and self-occlusion in visual perception. The key difficulty is a suitable representation, rich enough to capture the object shape, dynamics for manipulation and yet simple enough to be estimated reliably from visual observations. This work aims to learn latent Graph dynamics for DefOrmable Object Manipulation (G-DOOM). G-DOOM approximates a deformable object as a sparse set of interacting keypoints, which are extracted automatically from images via unsupervised learning. It learns a graph neural network that captures abstractly the geometry and the interaction dynamics of the keypoints. To handle object self-occlusion, G-DOOM uses a recurrent neural network to track the keypoints over time and condition their interactions on the history. We then train the resulting recurrent graph dynamics model through contrastive learning in a high-fidelity simulator. For manipulation planning, G-DOOM reasons explicitly about the learned dynamics model through model-predictive control applied at each keypoint. Preliminary experiments of G-DOOM on a set of challenging rope and cloth manipulation tasks indicate strong performance, compared with state-of-the-art methods. Although trained in a simulator, G-DOOM transfers directly to a real robot for both rope and cloth manipulation <sup xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">1</sup> <sup xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">1</sup> Demo video available online at https://youtu.be/oCfbNMx2sQI.}
 }
-
-
-
-
-
-
 
 
 @article{li2022fluidictopology,
@@ -3315,30 +2370,18 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{lou2022learningobject,
   title={Learning Object Relations with Graph Neural Networks for Target-Driven Grasping in Dense Clutter},
   author={Xibai Lou and Yang Yang and Changhyun Choi},
   booktitle={2022 International Conference on Robotics and Automation (ICRA)},
   year={2022},
-  category={rigidbody},
-  tag={gnn},
+  category={rigidbody, control, embodied_ai},
+  tag={gnn, robot_control},
   doi={10.1109/icra46639.2022.9811601},
   link={https://doi.org/10.1109/icra46639.2022.9811601},
   openalex_id={W4221153162},
   abstract={Robots in the real world frequently come across identical objects in dense clutter. When evaluating grasp poses in these scenarios, a target-driven grasping system requires knowledge of spatial relations between scene objects (e.g., proximity, adjacency, and occlusions). To efficiently complete this task, we propose a target-driven grasping system that simultaneously considers object relations and predicts 6-DoF grasp poses. A densely cluttered scene is first formulated as a grasp graph with nodes representing object geometries in the grasp coordinate frame and edges indicating spatial relations between the objects. We design a Grasp Graph Neural Network (G2N2) that evaluates the grasp graph and finds the most feasible 6-DoF grasp pose for a target object. Additionally, we develop a shape completion-assisted grasp pose sampling method that improves sample quality and consequently grasping efficiency. We compare our method against several baselines in both simulated and real settings. In real-world experiments with novel objects, our approach achieves a 77.78% grasping accuracy in densely cluttered scenarios, surpassing the best-performing baseline by more than 15%. Supplementary material is available at https://sites.google.com/umn.edu/graph-grasping.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{zhu2022learningto,
@@ -3353,12 +2396,6 @@ li2023pacnerf,
   openalex_id={W4221153262},
   abstract={Vision-based tactile sensors typically utilize a deformable elastomer and a camera mounted above to provide high-resolution image observations of contacts. Obtaining accurate volumetric meshes for the deformed elastomer can provide direct contact information and benefit robotic grasping and manipulation. This paper focuses on learning to synthesize the volumetric mesh of the elastomer based on the image imprints acquired from vision-based tactile sensors. Synthetic image-mesh pairs and real-world images are gathered from 3D finite element methods (FEM) and physical sensors, respectively. A graph neural network (GNN) is introduced to learn the image-to-mesh mappings with supervised learning. A self-supervised adaptation method and image augmentation techniques are proposed to transfer networks from simulation to reality, from primitive contacts to unseen contacts, and from one sensor to another. Using these learned and adapted networks, our proposed method can accurately reconstruct the deformation of the real-world tactile sensor elastomer in various domains, as indicated by the quantitative and qualitative results.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{heiden2022probabilisticinference,
@@ -3376,12 +2413,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{shi2022robocraftlearning,
   title={RoboCraft: Learning to See, Simulate, and Shape Elasto-Plastic Objects with Graph Networks},
   author={Haochen Shi and Huazhe Xu and Zhiao Huang and Yunzhu Li and Jiajun Wu},
@@ -3394,12 +2425,6 @@ li2023pacnerf,
   openalex_id={W4229451778},
   abstract={Modeling and manipulating elasto-plastic objects are essential capabilities for robots to perform complex industrial and household interaction tasks (e.g., stuffing dumplings, rolling sushi, and making pottery). However, due to the high degree of freedom of elasto-plastic objects, significant challenges exist in virtually every aspect of the robotic manipulation pipeline, e.g., representing the states, modeling the dynamics, and synthesizing the control signals. We propose to tackle these challenges by employing a particle-based representation for elasto-plastic objects in a model-based planning framework. Our system, RoboCraft, only assumes access to raw RGBD visual observations. It transforms the sensing data into particles and learns a particle-based dynamics model using graph neural networks (GNNs) to capture the structure of the underlying system. The learned model can then be coupled with model-predictive control (MPC) algorithms to plan the robot's behavior. We show through experiments that with just 10 minutes of real-world robotic interaction data, our robot can learn a dynamics model that can be used to synthesize control signals to deform elasto-plastic objects into various target shapes, including shapes that the robot has never encountered before. We perform systematic evaluations in both simulation and the real world to demonstrate the robot's manipulation capabilities and ability to generalize to a more complex action space, different tool shapes, and a mixture of motion modes. We also conduct comparisons between RoboCraft and untrained human subjects controlling the gripper to manipulate deformable objects in both simulation and the real world. Our learned modelbased planning framework is comparable to and sometimes better than human subjects on the tested tasks. 1}
 }
-
-
-
-
-
-
 
 
 @inproceedings{lv2022sagcisystem,
@@ -3415,12 +2440,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{schaff2022softrobots,
   title={Soft Robots Learn to Crawl: Jointly Optimizing Design and Control with Sim-to-Real Transfer},
   author={Charles Schaff and Audrey Sedal and Matthew R. Walter},
@@ -3433,12 +2452,6 @@ li2023pacnerf,
   openalex_id={W4283784756},
   abstract={This work provides a complete framework for the simulation, co-optimization, and sim-to-real transfer of the design and control of soft legged robots. The compliance of soft robots provides a form of "mechanical intelligence"-the ability to passively exhibit behaviors that would otherwise be difficult to program. Exploiting this capacity requires careful consideration of the coupling between mechanical design and control. Cooptimization provides a promising means to generate sophisticated soft robots by reasoning over this coupling. However, the complex nature of soft robot dynamics makes it difficult to achieve a simulation environment that is both sufficiently accurate to allow for sim-to-real transfer and fast enough for contemporary co-optimization algorithms. In this work, we describe a modularized model order reduction algorithm that significantly improves the efficiency of finite element simulation, while preserving the accuracy required to successfully learn effective soft robot design-control pairs that transfer to reality. We propose a reinforcement learning-based framework for co-optimization and demonstrate successful optimization, construction, and zero-shot sim-to-real transfer of several soft crawling robots. Our learned robot outperforms an expert-designed crawling robot, showing that our approach can generate novel, high-performing designs even in well-understood domains.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{preiss2022trackingfast,
@@ -3456,12 +2469,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{shen2022acidaction,
   title={ACID: Action-Conditional Implicit Visual Dynamics for Deformable Object Manipulation},
   author={Bokui Shen and Zhenyu Jiang and Christopher Choy and Silvio Savarese and Leonidas Guibas and Anima Anandkumar and Yuke Zhu},
@@ -3474,12 +2481,6 @@ li2023pacnerf,
   openalex_id={W4229002925},
   abstract={Manipulating volumetric deformable objects in the real world, like plush toys and pizza dough, bring substantial challenges due to infinite shape variations, non-rigid motions, and partial observability. We introduce ACID, an actionconditional visual dynamics model for volumetric deformable objects based on structured implicit neural representations. ACID integrates two new techniques: implicit representations for action-conditional dynamics and geodesics-based contrastive learning. To represent deformable dynamics from partial RGB-D observations, we learn implicit representations of occupancy and flow-based forward dynamics. To accurately identify state change under large non-rigid deformations, we learn a correspondence embedding field through a novel geodesics-based contrastive loss. To evaluate our approach, we develop a simulation framework for manipulating complex deformable shapes in realistic scenes and a benchmark containing over 17,000 action trajectories with six types of plush toys and 78 variants. Our model achieves the best performance in geometry, correspondence, and dynamics predictions over existing approaches. The ACID dynamics models are successfully employed to goal-conditioned deformable manipulation tasks, resulting in a 30% increase in task success rate over the strongest baseline. For more results and information, please visit https://b0ku1.github.io/acid/.}
 }
-
-
-
-
-
-
 
 
 @article{arnavaz2022differentiabledepth,
@@ -3495,12 +2496,6 @@ li2023pacnerf,
   abstract={Abstract In this work, we present a novel approach for calibrating material model parameters for soft body simulations using real data. We use a fully differentiable pipeline, combining a differentiable soft body simulator and differentiable depth rendering, which permits fast gradient‐based optimizations. Our method requires no data pre‐processing, and minimal experimental set‐up, as we directly minimize the L2‐norm between raw LIDAR scans and rendered simulation states. In essence, we provide the first marker‐free approach for calibrating a soft‐body simulator to match observed real‐world deformations. Our approach is inexpensive as it solely requires a consumer‐level LIDAR sensor compared to acquiring a professional marker‐based motion capture system. We investigate the effects of different material parameterizations and evaluate convergence for parameter optimization in both single and multi‐material scenarios of varying complexity. Finally, we show that our set‐up can be extended to optimize for dynamic behaviour as well.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{chen2022virtualelastic,
@@ -3519,18 +2514,13 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{grigorev2023hoodhierarchical,
   title={HOOD: Hierarchical Graphs for Generalized Modelling of Clothing Dynamics},
   author={Artur Grigorev and Michael J. Black and Otmar Hilliges},
   booktitle={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2023},
-  category={cloth},
+  category={cloth, neural_solver},
+  tag={gnn},
   doi={10.1109/cvpr52729.2023.01627},
   link={https://doi.org/10.1109/cvpr52729.2023.01627},
   project={https://dolorousrtur.github.io/hood/?trk=public_post_comment-text},
@@ -3538,12 +2528,6 @@ li2023pacnerf,
   abstract={We propose a method that leverages graph neural networks, multi-level message passing, and unsupervised training to enable efficient prediction of realistic clothing dynamics. Whereas existing methods based on linear blend skinning must be trained for specific garments, our method, called HOOD, is agnostic to body shape and applies to tight-fitting garments as well as loose, free-flowing clothing. Furthermore, HOOD handles changes in topology (e.g., garments with buttons or zippers) and material properties at inference time. As one key contribution, we propose a hierarchical message-passing scheme that efficiently propagates stiff stretching modes while preserving local detail. We empirically show that HOOD outperforms strong baselines quantitatively and that its results are perceived as more realistic than state-of-the-art methods.},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @article{rodrguezpardo2023howwill,
@@ -3562,18 +2546,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{zhao2023learninganchor,
   title={Learning Anchor Transformations for 3D Garment Animation},
   author={Fang Zhao and Zekun Li and Shaoli Huang and Junwu Weng and Tianfei Zhou and Guo-Sen Xie and Jue Wang and Ying Shan},
   booktitle={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2023},
-  category={cloth},
+  category={cloth, neural_solver, avatar},
   doi={10.1109/cvpr52729.2023.00055},
   link={https://doi.org/10.1109/cvpr52729.2023.00055},
   project={https://semanticdh.github.io/AnchorDEF},
@@ -3583,18 +2561,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{li2023swingarspectrum,
   title={SwinGar: Spectrum-Inspired Neural Dynamic Deformation for Free-Swinging Garments},
   author={Tianxing Li and Rui Shi and Qing Zhu and Takashi Kanai},
   journal={IEEE Transactions on Visualization and Computer Graphics},
   year={2023},
-  category={cloth},
+  category={cloth, neural_solver},
   doi={10.1109/tvcg.2023.3346055},
   link={https://doi.org/10.1109/tvcg.2023.3346055},
   openalex_id={W4390120214},
@@ -3602,18 +2574,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{shao2023towardsmulti,
   title={Towards Multi-Layered 3D Garments Animation},
   author={Yidi Shao and Chen Change Loy and Bo Dai},
   booktitle={2023 IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2023},
-  category={cloth},
+  category={cloth, neural_solver, contact},
   doi={10.1109/iccv51070.2023.01321},
   link={https://doi.org/10.1109/iccv51070.2023.01321},
   project={https://mmlab-ntu.github.io/project/layersnet},
@@ -3621,12 +2587,6 @@ li2023pacnerf,
   abstract={Mimicking realistic dynamics in 3D garment animations is a challenging task due to the complex nature of multi-layered garments and the variety of outer forces involved. Existing approaches mostly focus on single-layered garments driven by only human bodies and struggle to handle general scenarios. In this paper, we propose a novel data-driven method, called LayersNet, to model garment-level animations as particle-wise interactions in a micro physics system. We improve simulation efficiency by representing garments as patch-level particles in a two-level structural hierarchy. Moreover, we introduce a novel Rotation Equivalent Transformation with Rotation Invariant Attention that leverage the rotation invariance and additivity of physics systems to better model outer forces. To verify the effectiveness of our approach and bridge the gap between experimental environments and real-world scenarios, we introduce a new challenging dataset, D-LAYERS, containing 700K frames of dynamics of 4,900 combinations of multi-layered garments driven by human bodies and randomly sampled wind. Our LayersNet achieves superior performance both quantitatively and qualitatively. Project page: www.mmlab-ntu.com/project/layersnet/index.html.},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @inproceedings{lee2023aquariumfully,
@@ -3645,18 +2605,13 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{mayr2023boundarygraph,
   title={Boundary Graph Neural Networks for 3D Simulations},
   author={Andreas Mayr and Sebastian Lehner and Arno Mayrhofer and Christoph Kloss and Sepp Hochreiter and J. Brandstetter},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2023},
-  category={fluid},
+  category={fluid, neural_solver},
+  tag={gnn},
   doi={10.1609/aaai.v37i8.26092},
   link={https://doi.org/10.1609/aaai.v37i8.26092},
   project={https://ml-jku.github.io/bgnn},
@@ -3664,12 +2619,6 @@ li2023pacnerf,
   abstract={The abundance of data has given machine learning considerable momentum in natural sciences and engineering, though modeling of physical processes is often difficult. A particularly tough problem is the efficient representation of geometric boundaries. Triangularized geometric boundaries are well understood and ubiquitous in engineering applications. However, it is notoriously difficult to integrate them into machine learning approaches due to their heterogeneity with respect to size and orientation. In this work, we introduce an effective theory to model particle-boundary interactions, which leads to our new Boundary Graph Neural Networks (BGNNs) that dynamically modify graph structures to obey boundary conditions. The new BGNNs are tested on complex 3D granular flow processes of hoppers, rotating drums and mixers, which are all standard components of modern industrial machinery but still have complicated geometry. BGNNs are evaluated in terms of computational efficiency as well as prediction accuracy of particle flows and mixing entropies. BGNNs are able to accurately reproduce 3D granular flows within simulation uncertainties over hundreds of thousands of simulation timesteps. Most notably, in our experiments, particles stay within the geometric objects without using handcrafted conditions or restrictions.},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @article{rosset2023interactivedesign,
@@ -3688,12 +2637,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{huang2023defgraspnetsgrasp,
   title={DefGraspNets: Grasp Planning on 3D Fields with Graph Neural Nets},
   author={Isabella Huang and Yashraj Narang and Růžena Bajcsy and Fábio Ramos and Tucker Hermans and Dieter Fox},
@@ -3710,12 +2653,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{lee2023differentiabledynamics,
   title={Differentiable Dynamics Simulation Using Invariant Contact Mapping and Damped Contact Force},
   author={Minji Lee and Jeong Min Lee and Dongjun Lee},
@@ -3727,12 +2664,6 @@ li2023pacnerf,
   openalex_id={W4383108951},
   abstract={The gradient of typical differentiable simulation is uninformative for two reasons: 1) non-smoothness in contact dynamics not considered properly, and 2) excessive local minima generated from the smoothing procedure. To tackle this issue, we first propose differentiable contact dynamics with an invariant contact set and coordinate differentiation using a signed distance function (SDF). Also, to eliminate the undesirable jittering caused by the smoothing procedure, which induces extra local minima, and to achieve a smooth and informative gradient, we further endow our framework with a novel damped contact model. Various optimization problems are implemented to demonstrate the usefulness and efficacy of our differentiable framework.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{wang2023dynamicresolution,
@@ -3751,29 +2682,17 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{longhini2023elasticcontext,
   title={Elastic Context: Encoding Elasticity for Data-driven Models of Textiles Elastic Context: Encoding Elasticity for Data-driven Models of Textiles},
   author={Alberta Longhini and Marco Moletta and Alfredo Reichlin and Michael C. Welle and Alexander Kravberg and Yufei Wang and David Held and Zackory Erickson and Danica Kragić},
   booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
   year={2023},
-  category={softbody,embodied_ai},
+  category={softbody, reconstruction, embodied_ai},
   doi={10.1109/icra48891.2023.10160740},
   link={https://doi.org/10.1109/icra48891.2023.10160740},
   openalex_id={W4383066164},
   abstract={Physical interaction with textiles, such as assistive dressing or household tasks, requires advanced dexterous skills. The complexity of textile behavior during stretching and pulling is influenced by the material properties of the yarn and by the textile's construction technique, which are often unknown in real-world settings. Moreover, identification of physical properties of textiles through sensing commonly available on robotic platforms remains an open problem. To address this, we introduce Elastic Context (EC), a method to encode the elasticity of textiles using stress-strain curves adapted from textile engineering for robotic applications. We employ EC to learn generalized elastic behaviors of textiles and examine the effect of EC dimension on accurate force modeling of real-world non-linear elastic behaviors.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{turpin2023fastgrasp,
@@ -3787,12 +2706,6 @@ li2023pacnerf,
   openalex_id={W4383108955},
   abstract={Multi-finger grasping relies on high quality training data, which is hard to obtain: human data is hard to transfer and synthetic data relies on simplifying assumptions that reduce grasp quality. By making grasp simulation differentiable, and contact dynamics amenable to gradient-based optimization, we accelerate the search for high-quality grasps with fewer limiting assumptions. We present Grasp'D-1M: a large-scale dataset for multi-finger robotic grasping, synthesized with Fast-Grasp'D, a novel differentiable grasping simulator. Grasp'D-1M contains one million training examples for three robotic hands (three, four and five-fingered), each with multimodal visual inputs (RGB+depth+segmentation, available in mono and stereo). Grasp synthesis with Fast-Grasp'D is 10x faster than GraspIt! [1] and 20x faster than the prior Grasp'D differentiable simulator [2]. Generated grasps are more stable and contact-rich than GraspIt! grasps, regardless of the distance threshold used for contact generation. We validate the usefulness of our dataset by retraining an existing vision-based grasping pipeline [3] on Grasp'D-1M, and showing a dramatic increase in model performance, predicting grasps with 30% more contact, a 33% higher epsilon metric, and 35% lower simulated displacement. Additional details at fast-graspd.github.io.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{xu2023roboninjalearning,
@@ -3809,12 +2722,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{lv2023samrl,
   title={SAM-RL: Sensing-Aware Model-Based Reinforcement Learning via Differentiable Physics-Based Simulation and Rendering},
   author={Jun Lv and Yunhai Feng and Cheng Zhang and Shuang Zhao and Lin Shao and Cewu Lu},
@@ -3829,18 +2736,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{tang2023beyondchainmail,
   title={Beyond Chainmail: Computational Modeling of Discrete Interlocking Materials},
   author={Pengbin Tang and Stelian Coros and Bernhard Thomaszewski},
   journal={ACM Transactions on Graphics},
   year={2023},
-  category={softbody},
+  category={softbody, contact},
   doi={10.1145/3592112},
   link={https://doi.org/10.1145/3592112},
   openalex_id={W4385320774},
@@ -3848,18 +2749,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{grigorev2024contourcraftlearning,
   title={ContourCraft: Learning to Resolve Intersections in Neural Multi-Garment Simulations},
   author={Artur Grigorev and Giorgio Becherini and Michael J. Black and Otmar Hilliges and Bernhard Thomaszewski},
   booktitle={Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
   year={2024},
-  category={cloth},
+  category={cloth, contact},
   doi={10.1145/3641519.3657408},
   link={https://doi.org/10.1145/3641519.3657408},
   openalex_id={W4396987717},
@@ -3867,18 +2762,13 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{li2024efficientdeformation,
   title={Efficient Deformation Learning of Varied Garments with a Structure-Preserving Multilevel Framework},
   author={Tianxing Li and Rui Shi and Zihui Li and Takashi Kanai and Qing Zhu},
   booktitle={Proceedings of the ACM on Computer Graphics and Interactive Techniques},
   year={2024},
-  category={cloth,engine},
+  category={cloth, neural_solver},
+  tag={gnn},
   doi={10.1145/3651286},
   link={https://doi.org/10.1145/3651286},
   project={https://li-tianxing.github.io/publication/psdunet},
@@ -3886,12 +2776,6 @@ li2023pacnerf,
   abstract={Due to the highly nonlinear behavior of clothing, modelling fine-scale garment deformation on arbitrary meshes under varied conditions within a unified network poses a significant challenge. Existing methods often compromise on either model generalization, deformation quality, or runtime speed, making them less suitable for real-world applications. To address it, we propose to incorporate multi-source graph construction and pooling to achieve a novel graph learning scheme. We first introduce methods for extracting cues from different deformation correlations and transform the garment mesh into a comprehensive graph enriched with deformation-related information. To enhance the learning capability and generalizability of the model, we present structure-preserving pooling and unpooling strategies for the mesh deformation task, thereby improving information propagation across the mesh and enhancing the realism of deformation. Lastly, we conduct an attribution analysis and visualize the contribution of various vertices in the graph to the output, providing insights into the deformation behavior. The experimental results demonstrate superior performance against state-of-the-art methods.},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @article{ju2024estimatingcloth,
@@ -3910,12 +2794,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{wang2024garmentanimation,
   title={Garment Animation NeRF with Color Editing},
   author={Renke Wang and Meng Zhang and Jun Li and Jian Yang},
@@ -3930,12 +2808,6 @@ li2023pacnerf,
   abstract={Abstract Generating high‐fidelity garment animations through traditional workflows, from modeling to rendering, is both tedious and expensive. These workflows often require repetitive steps in response to updates in character motion, rendering viewpoint changes, or appearance edits. Although recent neural rendering offers an efficient solution for computationally intensive processes, it struggles with rendering complex garment animations containing fine wrinkle details and realistic garment‐and‐body occlusions, while maintaining structural consistency across frames and dense view rendering. In this paper, we propose a novel approach to directly synthesize garment animations from body motion sequences without the need for an explicit garment proxy. Our approach infers garment dynamic features from body motion, providing a preliminary overview of garment structure. Simultaneously, we capture detailed features from synthesized reference images of the garment's front and back, generated by a pre‐trained image model. These features are then used to construct a neural radiance field that renders the garment animation video. Additionally, our technique enables garment recoloring by decomposing its visual elements. We demonstrate the generalizability of our method across unseen body motions and camera views, ensuring detailed structural consistency. Furthermore, we showcase its applicability to color editing on both real and synthetic garment data. Compared to existing neural rendering techniques, our method exhibits qualitative and quantitative improvements in garment dynamics and wrinkle detail modeling. Code is available at https://github.com/wrk226/GarmentAnimationNeRF .},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{zhang2024neuralgarment,
@@ -3954,18 +2826,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{li2024neuralgarment,
   title={Neural Garment Dynamics via Manifold‐Aware Transformers},
   author={Peizhuo Li and Tuanfeng Y. Wang and Timur Levent Kesdogan and Duygu Ceylan and Olga Sorkine‐Hornung},
   journal={Computer Graphics Forum},
   year={2024},
-  category={cloth},
+  category={cloth, neural_solver, contact, avatar},
   tag={transformer},
   doi={10.1111/cgf.15028},
   link={https://doi.org/10.1111/cgf.15028},
@@ -3976,18 +2842,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{chen2024parametriclinear,
   title={Parametric Linear Blend Skinning Model for Multiple-Shape 3D Garments},
   author={X. Chen and Guangrun Wang and Xiaogang Xu and Philip H. S. Torr and Liang Lin},
   journal={IEEE Transactions on Visualization and Computer Graphics},
   year={2024},
-  category={cloth},
+  category={cloth, avatar},
   doi={10.1109/tvcg.2024.3478852},
   link={https://doi.org/10.1109/tvcg.2024.3478852},
   project={https://www.sysu-hcp.net/projects/cv/126.html},
@@ -3995,12 +2855,6 @@ li2023pacnerf,
   abstract={We present a novel data-driven Parametric Linear Blend Skinning (PLBS) model meticulously crafted for generalized 3D garment dressing and animation. Previous data-driven methods are impeded by certain challenges including overreliance on human body modeling and limited adaptability across different garment shapes. Our method resolves these challenges via two goals: 1) Develop a model based on garment modeling rather than human body modeling. 2) Separately construct low-dimensional sub-spaces for modeling in-plane deformation (such as variation in garment shape and size) and out-of-plane deformation (such as deformation due to varied body size and motion). Therefore, we formulate garment deformation as a PLBS model controlled by canonical 3D garment mesh, vertex-based skinning weights and associated local patch transformation. Unlike traditional LBS models specialized for individual objects, PLBS model is capable of uniformly expressing varied garments and bodies, the in-plane deformation is encoded on the canonical 3D garment and the out-of-plane deformation is controlled by the local patch transformation. Besides, we propose novel 3D garment registration and skinning weight decomposition strategies to obtain adequate data to build PLBS model under different garment categories. Furthermore, we employ dynamic fine-tuning to complement high-frequency signals missing from LBS for unseen testing data. Experiments illustrate that our method is capable of modeling dynamics for loose-fitting garments, outperforming previous data-driven modeling methods using different sub-space modeling strategies. We showcase that our method can factorize and be generalized for varied body sizes, garment shapes, garment sizes and human motions under different garment categories.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{stotko2024physicsguided,
@@ -4019,12 +2873,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{cen2024realtime,
   title={A Real-Time and Interactive Fluid Modeling System for Mixed Reality},
   author={Yunchi Cen and Hanchen Deng and Yue Ma and Xiaohui Liang},
@@ -4041,12 +2889,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{qiu2024neusmokeefficient,
   title={NeuSmoke: Efficient Smoke Reconstruction and View Synthesis with Neural Transportation Fields},
   author={Jiaxiong Qiu and Ruihong Cen and Zhong Li and Han Yan and Ming‐Ming Cheng and Bo Ren},
@@ -4060,12 +2902,6 @@ li2023pacnerf,
   openalex_id={W4404966498},
   project_kind={code_repo}
 }
-
-
-
-
-
-
 
 
 @inproceedings{wang2024physicsinformed,
@@ -4084,12 +2920,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{zhao2024reconstructionimplicit,
   title={Reconstruction of implicit surfaces from fluid particles using convolutional neural networks},
   author={Chunming Zhao and Tamar Shinar and Craig Schroeder},
@@ -4106,29 +2936,18 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{choi2024snnpde,
   title={SNN-PDE: Learning Dynamic PDEs from Data with Simplicial Neural Networks},
   author={Jae Woong Choi and Yuzhou Chen and Huikyo Lee and Hyun Kim and Yulia R. Gel},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2024},
-  category={fluid},
+  category={fluid, neural_solver},
+  tag={gnn},
   doi={10.1609/aaai.v38i10.29038},
   link={http://dx.doi.org/10.1609/aaai.v38i10.29038},
   openalex_id={W4393147400},
   abstract={Dynamics of many complex systems, from weather and climate to spread of infectious diseases, can be described by partial differential equations (PDEs). Such PDEs involve unknown function(s), partial derivatives, and typically multiple independent variables. The traditional numerical methods for solving PDEs assume that the data are observed on a regular grid. However, in many applications, for example, weather and air pollution monitoring delivered by the arbitrary located weather stations of the National Weather Services, data records are irregularly spaced. Furthermore, in problems involving prediction analytics such as forecasting wildfire smoke plumes, the primary focus may be on a set of irregular locations associated with urban development. In recent years, deep learning (DL) methods and, in particular, graph neural networks (GNNs) have emerged as a new promising tool that can complement traditional PDE solvers in scenarios of the irregular spaced data, contributing to the newest research trend of physics informed machine learning (PIML). However, most existing PIML methods tend to be limited in their ability to describe higher dimensional structural properties exhibited by real world phenomena, especially, ones that live on manifolds. To address this fundamental challenge, we bring the elements of the Hodge theory and, in particular, simplicial convolution defined on the Hodge Laplacian to the emerging nexus of DL and PDEs. In contrast to conventional Laplacian and the associated convolution operation, the simplicial convolution allows us to rigorously describe diffusion across higher order structures and to better approximate the complex underlying topology and geometry of the data. The new approach, Simplicial Neural Networks for Partial Differential Equations (SNN PDE) offers a computationally efficient yet effective solution for time dependent PDEs. Our studies of a broad range of synthetic data and wildfire processes demonstrate that SNN PDE improves upon state of the art baselines in handling unstructured grids and irregular time intervals of complex physical systems and offers competitive forecasting capabilities for weather and air quality forecasting.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{seker2024estimatingmaterial,
@@ -4147,12 +2966,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{gjoka2024softpneumatic,
   title={Soft Pneumatic Actuator Design using Differentiable Simulation},
   author={Arvi Gjoka and Espen Knoop and Moritz Bächer and Denis Zorin and Daniele Panozzo},
@@ -4167,12 +2980,6 @@ li2023pacnerf,
   abstract={We propose a computational design pipeline for pneumatically-actuated soft robots interacting with their environment through contact. We optimize the shape of the robot with a shape optimization approach, using a physically-accurate high-order finite element model for the forward simulation. Our approach enables fine-grained control over both deformation and contact forces by optimizing the shape of internal cavities, which we exploit to design pneumatically-actuated robots that can assume user-prescribed poses, or apply user-controlled forces. We demonstrate the efficacy of our method on two artistic and two functional examples.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{jin2024diffsounddifferentiable,
@@ -4191,12 +2998,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{wang2024neuralmodes,
   title={Neural Modes: Self-supervised Learning of Nonlinear Modal Subspaces},
   author={Jiahong Wang and Yinwei Du and Stelian Coros and Bernhard Thomaszewski},
@@ -4212,18 +3013,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{chen2024realtime,
   title={Real-time Wing Deformation Simulations for Flying Insects},
   author={Qiang Chen and Zhigang Deng and Feng Li and Yuming Fang and Tingsong Lu and Yang Tong and Yifan Zuo},
   booktitle={Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
   year={2024},
-  category={softbody},
+  category={softbody, control},
   doi={10.1145/3641519.3657434},
   link={https://doi.org/10.1145/3641519.3657434},
   project={https://graphics.cs.uh.edu/article/2024/2640/2024-siggraph-insectwingdeformation/},
@@ -4233,18 +3028,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{chen2025dressanyone,
   title={Dress Anyone : Automatic Physically-Based Garment Pattern Refitting 56},
   author={Hsiao-yu Chen and Egor Larionov and Ladislav Kavan and Gene Wei-Chin Lin and Doug Roble and Olga Sorkine‐Hornung and Tuur Stuyck},
   booktitle={Proceedings of the ACM on Computer Graphics and Interactive Techniques},
   year={2025},
-  category={cloth,differentiable_simulation},
+  category={cloth, differentiable_simulation, optimization, avatar},
   doi={10.1145/3747858},
   link={https://doi.org/10.1145/3747858},
   project={https://igl.ethz.ch/projects/dress_anyone},
@@ -4254,18 +3043,13 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{li2025dress1,
   title={Dress-1-to-3: Single Image to Simulation-Ready 3D Outfit with Diffusion Prior and Differentiable Physics},
   author={Xuan Li and Chang Yu and Wenxin Du and Ying Jiang and Tianyi Xie and Yunuo Chen and Yin Yang and Chenfanfu Jiang},
   journal={ACM Transactions on Graphics},
   year={2025},
-  category={cloth,differentiable_simulation},
+  category={cloth, differentiable_simulation, reconstruction, avatar},
+  tag={real2sim},
   doi={10.1145/3731177},
   link={https://doi.org/10.1145/3731177},
   project={https://dress-1-to-3.github.io/},
@@ -4274,18 +3058,13 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{li2025frequencydivided,
   title={Frequency-Divided Learning of Fine-Grained Clothing Behavior via Flexible Dynamic Graphs},
   author={Tianxing Li and Rui Shi and Takashi Kanai and Qing Zhu},
   journal={IEEE Transactions on Visualization and Computer Graphics},
   year={2025},
-  category={cloth,neural_solver},
+  category={cloth, neural_solver},
+  tag={gnn},
   doi={10.1109/tvcg.2025.3591816},
   link={https://doi.org/10.1109/tvcg.2025.3591816},
   project={https://shirui-homepage.com/publication/2025-freq-div-TVCG},
@@ -4293,12 +3072,6 @@ li2023pacnerf,
   abstract={Despite significant advancements in neural simulation techniques for clothing animation, these methods struggle to capture the dynamic details of garments during movement. This limitation restricts their applicability in scenarios where high-quality garment deformation is essential. To address this challenge, we introduce a novel graph learning-based approach to enhance deformation realism through designed mechanisms for mesh information propagation and external optimization strategies during model training. First, we address the issue of over-smoothing common in conventional graph processing techniques by introducing a flexible message-passing method. This approach effectively manages node interactions within the mesh, thereby improving the expressiveness of the model. Furthermore, acknowledging that uniform model supervision typically neglects high-frequency details during optimization, we analyze the spectral properties of clothing meshes. Based on this analysis, we introduce a frequency-division constraint aligned with the characteristics of different frequency bands, which aids in precisely controlling the generation of details. Our model further integrates self-collision and other physics-aware losses, enabling the learning of generalized and fine-grained dynamic deformations. Extensive evaluations and comparisons demonstrate the effectiveness of our approach, showing notable improvements over existing state-of-the-art solutions.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @article{peng2025picaphysics,
@@ -4317,18 +3090,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{shi2025selfsupervised,
   title={Self‐Supervised Humidity‐Controllable Garment Simulation via Capillary Bridge Modeling},
   author={Min Shi and Xinyuan Wang and J. Zhang and Lin Gao and Dengming Zhu and Hui Zhang},
   journal={Computer Graphics Forum},
   year={2025},
-  category={cloth},
+  category={cloth, neural_solver, contact, avatar},
   tag={gnn},
   doi={10.1111/cgf.70236},
   link={https://doi.org/10.1111/cgf.70236},
@@ -4337,18 +3104,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{chen2025neuralparticle,
   title={A Neural Particle Level Set Method for Dynamic Interface Tracking},
   author={Duowen Chen and Junwei Zhou and Bo Zhu},
   journal={ACM Transactions on Graphics},
   year={2025},
-  category={fluid},
+  category={fluid, neural_representation},
   doi={10.1145/3730399},
   link={https://doi.org/10.1145/3730399},
   project={https://cdwj.github.io/projects/neural-pls-project-page/index.html},
@@ -4358,18 +3119,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{yu2025pioneeringneural,
   title={A Pioneering Neural Network Method for Efficient and Robust Fuel Sloshing Simulation in Aircraft},
   author={Chen Yu and Shuai Zheng and Nianyi Wang and Menglong Jin and Yan Chang},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2025},
-  category={fluid},
+  category={fluid, neural_solver},
   doi={10.1609/aaai.v39i15.33752},
   link={https://doi.org/10.1609/aaai.v39i15.33752},
   project={https://github.com/chenyu-xjtu/A-Pioneering-Neural-Network-Method-for-Efficient-and-Robust-Fuel-Sloshing-Simulation-in-Aircraft},
@@ -4377,12 +3132,6 @@ li2023pacnerf,
   abstract={Simulating fuel sloshing within aircraft tanks during flight is crucial for aircraft safety research. Traditional methods based on Navier-Stokes equations are computationally expensive. In this paper, we treat fluid motion as point cloud transformation and propose the first neural network method specifically designed for simulating fuel sloshing in aircraft. This model is also the first deep learning model capable of stably modeling fluid particle dynamics in such complex scenarios. Our triangle feature fusion design achieves an optimal balance among fluid dynamics modeling, momentum conservation constraints, and global stability control. Additionally, we constructed the Fueltank dataset, the first dataset for aircraft fuel surface sloshing. It comprises 320,000 frames across four typical tank types and covers a wide range of flight maneuvers, including multi-directional rotations. We conducted comprehensive experiments on both our dataset and the take-off scenario of the aircraft. Compared to existing neural network-based fluid simulation algorithms, we significantly enhanced accuracy while maintaining high computational speed. Compared to traditional SPH methods, our speed improved approximately 10 times. Furthermore, compared to traditional fluid simulation software such as Flow3D, our computation speed increased by more than 300 times.},
   project_kind={code_repo}
 }
-
-
-
-
-
-
 
 
 @inproceedings{ni2025representingflow,
@@ -4401,18 +3150,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{holz2025multiphysicssimulation,
   title={Multiphysics Simulation Methods in Computer Graphics},
   author={Daniel Holz and Stefan Rhys Jeske and Fabian Löschner and Jan Bender and Yin Yang and Sheldon Andrews},
   journal={Computer Graphics Forum},
   year={2025},
-  category={multiphys},
+  category={multiphys, survey},
   doi={10.1111/cgf.70082},
   link={https://doi.org/10.1111/cgf.70082},
   project={https://multi.physics-simulation.org/},
@@ -4420,12 +3163,6 @@ li2023pacnerf,
   abstract={Abstract Physics simulation is a cornerstone of many computer graphics applications, ranging from video games and virtual reality to visual effects and computational design. The number of techniques for physically‐based modeling and animation has thus skyrocketed over the past few decades, facilitating the simulation of a wide variety of materials and physical phenomena. This report captures the state‐of‐the‐art of multiphysics simulation for computer graphics applications. Although a lot of work has focused on simulating individual phenomena, here we put an emphasis on methods developed by the computer graphics community for simulating various physical phenomena and materials, as well as the interactions between them. These include combinations of discretization schemes, mathematical modeling frameworks, and coupling techniques. For the most commonly used methods we provide an overview of the state‐of‐the‐art and deliver valuable insights into the various approaches. A selection of software frameworks that offer out‐of‐the‐box multiphysics modeling capabilities is also presented. Finally, we touch on emerging trends in physics‐based animation that affect multiphysics simulation, including machine learning‐based methods which have become increasingly popular in recent years.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @article{xu2025differentiablematerial,
@@ -4441,12 +3178,6 @@ li2023pacnerf,
   abstract={We present a novel, physically-based morphing technique for elastic shapes, leveraging the differentiable material point method (MPM) with space-time control through per-particle deformation gradients to accommodate complex topology changes. This approach, grounded in MPM's natural handling of dynamic topologies, is enhanced by a chained iterative optimization technique, allowing for the creation of both succinct and extended morphing sequences that maintain coherence over time. Demonstrated across various challenging scenarios, our method is able to produce detailed elastic deformation and topology transitions, all grounded within our physics-based simulation framework.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{chen2025learningobject,
@@ -4465,18 +3196,12 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{romanyserrasolsas2025painlessdifferentiable,
   title={Painless Differentiable Rotation Dynamics},
   author={Magí Romanyà-Serrasolsas and Juan J. Casafranca and Miguel Á. Otaduy},
   journal={ACM Transactions on Graphics},
   year={2025},
-  category={rigidbody},
+  category={rigidbody, differentiable_simulation},
   doi={10.1145/3730944},
   link={https://doi.org/10.1145/3730944},
   project={https://mslab.es/projects/Painless/},
@@ -4484,12 +3209,6 @@ li2023pacnerf,
   abstract={We propose the formulation of forward and differentiable rigid-body dynamics using Lie-algebra rotation derivatives. In particular, we show how this approach can easily be applied to incremental-potential formulations of forward dymamics, and we introduce a novel definition of adjoints for differentiable dynamics. In contrast to other parameterizations of rotations (notably the popular rotation-vector parameterization), our approach leads to painlessly simple and compact derivatives, better conditioning, and higher runtime efficiency. We demonstrate our approach on fundamental rigid-body problems, but also on Cosserat rods as an example of multi-rigid-body dynamics.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @inproceedings{ruan2025profrobot,
@@ -4505,12 +3224,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{shen2025elasticlocomotion,
   title={Elastic Locomotion with Mixed Second-order Differentiation},
   author={Siyuan Shen and Tianjia Shao and Kun Zhou and Chenfanfu Jiang and Sheldon Andrews and Victor Zordan and Yin Yang},
@@ -4521,12 +3234,6 @@ li2023pacnerf,
   link={https://doi.org/10.1145/3721238.3730685},
   openalex_id={W4412596298}
 }
-
-
-
-
-
-
 
 
 @inproceedings{tang2025inversedesign,
@@ -4542,12 +3249,6 @@ li2023pacnerf,
   openalex_id={W4412587883},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @inproceedings{liu2025precisegradient,
@@ -4566,12 +3267,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{stuyck2025quaffurereal,
   title={Quaffure: Real-Time Quasi-Static Neural Hair Simulation},
   author={Tuur Stuyck and Gene Wei-Chin Lin and Egor Larionov and Hsiao-yu Chen and Aljaž Božič and Nikolaos Sarafianos and Doug Roble},
@@ -4588,12 +3283,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{li2025selfsupervised,
   title={Self-supervised Learning of Latent Space Dynamics},
   author={Yue Li and Gene Wei-Chin Lin and Egor Larionov and Aljaž Božič and Doug Roble and Ladislav Kavan and Stelian Coros and Bernhard Thomaszewski and Tuur Stuyck and Hsiao-yu Chen},
@@ -4605,12 +3294,6 @@ li2023pacnerf,
   openalex_id={W4413131481},
   abstract={Modeling the dynamic behavior of deformable objects is crucial for creating realistic digital worlds. While conventional simulations produce high-quality motions, their computational costs are often prohibitive. Subspace simulation techniques address this challenge by restricting deformations to a lower-dimensional space, improving performance while maintaining visually compelling results. However, even subspace methods struggle to meet the stringent performance demands of portable devices such as virtual reality headsets and mobile platforms. To overcome this limitation, we introduce a novel subspace simulation framework powered by a neural latent-space integrator. Our approach leverages self-supervised learning to enhance inference stability and generalization. By operating entirely within latent space, our method eliminates the need for full-space computations, resulting in a highly efficient method well-suited for deployment on portable devices. We demonstrate the effectiveness of our approach on challenging examples involving rods, shells, and solids, showcasing its versatility and potential for widespread adoption.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{mittal2025uniphylearning,
@@ -4629,12 +3312,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{lin2026neuralocksreal,
   title={Neuralocks: Real‐Time Dynamic Neural Hair Simulation},
   author={Gene Wei‐Chin Lin and Egor Larionov and Hsiao‐yu Chen and Doug Roble and Tuur Stuyck},
@@ -4647,12 +3324,6 @@ li2023pacnerf,
   openalex_id={W7143446781},
   abstract={Abstract Real‐time hair simulation is a vital component in creating believable virtual avatars, as it provides a sense of immersion and authenticity. The dynamic behavior of hair, such as bouncing or swaying in response to character movements like jumping or walking, plays a significant role in enhancing the overall realism and engagement of virtual experiences. Current methods for simulating hair have been constrained by two primary approaches: highly optimized physics‐based systems and neural methods. However, state‐of‐the‐art neural techniques have been limited to quasi‐static solutions, failing to capture the dynamic behavior of hair. This paper introduces a novel neural method that breaks through these limitations, achieving efficient and stable dynamic hair simulation while outperforming existing approaches. We propose a fully self‐supervised method which can be trained without any manual intervention or artist generated training data allowing the method to be integrated with hair reconstruction methods to enable automatic end‐to‐end methods for avatar reconstruction. Our approach harnesses the power of compact, memory‐efficient neural networks to simulate hair at the strand level, allowing for the simulation of diverse hairstyles without excessive computational resources or memory requirements. We validate the effectiveness of our method through a variety of hairstyle examples, showcasing its potential for real‐world applications.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{jain2024neuralmonte,
@@ -4670,12 +3341,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{li2025adjoint,
   title={An Adjoint Method for Differentiable Fluid Simulation on Flow Maps},
   author={Zhiqi Li and Jinjin He and Barnab{\'a}s B{\"o}rcs{\"o}k and Taiyuan Zhang and Duowen Chen and Tao Du and Ming C. Lin and Greg Turk and Bo Zhu},
@@ -4687,12 +3352,6 @@ li2023pacnerf,
   project={https://pearseven.github.io/DiffFMProject/},
   abstract={This paper presents a novel adjoint solver for differentiable fluid simulation based on bidirectional flow maps. Our key observation is that the forward fluid solver and its corresponding backward, adjoint solver share the same flow map as the forward simulation. In the forward pass, this map transports fluid impulse variables from the initial frame to the current frame to simulate vortical dynamics. In the backward pass, the same map propagates adjoint variables from the current frame back to the initial frame to compute gradients. This shared long-range map allows the accuracy of gradient computation to benefit directly from improvements in flow map construction. Building on this insight, we introduce a novel adjoint solver that solves the adjoint equations directly on the flow map, enabling long-range and accurate differentiation of incompressible flows without differentiating intermediate numerical steps or storing intermediate variables, as required in conventional adjoint methods. To further improve efficiency, we propose a long-short time-sparse flow map representation for evolving adjoint variables. Our approach has low memory usage, requiring only 6.53GB of data at a resolution of $192^3$ while preserving high accuracy in tracking vorticity, enabling new differentiable simulation tasks that require precise identification, prediction, and control of vortex dynamics.},
 }
-
-
-
-
-
-
 
 
 @article{li2024neuralfluidic,
@@ -4707,12 +3366,6 @@ li2023pacnerf,
   project={https://people.csail.mit.edu/liyifei/publication/neuralfluid/},
   abstract={We present a novel framework to explore neural control and design of complex fluidic systems with dynamic solid boundaries. Our system features a fast differentiable Navier-Stokes solver with solid-fluid interface handling, a low-dimensional differentiable parametric geometry representation, a control-shape co-design algorithm, and gym-like simulation environments to facilitate various fluidic control design applications. Additionally, we present a benchmark of design, control, and learning tasks on high-fidelity, high-resolution dynamic fluid environments that pose challenges for existing differentiable fluid simulators. These tasks include designing the control of artificial hearts, identifying robotic end-effector shapes, and controlling a fluid gate. By seamlessly incorporating our differentiable fluid simulator into a learning framework, we demonstrate successful design, control, and learning results that surpass gradient-free solutions in these benchmark tasks.},
 }
-
-
-
-
-
-
 
 
 @article{park2024nearrealtime,
@@ -4730,12 +3383,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{xu2025amrtransformer,
   title={AMR-Transformer: Enabling Efficient Long-range Interaction for Complex Neural Fluid Simulation},
   author={Zeyi Xu and Jinfan Liu and Kuangxu Chen and Ye Chen and Zhangli Hu and Bingbing Ni},
@@ -4751,28 +3398,16 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{liu2025neuralkinematicbases,
   title={Neural Kinematic Bases for Fluids},
   author={Yibo Liu and Zhixin Fang and Sune Darkner and Noam Aigerman and Kenny Erleben and Paul Kry and Teseo Schneider},
   booktitle={Proceedings of the SIGGRAPH Asia 2025 Conference Papers},
   year={2025},
-  category={fluid},
+  category={fluid, neural_representation},
   doi={10.1145/3757377.3763925},
   link={https://arxiv.org/abs/2504.15657},
   abstract={We propose mesh-free fluid simulations that exploit a kinematic neural basis for velocity fields represented by an MLP. We design a set of losses that ensures that these neural bases approximate fundamental physical properties such as orthogonality, divergence-free, boundary alignment, and smoothness. Our neural bases can then be used to fit an input sketch of a flow, which will inherit the same fundamental properties from the bases. We then can animate such flow in real-time using standard time integrators. Our neural bases can accommodate different domains, moving boundaries, and naturally extend to three dimensions.},
 }
-
-
-
-
-
-
 
 
 @article{yue2025shapespace,
@@ -4790,12 +3425,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{tao2024nirfs,
   title={Neural Implicit Reduced Fluid Simulation},
   author={Yuanyuan Tao and Ivan Puhachov and Derek Nowrouzezahrai and Paul Kry},
@@ -4808,12 +3437,6 @@ li2023pacnerf,
   project={https://yuanyuantao.github.io/Neural-Implicit-Reduced-Fluid-Simulation/},
   abstract={High-fidelity simulation of fluid dynamics is challenging because of the high dimensional state data needed to capture fine details and the large computational cost associated with advancing the system in time. We present neural implicit reduced fluid simulation (NIRFS), a reduced fluid simulation technique that combines an implicit neural representation of fluid shapes and a neural ordinary differential equation to model the dynamics of fluid in the reduced latent space. The latent trajectories are computed at very little cost in comparison to simulations for training, while preserving fine physical details. We show that this approach can work well, capturing the shapes and dynamics involved in a variety of scenarios with constrained initial conditions, e.g., droplet-droplet collisions, crown splashes, and fluid slosh in a container. In each scenario, we learn the latent implicit representation of fluid shapes with a deep-network signed distance function, as well as the energy function and parameters of a damped Hamiltonian system, which helps guarantee desirable properties of the latent dynamics. To ensure that latent shape representations form smooth and physically meaningful trajectories, we simultaneously learn the latent representation and dynamics. We evaluate novel simulations for conservation of volume and momentum conservation, discuss design decisions, and demonstrate an application of our method to fluid control.},
 }
-
-
-
-
-
-
 
 
 @inproceedings{mani2023surfsup,
@@ -4829,12 +3452,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{jia2025implicitphysics,
   title={Learning an Implicit Physical Model for Image-based Fluid Simulation},
   author={Emily Yue-ting Jia and Jiageng Mao and Zhiyuan Gao and Yajie Zhao and Yue Wang},
@@ -4848,12 +3465,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{lee2024realtimeneuralcloth,
   title={Real-Time Neural Cloth Deformation Using a Compact Latent Space and a Latent Vector Predictor},
   author={Chanhaeng Lee and Maksym Perepichka and Saeed Ghorbani and Sudhir Mudur and Eric Paquette and Tiberiu Popa},
@@ -4865,12 +3476,6 @@ li2023pacnerf,
   link={https://doi.org/10.1007/978-3-031-92387-6_25},
   abstract={We propose a method for real-time cloth deformation using neural networks. The computational overhead of most of the existing learning methods for cloth simulation often limits their use in interactive applications. Employing a two-stage training process, our method predicts garment deformations in real-time. In the first stage, a graph neural network extracts cloth vertex features which are compressed into a latent vector with a mesh convolution network. We then decode the latent vector to blend shape weights, which are fed to a trainable blend shape module. In the second stage, we freeze the latent extraction and train a temporal latent predictor network. The temporal latent predictor uses a subset of the inputs from the first stage, ensuring that inputs are restricted to those which are readily available in a typical game engine. Then, during inference, the latent predictor predicts the compacted latent which is processed by the decoder and blend shape networks from the first stage. The latent predictor is the crucial component to speed up our inference time by replacing the resource-intensive graph neural network from the first stage. Our experiments demonstrate that our method effectively balances computational efficiency and realistic cloth deformation, making it suitable for real-time use in applications such as games.},
 }
-
-
-
-
-
-
 
 
 @article{kairanda2024neuralclothsim,
@@ -4887,12 +3492,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{jatavallabhula2021gradsim,
   title={gradSim: Differentiable Simulation for System Identification and Visuomotor Control},
   author={Krishna Murthy Jatavallabhula and Miles Macklin and Florian Golemo and Vikram Voleti and Linda Petrini and Martin Weiss and Breandan Considine and Jerome Parent-Levesque and Kevin Xie and Kenny Erleben and Liam Paull and Florian Shkurti and Derek Nowrouzezahrai and Sanja Fidler},
@@ -4906,12 +3505,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{coros2021differentiablesimulationcourse,
   title={Differentiable Simulation},
   author={Stelian Coros and Miles Macklin and Bernhard Thomaszewski and Nils Th{\"u}rey},
@@ -4922,12 +3515,6 @@ li2023pacnerf,
   link={https://doi.org/10.1145/3476117.3483433},
   abstract={Differentiable simulation is emerging as a fundamental building block for many cutting-edge applications in computer graphics, vision and robotics, among others. This course provides an introduction to this topic and an overview of state-of-the-art methods in this context. Starting with the basics of dynamic mechanical systems, we will present a general theoretical framework for differentiable simulation, which we will specialize to rigid bodies, deformable solids, and fluids. A particular focus will be on the different alternatives for computing simulation derivatives, ranging from analytical expressions via sensitivity analysis to reverse-mode automatic differentiation. As an important step towards real-world applications, we also present extensions to non-smooth phenomena such as frictional contact. Finally, we will discuss different ways of integrating differentiable simulation into machine learning frameworks.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{xing2025stabilizing,
@@ -4943,27 +3530,15 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @misc{newton2025engine,
   author={newton-physics contributors},
   title={Newton: An Open-Source, GPU-Accelerated Physics Simulation Engine Built upon NVIDIA Warp},
   year={2025},
-  category={rigidbody,engine},
+  category={rigidbody, embodied_ai, engine},
   url={https://github.com/newton-physics/newton},
   link={https://github.com/newton-physics/newton},
   abstract={An open-source, GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.}
 }
-
-
-
-
-
-
 
 
 @article{lecleach2023differentiable,
@@ -4982,17 +3557,11 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @misc{bertiche2021implicit,
   title={Neural Implicit Surfaces for Efficient and Accurate Collisions in Physically Based Simulations},
   author={Bertiche, Hugo and Madadi, Meysam and Escalera, Sergio},
   year={2021},
-  category={cloth},
+  category={cloth, neural_representation, contact},
   eprint={2110.01614},
   archivePrefix={arXiv},
   primaryClass={cs.GR},
@@ -5000,12 +3569,6 @@ li2023pacnerf,
   project={https://hbertiche.github.io/NeuralColliders/},
   abstract={Current trends in physically based simulation seek to abandon explicit data structures in favor of neural networks. However, one key issue is collisions. Existing approaches use low-resolution geometries to compute collisions, leading to poor dynamics. Here, we use neural networks to model the colliding surfaces and propose Neural Implicit Surfaces for computing collisions using the resulting representations. We show that our approach improves the efficiency and accuracy of physically based simulations, while enabling several applications that are unique to the capabilities of neural networks. Specifically, our method can simulate at different levels of detail, lead to reduced memory footprint, and allow interpolation between collision models, among other features.},
 }
-
-
-
-
-
-
 
 
 @inproceedings{xu2022accelerated,
@@ -5024,12 +3587,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{lin2022diffskill,
   title={DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools},
   author={Xingyu Lin and Zhiao Huang and Yunzhu Li and Joshua B. Tenenbaum and David Held and Chuang Gan},
@@ -5044,12 +3601,6 @@ li2023pacnerf,
   abstract={We consider the problem of sequential robotic manipulation of deformable objects using tools. Previous works have shown that differentiable physics simulators provide gradients to the environment state and help trajectory optimization to converge orders of magnitude faster than model-free reinforcement learning algorithms for deformable object manipulation. However, such gradient-based trajectory optimization typically requires access to the full simulator states and can only solve short-horizon, single-skill tasks due to local optima. In this work, we propose a novel framework, named DiffSkill, that uses a differentiable physics simulator for skill abstraction to solve long-horizon deformable object manipulation tasks from sensory observations. In particular, we first obtain short-horizon skills using individual tools from a gradient-based optimizer, using the full state information in a differentiable simulator; we then learn a neural skill abstractor from the demonstration trajectories which takes RGBD images as input. Finally, we plan over the skills by finding the intermediate goals and then solve long-horizon tasks. We show the advantages of our method in a new set of sequential deformable object manipulation tasks compared to previous reinforcement learning algorithms and compared to the trajectory optimizer.},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @inproceedings{liu2022fishgym,
@@ -5068,12 +3619,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{newbury2024review,
   title={A Review of Differentiable Simulators},
   author={R. Newbury and Jack Collins and Kerry He and Jiahe Pan and Ingmar Posner and David Howard and Akansel Cosgun},
@@ -5089,12 +3634,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{liu2024softmac,
   title={SoftMAC: Differentiable Soft Body Simulation with Forecast-based Contact Model and Two-way Coupling with Articulated Rigid Bodies and Clothes},
   author={Min Liu and Gang Yang and Siyuan Luo and Lin Shao},
@@ -5108,12 +3647,6 @@ li2023pacnerf,
   abstract={Differentiable physics simulation provides an avenue to tackle previously intractable challenges through gradient-based optimization, thereby greatly improving the efficiency of solving robotics-related problems. To apply differentiable simulation in diverse robotic manipulation scenarios, a key challenge is to integrate various materials in a unified framework. We present SoftMAC, a differentiable simulation framework that couples soft bodies with articulated rigid bodies and clothes. SoftMAC simulates soft bodies with the continuum-mechanics-based Material Point Method (MPM). We provide a novel forecast-based contact model for MPM, which effectively reduces penetration without introducing other artifacts like unnatural rebound. To couple MPM particles with deformable and non-volumetric clothes meshes, we also propose a penetration tracing algorithm that reconstructs the signed distance field in local area. Diverging from previous works, SoftMAC simulates the complete dynamics of each modality and incorporates them into a cohesive system with an explicit and differentiable coupling mechanism. The feature empowers SoftMAC to handle a broader spectrum of interactions, such as soft bodies serving as manipulators and engaging with underactuated systems. We conducted comprehensive experiments to validate the effectiveness and accuracy of the proposed differentiable pipeline in downstream robotic manipulation applications. Supplementary materials and videos are available on our project website at https://minliu01.github.io/SoftMAC.},
   project_kind={project_page}
 }
-
-
-
-
-
-
 
 
 @inproceedings{mnager2025differentiable,
@@ -5132,12 +3665,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @article{yifei2025neural,
   title={Neural Modular Physics for Elastic Simulation},
   author={Li, Yifei and Wu, Haixu and Xu, Zeyi and Stuyck, Tuur and Matusik, Wojciech},
@@ -5150,12 +3677,6 @@ li2023pacnerf,
   abstract={Learning-based methods have made significant progress in physics simulation, typically approximating dynamics with a monolithic end-to-end optimized neural network. Although these models offer an effective way to simulation, they may lose essential features compared to traditional numerical simulators, such as physical interpretability and reliability. Drawing inspiration from classical simulators that operate in a modular fashion, this paper presents Neural Modular Physics (NMP) for elastic simulation, which combines the approximation capacity of neural networks with the physical reliability of traditional simulators. Beyond the previous monolithic learning paradigm, NMP enables direct supervision of intermediate quantities and physical constraints by decomposing elastic dynamics into physically meaningful neural modules connected through intermediate physical quantities. With a specialized architecture and training strategy, our method transforms the numerical computation flow into a modular neural simulator, achieving improved physical consistency and generalizability. Experimentally, NMP demonstrates superior generalization to unseen initial conditions and resolutions, stable long-horizon simulation, better preservation of physical properties compared to other neural simulators, and greater feasibility in scenarios with unknown underlying dynamics than traditional simulators.},
   project_kind={webpage}
 }
-
-
-
-
-
-
 
 
 @article{daviet2025neurally,
@@ -5174,12 +3695,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{ye2026efficient,
   title={Efficient Differentiable Contact Model with Long-range Influence},
   author={Xiaohan Ye and Kui Wu and Zherong Pan and Taku Komura},
@@ -5190,12 +3705,6 @@ li2023pacnerf,
   link={https://arxiv.org/abs/2509.20917},
   abstract={With the maturation of differentiable physics, its role in various downstream applications: such as model predictive control, robotic design optimization, and neural PDE solvers, has become increasingly important. However, the derivative information provided by differentiable simulators can exhibit abrupt changes or vanish altogether, impeding the convergence of gradient-based optimizers. In this work, we demonstrate that such erratic gradient behavior is closely tied to the design of contact models. We further introduce a set of properties that a contact model must satisfy to ensure well-behaved gradient information. Lastly, we present a practical contact model for differentiable rigid-body simulators that satisfies all of these properties while maintaining computational efficiency. Our experiments show that, even from simple initializations, our contact model can discover complex, contact-rich control signals, enabling the successful execution of a range of downstream locomotion and manipulation tasks.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{weib2020correspondence,
@@ -5214,12 +3723,6 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
-
 @inproceedings{guo2021inverse,
   title={Inverse Simulation: Reconstructing Dynamic Geometry of Clothed Humans via Optimal Control},
   author={Jingfan Guo and  Jie Li and  Rahul Narain and  Hyun Soo Park},
@@ -5234,15 +3737,7 @@ li2023pacnerf,
 }
 
 
-
-
-
-
-
 s
-
-
-
 
 
 @inproceedings{mezghanni2022physical,
@@ -5256,12 +3751,6 @@ s
   openalex_id={W4312332873},
   abstract={We introduce a novel approach for generative 3D modeling that explicitly encourages the physical and thus functional consistency of the generated shapes. To this end, we advocate the use of online physical simulation as part of learning a generative model. Unlike previous related methods, our approach is trained end-to-end with a fully differentiable physical simulator in the training loop. We accomplish this by leveraging recent advances in differentiable programming, and introducing a fully differentiable point-based physical simulation layer, which accurately evaluates the shape's stability when subjected to gravity. We then incorporate this layer in a signed distance function (SDF) shape decoder. By augmenting a conventional SDF decoder with our simulation layer, we demonstrate through extensive experiments that online physical simulation improves the accuracy, visual plausibility and physical validity of the resulting shapes, while requiring no additional data or annotation effort.}
 }
-
-
-
-
-
-
 
 
 @inproceedings{huang2022mesh,
@@ -5278,12 +3767,6 @@ s
 }
 
 
-
-
-
-
-
-
 @inproceedings{kaneko2024improving,
   title={Improving Physics-Augmented Continuum Neural Radiance Field-Based Geometry-Agnostic System Identification with Lagrangian Particle Optimization},
   author={Takuhiro Kaneko},
@@ -5298,12 +3781,6 @@ s
 }
 
 
-
-
-
-
-
-
 @article{yu2024inverse,
   title={Inverse Garment and Pattern Modeling with a Differentiable Simulator},
   author={Boyang Yu and  Frédéric Cordier and  Hyewon Seo},
@@ -5316,12 +3793,6 @@ s
   openalex_id={W4404195038},
   abstract={Abstract The capability to generate simulation‐ready garment models from 3D shapes of clothed people will significantly enhance the interpretability of captured geometry of real garments, as well as their faithful reproduction in the digital world. This will have notable impact on fields like shape capture in social VR, and virtual try‐on in the fashion industry. To align with the garment modeling process standardized by the fashion industry and cloth simulation software, it is required to recover 2D patterns, which are then placed around the wearer's body model and seamed prior to the draping simulation. This involves an inverse garment design problem, which is the focus of our work here: Starting with an arbitrary target garment geometry, our system estimates its animatable replica along with its corresponding 2D pattern. Built upon a differentiable cloth simulator, it runs an optimization process that is directed towards minimizing the deviation of the simulated garment shape from the target geometry, while maintaining desirable properties such as left‐to‐right symmetry. Experimental results on various real‐world and synthetic data show that our method outperforms state‐of‐the‐art methods in producing both high‐quality garment models and accurate 2D patterns.}
 }
-
-
-
-
-
-
 
 
 @article{tao2025flowcapx,
@@ -5340,12 +3811,6 @@ s
 }
 
 
-
-
-
-
-
-
 @inproceedings{kaneko2025structure,
   title={Structure from Collision},
   author={Takuhiro Kaneko},
@@ -5358,16 +3823,6 @@ s
   openalex_id={W4413157470},
   abstract={Recent advancements in neural 3D representations, such as neural radiance fields (NeRF) and 3D Gaussian splatting (3DGS), have made accurate estimation of the 3D structure from multiview images possible. However, this capability is limited to estimating the visible external structure, and it is still difficult to identify the invisible internal structure hidden behind the surface. To overcome this limitation, we address a new task called structure from collision (SfC), which aims to estimate the structure (including the invisible internal one) of an object from the appearance changes at collision. To solve this task, we propose a novel model called SfC-NeRF, which optimizes the invisible internal structure of the object through a video sequence under physical, appearance (i.e., visible external structure)-preserving, and keyframe constraints. In particular, to avoid falling into undesirable local optima owing to its ill-posed nature, we propose volume annealing, i.e., searching for the global optima by repeatedly reducing and expanding the volume. Extensive experiments on 115 objects involving diverse structures (i.e., various cavity shapes, locations, and sizes) and various material properties reveal the properties of SfC and demonstrate the effectiveness of the proposed SfC-NeRF. <sup xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">1</sup>}
 }
-
-
-
-
-
-
-
-
-
-
 
 
 @article{yu2024super,
@@ -5384,10 +3839,5 @@ s
   abstract={Creating super-resolution cloth animations, which refine coarse cloth meshes with fine wrinkle details, faces challenges in preserving spatial consistency and temporal coherence across frames. In this paper, we introduce a general framework to address these issues, leveraging two core modules. The first module interleaves a simulator and a corrector. The simulator handles cloth dynamics, while the corrector rectifies differences in low-frequency features across various resolutions. This interleaving ensures prompt correction of spatial errors from the coarse simulation, effectively preventing their temporal propagation. The second module performs mesh-based super-resolution for detailed wrinkle enhancements. We decompose garment meshes into overlapping patches for adaptability to various styles and geometric continuity. Our method achieves an 8× improvement in resolution for cloth animations. We showcase the effectiveness of our method through diverse animation examples, including simple cloth pieces and intricate garments.},
   project_kind={webpage}
 }
-
-
-
-
-
 
 
