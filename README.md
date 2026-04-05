@@ -8,16 +8,16 @@ A curated list of papers on the seamless fusion of neural models and physics sim
 
 ## Contents
 
-- [Fluid (81)](#fluid)
-- [Cloth (54)](#cloth)
-- [Softbody (61)](#softbody)
+- [Fluid (80)](#fluid)
+- [Cloth (53)](#cloth)
+- [Softbody (63)](#softbody)
 - [Rigidbody (38)](#rigidbody)
 - [Multiphys (13)](#multiphys)
 - [Tag Guide](#tag-guide)
 - [Citation](#citation)
 
 <a id="fluid"></a>
-## Fluid (81)
+## Fluid (80)
 
 Neural physics papers on fluid simulation, reconstruction, control, and differentiable methods.
 
@@ -41,9 +41,6 @@ Neural physics papers on fluid simulation, reconstruction, control, and differen
 
 - Neural Kinematic Bases for Fluids | Siggraph Asia 2025 | [Paper](https://arxiv.org/abs/2504.15657) [DOI](https://doi.org/10.1145/3757377.3763925)
   - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square)
-
-- Neural Modular Physics for Elastic Simulation | Arxiv 2025 | [Paper](https://arxiv.org/abs/2512.15083) [Project](https://people.csail.mit.edu/liyifei/publication/nmp)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - Representing Flow Fields with Divergence-Free Kernels for Reconstruction | PACMCGIT 2025 | [DOI](https://doi.org/10.1145/3747872) [Project](https://www.physicsbasedanimation.com/2025/08/10/representing-flow-fields-with-divergence-free-kernels-for-reconstruction)
   - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Fluid Reconstruction](https://img.shields.io/badge/-Fluid%20Reconstruction-6d597a.svg?style=flat-square) ![Super Resolution](https://img.shields.io/badge/-Super%20Resolution-8ab17d.svg?style=flat-square)
@@ -264,7 +261,7 @@ Neural physics papers on fluid simulation, reconstruction, control, and differen
 - Data-driven fluid simulations using regression forests | TOG 2015 | [Paper](https://dl.acm.org/doi/10.1145/2816795.2818129) [DOI](https://doi.org/10.1145/2816795.2818129)
   - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Fluid Reconstruction](https://img.shields.io/badge/-Fluid%20Reconstruction-6d597a.svg?style=flat-square)
 <a id="cloth"></a>
-## Cloth (54)
+## Cloth (53)
 
 Papers on cloth, garments, and apparel-related dynamics, reconstruction, and avatar-centric modeling.
 
@@ -283,9 +280,6 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
 - PICA: Physics-Integrated Clothed Avatar | TVCG 2025 | [DOI](https://doi.org/10.1109/tvcg.2025.3560241) [Project](https://ustc3dv.github.io/PICA) [DOI](https://doi.org/10.1109/tvcg.2025.3614642)
   - ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![3DGS](https://img.shields.io/badge/-3DGS-bc6c25.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
 
-- Quaffure: Real-Time Quasi-Static Neural Hair Simulation | CVPR 2025 | [DOI](https://doi.org/10.1109/cvpr52734.2025.00031) [Project](https://tuurstuyck.github.io/quaffure/quaffure.html)
-  - ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
-
 - Self-Supervised Humidity-Controllable Garment Simulation via Capillary Bridge Modeling | CGF 2025 | [DOI](https://doi.org/10.1111/cgf.70236)
   - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
 
@@ -293,7 +287,7 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Cloth Reconstruction](https://img.shields.io/badge/-Cloth%20Reconstruction-6d597a.svg?style=flat-square) ![Parameter Estimation](https://img.shields.io/badge/-Parameter%20Estimation-6d597a.svg?style=flat-square)
 
 - ContourCraft: Learning to Resolve Intersections in Neural Multi-Garment Simulations | Siggraph 2024 | [DOI](https://doi.org/10.1145/3641519.3657408)
-  - ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
 
 - DiffAvatar: Simulation-Ready Garment Optimization with Differentiable Simulation | CVPR 2024 | [Paper](https://people.csail.mit.edu/liyifei/publication/diffavatar/)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Optimization](https://img.shields.io/badge/-Optimization-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
@@ -323,7 +317,6 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
   - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Neural Field](https://img.shields.io/badge/-Neural%20Field-8ab17d.svg?style=flat-square)
 
 - Parametric Linear Blend Skinning Model for Multiple-Shape 3D Garments | TVCG 2024 | [DOI](https://doi.org/10.1109/tvcg.2024.3478852) [Project](https://www.sysu-hcp.net/projects/cv/126.html)
-  - ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
 
 - Physics-guided Shape-from-Template: Monocular Video Perception through Neural Surrogate Models | CVPR 2024 | [DOI](https://doi.org/10.1109/cvpr52733.2024.01130) [Code](https://github.com/vc-bonn/Physics-guided-Shape-from-Template)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Cloth Reconstruction](https://img.shields.io/badge/-Cloth%20Reconstruction-6d597a.svg?style=flat-square)
@@ -335,16 +328,16 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
   - ![Super Resolution](https://img.shields.io/badge/-Super%20Resolution-8ab17d.svg?style=flat-square)
 
 - ClothCombo: Modeling Inter-Cloth Interaction for Draping Multi-Layered Clothes | TOG 2023 | [Paper](https://dl.acm.org/doi/10.1145/3618376)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
 
 - D-Cloth: Skinning-based Cloth Dynamic Prediction with a Three-stage Network | CGF 2023 | [Project](https://min-tang.github.io/home/DCloth/)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - Data-Free Learning of Reduced-Order Kinematics | Siggraph 2023 | [Project](https://nmwsharp.com/research/neural-physics-subspaces/)
   - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square)
 
 - Detail-Aware Deep Clothing Animations Infused with Multi-Source Attributes | CGF 2023 | [Paper](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14651)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
 
 - DiffXPBD: Differentiable Position-Based Simulation of Compliant Constraint Dynamics | PACMCGIT 2023 | [DOI](https://doi.org/10.1145/3606923)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Material Estimation](https://img.shields.io/badge/-Material%20Estimation-6d597a.svg?style=flat-square)
@@ -359,7 +352,7 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
   - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Cloth Reconstruction](https://img.shields.io/badge/-Cloth%20Reconstruction-6d597a.svg?style=flat-square)
 
 - Learning Anchor Transformations for 3D Garment Animation | CVPR 2023 | [DOI](https://doi.org/10.1109/cvpr52729.2023.00055) [Project](https://semanticdh.github.io/AnchorDEF)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - SwinGar: Spectrum-Inspired Neural Dynamic Deformation for Free-Swinging Garments | TVCG 2023 | [DOI](https://doi.org/10.1109/tvcg.2023.3346055)
   - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
@@ -389,13 +382,13 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
   - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Cloth Reconstruction](https://img.shields.io/badge/-Cloth%20Reconstruction-6d597a.svg?style=flat-square)
 
 - Predicting loose-fitting garment deformations using bone-driven motion networks | Siggraph 2022 | [Project](http://www.cad.zju.edu.cn/home/jin/SigCloth2022/SigCloth2022.htm)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - Snug: Self-supervised neural dynamic garments | CVPR 2022 | [Project](http://mslab.es/projects/SNUG/)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - Dynamic neural garments | TOG 2021 | [Project](https://geometry.cs.ucl.ac.uk/projects/2021/DynamicNeuralGarments/) [DOI](https://doi.org/10.1145/3478513.3480497)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - gradSim: Differentiable Simulation for System Identification and Visuomotor Control | ICLR 2021 | [Paper](https://openreview.net/forum?id=c_E8kFWfhp0) [Project](https://gradsim.github.io/)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Cloth Reconstruction](https://img.shields.io/badge/-Cloth%20Reconstruction-6d597a.svg?style=flat-square) ![Parameter Estimation](https://img.shields.io/badge/-Parameter%20Estimation-6d597a.svg?style=flat-square)
@@ -407,10 +400,10 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
   - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square)
 
 - PBNS: physically based neural simulation for unsupervised garment pose space deformation | TOG 2021 | [Project](https://hbertiche.github.io/PBNS/) [DOI](https://doi.org/10.1145/3478513.3480479)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - Self-supervised collision handling via generative 3d garment models for virtual try-on | CVPR 2021 | [Project](http://mslab.es/projects/SelfSupervisedGarmentCollisions/)
-  - ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square)
+  - ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
 
 - Cloth in the wind: A case study of physical measurement through simulation | CVPR 2020 | [Paper](https://arxiv.org/abs/2003.05065)
   - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Parameter Estimation](https://img.shields.io/badge/-Parameter%20Estimation-6d597a.svg?style=flat-square)
@@ -419,7 +412,7 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
   - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
 
 - Learning to measure the static friction coefficient in cloth contact | CVPR 2020 | [Paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Rasheed_Learning_to_Measure_the_Static_Friction_Coefficient_in_Cloth_Contact_CVPR_2020_paper.html)
-  - ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square)
+  - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Parameter Estimation](https://img.shields.io/badge/-Parameter%20Estimation-6d597a.svg?style=flat-square)
 
 - Projective dynamics with dry frictional contact | TOG 2020 | [Project](https://astcort.github.io/) [DOI](https://doi.org/10.1145/3386569.3392396)
   - ![Contact](https://img.shields.io/badge/-Contact-2a9d8f.svg?style=flat-square)
@@ -430,12 +423,12 @@ Papers on cloth, garments, and apparel-related dynamics, reconstruction, and ava
 - Learning an intrinsic garment space for interactive authoring of garment animation | TOG 2019 | [Project](https://geometry.cs.ucl.ac.uk/projects/2019/garment_authoring/) [DOI](https://doi.org/10.1145/3355089.3356512)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![User Interaction](https://img.shields.io/badge/-User%20Interaction-8ab17d.svg?style=flat-square)
 <a id="softbody"></a>
-## Softbody (61)
+## Softbody (63)
 
 Work on deformable objects, elasticity, fracture, soft robots, and learned physical models for soft materials.
 
 - Neuralocks: Real-Time Dynamic Neural Hair Simulation | CGF 2026 | [DOI](https://doi.org/10.1111/cgf.70407)
-  - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
 
 - A Differentiable Material Point Method Framework for Shape Morphing | TVCG 2025 | [DOI](https://doi.org/10.1109/tvcg.2025.3591729) [Project](https://chayo.oopy.io/1e7e3760-68e9-808e-b30a-f89ba08d6193)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Engine](https://img.shields.io/badge/-Engine-1f77b4.svg?style=flat-square)
@@ -447,7 +440,7 @@ Work on deformable objects, elasticity, fracture, soft robots, and learned physi
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Reinforcement Learning](https://img.shields.io/badge/-Reinforcement%20Learning-8ab17d.svg?style=flat-square)
 
 - Elastic Locomotion with Mixed Second-order Differentiation | Siggraph 2025 | [DOI](https://doi.org/10.1145/3721238.3730685)
-  - ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square)
+  - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Control](https://img.shields.io/badge/-Control-2f6db3.svg?style=flat-square) ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square)
 
 - Inverse Design of Discrete Interlocking Materials with Desired Mechanical Behavior | Siggraph 2025 | [DOI](https://doi.org/10.1145/3721238.3730675) [Project](https://tangpengbin.github.io/publications/InverseDIM/index.html)
   - ![Optimization](https://img.shields.io/badge/-Optimization-457b9d.svg?style=flat-square) ![Shape Design](https://img.shields.io/badge/-Shape%20Design-8ab17d.svg?style=flat-square)
@@ -455,11 +448,17 @@ Work on deformable objects, elasticity, fracture, soft robots, and learned physi
 - Learning Object Properties Using Robot Proprioception via Differentiable Robot-Object Interaction | ICRA 2025 | [DOI](https://doi.org/10.1109/icra55743.2025.11127955) [Project](https://warpdiffrobot.github.io/)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Parameter Estimation](https://img.shields.io/badge/-Parameter%20Estimation-6d597a.svg?style=flat-square)
 
+- Neural Modular Physics for Elastic Simulation | Arxiv 2025 | [Paper](https://arxiv.org/abs/2512.15083) [Project](https://people.csail.mit.edu/liyifei/publication/nmp)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
+
 - Neurally Integrated Finite Elements for Differentiable Elasticity on Evolving Domains | TOG 2025 | [DOI](https://doi.org/10.1145/3727874) [Project](https://research.nvidia.com/labs/toronto-ai/flexisim/)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square)
 
 - Precise Gradient Discontinuities in Neural Fields for Subspace Physics | Siggraph Asia 2025 | [DOI](https://doi.org/10.1145/3757377.3763810) [Project](https://www.dgp.toronto.edu/projects/discont_grad)
   - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Neural Field](https://img.shields.io/badge/-Neural%20Field-8ab17d.svg?style=flat-square)
+
+- Quaffure: Real-Time Quasi-Static Neural Hair Simulation | CVPR 2025 | [DOI](https://doi.org/10.1109/cvpr52734.2025.00031) [Project](https://tuurstuyck.github.io/quaffure/quaffure.html)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
 
 - Self-supervised Learning of Latent Space Dynamics | PACMCGIT 2025 | [DOI](https://doi.org/10.1145/3747854)
   - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square)
@@ -489,7 +488,7 @@ Work on deformable objects, elasticity, fracture, soft robots, and learned physi
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Parameter Estimation](https://img.shields.io/badge/-Parameter%20Estimation-6d597a.svg?style=flat-square) ![NeRF](https://img.shields.io/badge/-NeRF-e76f51.svg?style=flat-square)
 
 - Near-realtime Facial Animation by Deep 3D Simulation Super-Resolution | TOG 2024 | [DOI](https://doi.org/10.1145/3670687) [Code](https://github.com/hjoonpark/3d-sim-super-res)
-  - ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![Super Resolution](https://img.shields.io/badge/-Super%20Resolution-8ab17d.svg?style=flat-square)
+  - ![Super Resolution](https://img.shields.io/badge/-Super%20Resolution-8ab17d.svg?style=flat-square)
 
 - Neural Modes: Self-supervised Learning of Nonlinear Modal Subspaces | CVPR 2024 | [DOI](https://doi.org/10.1109/cvpr52733.2024.02185) [Code](https://github.com/jiahong-w/neural-modes)
   - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square)
@@ -525,10 +524,10 @@ Work on deformable objects, elasticity, fracture, soft robots, and learned physi
   - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Neural Field](https://img.shields.io/badge/-Neural%20Field-8ab17d.svg?style=flat-square)
 
 - Neural Metamaterial Networks for Nonlinear Material Design | TOG 2023 | [Code](https://github.com/liyuesolo/NeuralMetamaterialNetwork) [DOI](https://doi.org/10.1145/3618325)
-  - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square)
+  - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Optimization](https://img.shields.io/badge/-Optimization-457b9d.svg?style=flat-square)
 
 - Neuwigs: A neural dynamic model for volumetric hair capture and animation | CVPR 2023 | [Project](https://ziyanw1.github.io/neuwigs/)
-  - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
+  - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
 
 - SAM-RL: Sensing-Aware Model-Based Reinforcement Learning via Differentiable Physics-Based Simulation and Rendering | RSS 2023 | [DOI](https://doi.org/10.15607/rss.2023.xix.040)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square) ![Reinforcement Learning](https://img.shields.io/badge/-Reinforcement%20Learning-8ab17d.svg?style=flat-square)
@@ -567,7 +566,7 @@ Work on deformable objects, elasticity, fracture, soft robots, and learned physi
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square)
 
 - A Deep Emulator for Secondary Motion of 3D Characters | CVPR 2021 | [DOI](https://doi.org/10.1109/cvpr46437.2021.00587) [Code](https://github.com/ZhengMianlun/deep_emulator)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - Accurately Solving Rod Dynamics with Graph Learning | NeurIPS 2021 | [Project](http://hdl.handle.net/10754/679142) [Project](https://computationalsciences.org/publications/shao-2021-physical-systems-graph-learning.html)
   - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
@@ -603,7 +602,7 @@ Work on deformable objects, elasticity, fracture, soft robots, and learned physi
   - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square) ![Material Estimation](https://img.shields.io/badge/-Material%20Estimation-6d597a.svg?style=flat-square)
 
 - Real-time hair simulation with neural interpolation | TVCG 2020 | [Paper](https://www.mlchai.com/publication/lyu2020real/)
-  - ![Avatar](https://img.shields.io/badge/-Avatar-4c78a8.svg?style=flat-square) ![CNN](https://img.shields.io/badge/-CNN-e76f51.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
+  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![CNN](https://img.shields.io/badge/-CNN-e76f51.svg?style=flat-square) ![Hair](https://img.shields.io/badge/-Hair-ff7f0e.svg?style=flat-square)
 
 - ChainQueen: A Real-Time Differentiable Physical Simulator for Soft Robotics | ICRA 2019 | [Code](https://github.com/yuanming-hu/ChainQueen) [DOI](https://doi.org/10.1109/ICRA.2019.8794333)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Control](https://img.shields.io/badge/-Control-2f6db3.svg?style=flat-square) ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square)
@@ -682,7 +681,7 @@ Methods for articulated rigid bodies, robotics, contact-rich motion, and rigid o
   - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square) ![GNN](https://img.shields.io/badge/-GNN-6d597a.svg?style=flat-square)
 
 - Learning physics constrained dynamics using autoencoders | NeurIPS 2022 | [Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/6d5e035724687454549b97d6c805dc84-Abstract-Conference.html)
-  - ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
+  - ![Neural Representation](https://img.shields.io/badge/-Neural%20Representation-4c78a8.svg?style=flat-square) ![Neural Solver](https://img.shields.io/badge/-Neural%20Solver-457b9d.svg?style=flat-square)
 
 - Physical Simulation Layer for Accurate 3D Modeling | CVPR 2022 | [DOI](https://doi.org/10.1109/cvpr52688.2022.01315)
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square)
@@ -715,7 +714,7 @@ Methods for articulated rigid bodies, robotics, contact-rich motion, and rigid o
   - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square)
 
 - The Role of Physics-Based Simulators in Robotics | ARCRAS 2021 | [DOI](https://doi.org/10.1146/annurev-control-072220-093055)
-  - ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square)
+  - ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square) ![Survey](https://img.shields.io/badge/-Survey-3a86b8.svg?style=flat-square)
 
 - Rl-cyclegan: Reinforcement learning aware simulation-to-real | CVPR 2020 | [Paper](https://arxiv.org/abs/2006.09001)
   - ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square) ![Reinforcement Learning](https://img.shields.io/badge/-Reinforcement%20Learning-8ab17d.svg?style=flat-square)
@@ -724,7 +723,7 @@ Methods for articulated rigid bodies, robotics, contact-rich motion, and rigid o
   - ![Differentiable Simulation](https://img.shields.io/badge/-Differentiable%20Simulation-3a86b8.svg?style=flat-square) ![Control](https://img.shields.io/badge/-Control-2f6db3.svg?style=flat-square)
 
 - Use the force, luke! learning to predict physical forces by simulating effects | CVPR 2020 | [Project](https://ehsanik.github.io/forcecvpr2020/)
-  - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square)
+  - ![Reconstruction](https://img.shields.io/badge/-Reconstruction-3a86b8.svg?style=flat-square) ![Real2Sim](https://img.shields.io/badge/-Real2Sim-e76f51.svg?style=flat-square)
 
 - Drake: Model-based design and verification for robotics | 2019 | [Project](https://drake.mit.edu)
   - ![Engine](https://img.shields.io/badge/-Engine-1f77b4.svg?style=flat-square) ![Embodied AI](https://img.shields.io/badge/-Embodied%20AI-1f77b4.svg?style=flat-square)
@@ -784,15 +783,15 @@ Reader-facing tags used in the list for quick scanning and search.
 
 | Tag | Count |
 | --- | --- |
-| Real2Sim | 37 |
+| Real2Sim | 39 |
 | Fluid Reconstruction | 22 |
-| GNN | 20 |
+| GNN | 21 |
 | Reinforcement Learning | 18 |
 | Cloth Reconstruction | 14 |
 | Neural Field | 11 |
+| Parameter Estimation | 11 |
 | User Interaction | 11 |
 | Fluid Control | 10 |
-| Parameter Estimation | 10 |
 | Material Estimation | 9 |
 | NeRF | 9 |
 | Super Resolution | 9 |
